@@ -4,7 +4,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>You gain the <em>@UUID[Compendium.dervish-archetype.items.5EZPr3kFv4EKfcP6]{Force Field}</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1.</p>"
+      "value": "<p>You gain the <em>@UUID[Compendium.the-longest-mile.items.5EZPr3kFv4EKfcP6]{Force Field}</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1.</p>"
     },
     "source": { "value": "" },
     "rules": [

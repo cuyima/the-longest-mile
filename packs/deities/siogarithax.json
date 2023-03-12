@@ -17,9 +17,9 @@
     "skill": "itm",
     "weapons": [],
     "spells": {
-      "1": "Compendium.dervish-archetype.spells.xPJ29LKBAP7SEKFe",
-      "3": "Compendium.dervish-archetype.spells.74Rkk8RCCSwCyFsm",
-      "6": "Compendium.dervish-archetype.spells.ASWXAvLuWOwXZY8L"
+      "1": "Compendium.the-longest-mile.spells.xPJ29LKBAP7SEKFe",
+      "3": "Compendium.the-longest-mile.spells.74Rkk8RCCSwCyFsm",
+      "6": "Compendium.the-longest-mile.spells.ASWXAvLuWOwXZY8L"
     }
   },
   "img": "https://foundry-vtt-assets-eth.s3.us-east-2.amazonaws.com/TLM%20Tokens/Other/sioemblem.webp",
