@@ -1,9 +1,10 @@
 {
   "name": "Manifest Essence Form",
   "type": "effect",
-  "img": "systems/pf2e/icons/spells/gravity-weapon.webp",
+  "effects": [],
   "system": {
     "description": {
+      "gm": "",
       "value": "<p>Once per day when you use this ability, you can manifest the armament's essence form. You gain the armament's essence power until it's Dismissed. After 1 minute, the essence form armament is automatically Dismissed.</p>"
     },
     "source": {
@@ -82,22 +83,6 @@
         "override": {
           "damageType": "{item|flags.pf2e.rulesSelections.planarPainDamage}"
         }
-      },
-      {
-        "definition": ["item:slug:soulforged-partizan"],
-        "key": "AdjustStrike",
-        "mode": "remove",
-        "property": "weapon-traits",
-        "value": "deadly-d8"
-      },
-      {
-        "critical": true,
-        "key": "DamageDice",
-        "selector": "soulforged-partizan-damage",
-        "diceNumber": 1,
-        "dieSize": "d8",
-        "damageType": "{item|flags.pf2e.rulesSelections.planarPainDamage}",
-        "label": "Deadly d8"
       }
     ],
     "slug": "manifest-essence-form",
@@ -122,9 +107,9 @@
       "show": true
     },
     "badge": null,
-    "context": null
+    "context": null,
+    "unidentified": false
   },
-  "effects": [],
-  "flags": {},
-  "_id": "Bf6icD7q57eAtNr3"
+  "img": "systems/pf2e/icons/spells/gravity-weapon.webp",
+  "_id": "trYo9hPquBQMmn3j"
 }
