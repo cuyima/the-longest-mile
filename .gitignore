@@ -1,2 +1,4 @@
 packs/*.db
 decompile/
+input-items/
+output-items/
