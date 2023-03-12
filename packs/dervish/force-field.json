@@ -1,0 +1,54 @@
+{
+  "name": "Force Field",
+  "type": "spell",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div><p><strong>Trigger</strong> You or another creature you can see within 30 feet of you would take damage.</p><hr />You create a momentary shield of telekinetic force and reduce the damage taken by 1d4.\n<hr /><strong>Heightened (+2)</strong>The damage reduction increases by 1d4.</p></div>"
+    },
+    "source": { "value": "" },
+    "rules": [],
+    "slug": "force-field",
+    "traits": { "value": [], "rarity": "rare" },
+    "level": { "value": 1 },
+    "spellType": { "value": "utility" },
+    "category": { "value": "focus" },
+    "traditions": { "value": ["occult"] },
+    "school": { "value": "abjuration" },
+    "components": {
+      "focus": false,
+      "material": false,
+      "somatic": false,
+      "verbal": false
+    },
+    "materials": { "value": "" },
+    "target": { "value": "the creature which triggered the reaction" },
+    "range": { "value": "30 feet" },
+    "area": null,
+    "time": { "value": "reaction" },
+    "duration": { "value": "" },
+    "damage": {
+      "value": {
+        "PcfrrbUYtBmTlPeO": {
+          "value": "1d4",
+          "type": { "value": "", "categories": [], "subtype": "" },
+          "applyMod": false
+        }
+      }
+    },
+    "save": { "value": "", "basic": "" },
+    "sustained": { "value": false },
+    "cost": { "value": "" },
+    "location": { "value": null },
+    "hasCounteractCheck": { "value": false },
+    "ability": { "value": "" },
+    "heightening": {
+      "damage": { "PcfrrbUYtBmTlPeO": "1d4" },
+      "type": "interval",
+      "interval": 2
+    }
+  },
+  "img": "systems/pf2e/icons/spells/protective-ward.webp",
+  "flags": {},
+  "_id": "5EZPr3kFv4EKfcP6"
+}

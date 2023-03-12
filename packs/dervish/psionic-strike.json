@@ -1,0 +1,98 @@
+{
+  "name": "Psionic Strike",
+  "type": "spell",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Make a melee Strike. On a hit, you deal an extra 1 force damage. After the damage is dealt, you may choose to amp this cantrip.<hr /><strong>Heightened (+2)</strong> The damage increases by 1, and the Amp damage increases by 1d4.<hr /><strong>Amp </strong>You deal an extra 1d4 force damage. You force the target to make a Strength saving throw against a DC equal to your occult spell DC. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.</p>"
+    },
+    "source": {
+      "value": ""
+    },
+    "rules": [],
+    "slug": "psionic-strike",
+    "traits": {
+      "value": ["amp", "cantrip"],
+      "rarity": "rare"
+    },
+    "level": {
+      "value": 1
+    },
+    "spellType": {
+      "value": "utility"
+    },
+    "category": {
+      "value": "focus"
+    },
+    "traditions": {
+      "value": ["occult"]
+    },
+    "school": {
+      "value": "evocation"
+    },
+    "components": {
+      "focus": false,
+      "material": false,
+      "somatic": false,
+      "verbal": false
+    },
+    "materials": {
+      "value": ""
+    },
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": ""
+    },
+    "damage": {
+      "value": {
+        "JzQsiZjPFx5Hz9XG": {
+          "value": "1",
+          "type": {
+            "value": "force",
+            "categories": [],
+            "subtype": ""
+          },
+          "applyMod": false
+        }
+      }
+    },
+    "save": {
+      "value": "",
+      "basic": ""
+    },
+    "sustained": {
+      "value": false
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "hasCounteractCheck": {
+      "value": false
+    },
+    "ability": {
+      "value": ""
+    },
+    "heightening": {
+      "type": "interval",
+      "interval": 2,
+      "damage": {
+        "JzQsiZjPFx5Hz9XG": "1"
+      }
+    }
+  },
+  "img": "systems/pf2e/icons/spells/magic-weapon.webp",
+  "flags": {},
+  "_id": "VJlZs9QYTW559RCf"
+}

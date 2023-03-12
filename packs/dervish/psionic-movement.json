@@ -1,0 +1,86 @@
+{
+    "name": "Psionic Movement",
+    "type": "spell",
+    "effects": [],
+    "system": {
+        "description": {
+            "value": "<p>You can move an object or a creature up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both.<hr /><strong>Amp </strong>You can target yourself with this action.</p>"
+        },
+        "source": {
+            "value": ""
+        },
+        "rules": [],
+        "slug": "psionic-movement",
+        "traits": {
+            "value": [
+                "amp",
+                "cantrip"
+            ],
+            "rarity": "rare"
+        },
+        "level": {
+            "value": 1
+        },
+        "spellType": {
+            "value": "utility"
+        },
+        "category": {
+            "value": "focus"
+        },
+        "traditions": {
+            "value": [
+                "occult"
+            ]
+        },
+        "school": {
+            "value": "enchantment"
+        },
+        "components": {
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "verbal": false
+        },
+        "materials": {
+            "value": ""
+        },
+        "target": {
+            "value": "1 loose object that is Large or smaller or 1 willing creature, other than yourself"
+        },
+        "range": {
+            "value": "30 feet"
+        },
+        "area": null,
+        "time": {
+            "value": "2"
+        },
+        "duration": {
+            "value": ""
+        },
+        "damage": {
+            "value": {}
+        },
+        "save": {
+            "value": "",
+            "basic": ""
+        },
+        "sustained": {
+            "value": false
+        },
+        "cost": {
+            "value": ""
+        },
+        "location": {
+            "value": null
+        },
+        "hasCounteractCheck": {
+            "value": false
+        },
+        "ability": {
+            "value": ""
+        }
+    },
+    "img": "systems/pf2e/icons/spells/unfolding-wind-rush.webp",
+    "flags": {},
+    "_id": "8pR0eh4kACzxJilU"
+}

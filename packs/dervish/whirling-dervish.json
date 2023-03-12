@@ -1,0 +1,25 @@
+{
+  "name": "Whirling Dervish",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p><strong>Requirements </strong>You are wielding two melee weapons<hr />You whirl in and out of range. You Step, Strike, Step, and make another Strike. One Strike may instead be a use of Psionic Strike, but the others must be normal Strikes. You can choose not to take one or both Steps.</p>"
+    },
+    "source": { "value": "" },
+    "rules": [],
+    "slug": "whirling-dervish",
+    "level": { "value": 6 },
+    "traits": { "value": ["archetype", "flourish"], "rarity": "rare" },
+    "featType": { "value": "archetype" },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": { "value": "action" },
+    "actions": { "value": 2 },
+    "prerequisites": { "value": [{ "value": "Dervish Dedication" }] },
+    "location": null
+  },
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "flags": {},
+  "_id": "UVXKCiC9oSflU1lp"
+}

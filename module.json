@@ -1,0 +1,58 @@
+{
+  "id": "the-longest-mile",
+  "name": "the-longest-mile",
+  "title": "The Longest Mile",
+  "description": "Custom content for The Longest Mile campaign.",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": "0.8.6",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "author": "Erin & Viv",
+  "authors": [
+    {
+      "name": "Erin & Viv"
+    }
+  ],
+  "packs": [
+    {
+      "name": "items",
+      "label": "Dervish Archetype",
+      "path": "/packs/dervish.db",
+      "entity": "Item",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "deities",
+      "label": "Deities",
+      "path": "/packs/deities.db",
+      "entity": "Item",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "path": "/packs/spells.db",
+      "entity": "Item",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "feats",
+      "label": "Custom Feats",
+      "path": "/packs/feats.db",
+      "entity": "Item",
+      "type": "Item",
+      "system": "pf2e"
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "manifestPlusVersion": "1.2.0"
+}

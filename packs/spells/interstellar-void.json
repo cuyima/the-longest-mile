@@ -1,0 +1,99 @@
+{
+  "name": "Interstellar Void",
+  "type": "spell",
+  "img": "systems/pf2e/icons/spells/interstellar-void.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You call upon the frigid depths of outer space to bring a terrible chill to your enemy. The target is cloaked in the freezing void, which deals 3d6 cold damage immediately and the first time each round you Sustain the Spell on future turns, with a basic Fortitude save.</p>\n<p>The target is <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw\" data-id=\"HL2l2VRSaQHu9lUw\" data-type=\"Item\" data-pack=\"pf2e.conditionitems\" data-tooltip=\"Condition Item\">Fatigued</a> for as long as the effect persists.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The cold damage increases by 1d6.</p>"
+    },
+    "source": {
+      "value": ""
+    },
+    "rules": [],
+    "slug": "interstellar-void",
+    "traits": {
+      "value": ["cold", "divine"],
+      "rarity": "uncommon"
+    },
+    "level": {
+      "value": 3
+    },
+    "spellType": {
+      "value": "save"
+    },
+    "category": {
+      "value": "spell"
+    },
+    "traditions": {
+      "value": []
+    },
+    "school": {
+      "value": "evocation"
+    },
+    "components": {
+      "focus": false,
+      "material": false,
+      "somatic": true,
+      "verbal": true
+    },
+    "materials": {
+      "value": ""
+    },
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": ""
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "sustained up to 1 minute"
+    },
+    "damage": {
+      "value": {
+        "pHuDFOS5F2e6bvka": {
+          "value": "3d6",
+          "type": {
+            "value": "cold",
+            "categories": [],
+            "subtype": ""
+          },
+          "applyMod": false
+        }
+      }
+    },
+    "save": {
+      "value": "fortitude",
+      "basic": "basic"
+    },
+    "sustained": {
+      "value": false
+    },
+    "cost": {
+      "value": ""
+    },
+    "ability": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "hasCounteractCheck": {
+      "value": false
+    },
+    "heightening": {
+      "type": "interval",
+      "interval": 1,
+      "damage": {
+        "pHuDFOS5F2e6bvka": "1d6"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "74Rkk8RCCSwCyFsm"
+}

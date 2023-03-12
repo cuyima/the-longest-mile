@@ -1,0 +1,28 @@
+{
+  "name": "Siogarithax",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Siogarithax, the Cruel Star, was once a mighty Dragonknight.</p>"
+    },
+    "source": { "value": "" },
+    "rules": [],
+    "slug": "siogarithax",
+    "category": "deity",
+    "alignment": { "own": "LE", "follower": ["LN", "LE"] },
+    "domains": { "primary": ["star"], "alternate": ["cold", "duty"] },
+    "font": ["harm"],
+    "ability": ["str"],
+    "skill": "itm",
+    "weapons": [],
+    "spells": {
+      "1": "Compendium.dervish-archetype.spells.xPJ29LKBAP7SEKFe",
+      "3": "Compendium.dervish-archetype.spells.74Rkk8RCCSwCyFsm",
+      "6": "Compendium.dervish-archetype.spells.ASWXAvLuWOwXZY8L"
+    }
+  },
+  "img": "https://foundry-vtt-assets-eth.s3.us-east-2.amazonaws.com/TLM%20Tokens/Other/sioemblem.webp",
+  "flags": {},
+  "_id": "Bf6icD7q57eAtNr1"
+}

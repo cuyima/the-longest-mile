@@ -1,0 +1,130 @@
+{
+  "name": "Manifest Essence Form",
+  "type": "effect",
+  "img": "systems/pf2e/icons/spells/gravity-weapon.webp",
+  "system": {
+    "description": {
+      "value": "<p>Once per day when you use this ability, you can manifest the armament's essence form. You gain the armament's essence power until it's Dismissed. After 1 minute, the essence form armament is automatically Dismissed.</p>"
+    },
+    "source": {
+      "value": ""
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAcid",
+            "value": "acid"
+          },
+          {
+            "label": "PF2E.TraitChaotic",
+            "value": "chaotic"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "value": "cold"
+          },
+          {
+            "label": "PF2E.TraitElectricity",
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitEvil",
+            "value": "evil"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitGood",
+            "value": "good"
+          },
+          {
+            "label": "PF2E.TraitLawful",
+            "value": "lawful"
+          },
+          {
+            "label": "PF2E.TraitNegative",
+            "value": "negative"
+          },
+          {
+            "label": "PF2E.TraitPositive",
+            "value": "positive"
+          },
+          {
+            "label": "PF2E.TraitSonic",
+            "value": "sonic"
+          }
+        ],
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.DamageType",
+        "flag": "planarPainDamage"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.planarPain.damageType",
+        "value": "{item|flags.pf2e.rulesSelections.planarPainDamage}"
+      },
+      {
+        "damageType": "{item|flags.pf2e.rulesSelections.planarPainDamage}",
+        "key": "FlatModifier",
+        "selector": "soulforged-partizan-damage",
+        "value": 2,
+        "label": "Planar Pain",
+        "hideIfDisabled": true,
+        "type": "status"
+      },
+      {
+        "key": "DamageDice",
+        "selector": "soulforged-partizan-damage",
+        "override": {
+          "damageType": "{item|flags.pf2e.rulesSelections.planarPainDamage}"
+        }
+      },
+      {
+        "definition": ["item:slug:soulforged-partizan"],
+        "key": "AdjustStrike",
+        "mode": "remove",
+        "property": "weapon-traits",
+        "value": "deadly-d8"
+      },
+      {
+        "critical": true,
+        "key": "DamageDice",
+        "selector": "soulforged-partizan-damage",
+        "diceNumber": 1,
+        "dieSize": "d8",
+        "damageType": "{item|flags.pf2e.rulesSelections.planarPainDamage}",
+        "label": "Deadly d8"
+      }
+    ],
+    "slug": "manifest-essence-form",
+    "traits": {
+      "value": []
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "sustained": false,
+      "expiry": "turn-start"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "Bf6icD7q57eAtNr3"
+}

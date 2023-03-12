@@ -1,0 +1,161 @@
+{
+  "name": "Divine Lance (Siogarithax)",
+  "type": "spell",
+  "img": "systems/pf2e/icons/spells/divine-lance.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You unleash a beam of divine energy. Choose a damage type (evil, lawful or cold). Make a ranged spell attack roll against the target's AC. On a hit, the target takes damage of the chosen alignment type equal to 1d4 + your spellcasting ability modifier (double damage on a critical hit). The spell gains the trait of the damage type you chose.</p>\n<hr />\n<p><strong>Heightened (+1) </strong>The damage increases by 1d4.</p>"
+    },
+    "source": {
+      "value": ""
+    },
+    "rules": [],
+    "slug": "divine-lance-siogarithax",
+    "traits": {
+      "value": ["attack", "cantrip", "divine"],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "spellType": {
+      "value": "attack"
+    },
+    "category": {
+      "value": "spell"
+    },
+    "traditions": {
+      "value": ["divine"]
+    },
+    "school": {
+      "value": "evocation"
+    },
+    "components": {
+      "focus": false,
+      "material": false,
+      "somatic": true,
+      "verbal": true
+    },
+    "materials": {
+      "value": ""
+    },
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": ""
+    },
+    "damage": {
+      "value": {
+        "00Y22XrhV0r9Zce9": {
+          "value": "1d4",
+          "type": {
+            "value": "untyped",
+            "categories": [],
+            "subtype": ""
+          },
+          "applyMod": false
+        }
+      }
+    },
+    "save": {
+      "value": "",
+      "basic": ""
+    },
+    "sustained": {
+      "value": false
+    },
+    "cost": {
+      "value": ""
+    },
+    "ability": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "hasCounteractCheck": {
+      "value": false
+    },
+    "overlays": {
+      "ExrHlgmyOPBYpIcd": {
+        "name": "Divine Lance (Evil)",
+        "system": {
+          "traits": {
+            "value": ["attack", "cantrip", "evil"]
+          },
+          "damage": {
+            "value": {
+              "00Y22XrhV0r9Zce9": {
+                "type": {
+                  "value": "evil"
+                }
+              }
+            }
+          }
+        },
+        "sort": 1,
+        "_id": "ExrHlgmyOPBYpIcd",
+        "overlayType": "override"
+      },
+      "K5e0rPVKH8q4blUy": {
+        "name": "Divine Lance (Lawful)",
+        "system": {
+          "traits": {
+            "value": ["attack", "cantrip", "lawful"]
+          },
+          "damage": {
+            "value": {
+              "00Y22XrhV0r9Zce9": {
+                "type": {
+                  "value": "lawful"
+                }
+              }
+            }
+          }
+        },
+        "sort": 2,
+        "_id": "K5e0rPVKH8q4blUy",
+        "overlayType": "override"
+      },
+      "X4AyrgZlPYVUL0ua": {
+        "name": "Divine Lance (Cold)",
+        "system": {
+          "traits": {
+            "value": ["attack", "cantrip", "cold"]
+          },
+          "damage": {
+            "value": {
+              "00Y22XrhV0r9Zce9": {
+                "type": {
+                  "value": "chaotic"
+                }
+              }
+            }
+          }
+        },
+        "sort": 3,
+        "_id": "X4AyrgZlPYVUL0ua",
+        "overlayType": "override"
+      }
+    },
+    "heightening": {
+      "type": "interval",
+      "interval": 1,
+      "damage": {
+        "00Y22XrhV0r9Zce9": "1d4"
+      }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "Bf6icD7q57eAtNr4"
+}

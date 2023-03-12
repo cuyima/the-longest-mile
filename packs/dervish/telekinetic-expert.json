@@ -1,0 +1,25 @@
+{
+  "name": "Telekinetic Expert",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>Your proficiency ranks for occult spell attack rolls and spell DCs increase to expert. Once a day you can amp each of your psi cantrips or cast a Focus Spell without expending a Focus Point.</p>"
+    },
+    "source": { "value": "" },
+    "rules": [],
+    "slug": "telekinetic-expert",
+    "level": { "value": 8 },
+    "traits": { "value": ["archetype"], "rarity": "rare" },
+    "featType": { "value": "archetype" },
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": { "value": "passive" },
+    "actions": { "value": null },
+    "prerequisites": { "value": [{ "value": "Dervish Dedication" }] },
+    "location": null
+  },
+  "img": "systems/pf2e/icons/default-icons/feats.webp",
+  "flags": {},
+  "_id": "k8GWKHXlUoDCg2aE"
+}
