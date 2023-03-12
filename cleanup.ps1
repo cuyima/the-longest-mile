@@ -7,7 +7,7 @@ function CleanJson {
     param (
         $jsonObject
     )
-    $jsonObject = $jsonObject | Select-Object -ExcludeProperty _stats, flags, system.schema
+    $jsonObject = $jsonObject | Select-Object -ExcludeProperty _stats, flags, system.schema, ownership
     $jsonObject.system = $jsonObject.system | Select-Object -ExcludeProperty schema
 
 

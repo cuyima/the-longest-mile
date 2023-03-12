@@ -19,7 +19,7 @@
   ],
   "packs": [
     {
-      "name": "items",
+      "name": "dervish",
       "label": "Dervish Archetype",
       "path": "/packs/dervish.db",
       "entity": "Item",

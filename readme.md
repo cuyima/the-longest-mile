@@ -1,7 +1,7 @@
 # The Longest Mile - Content Pack
 A Foundry module containing homebrew content for The Longest Mile campaign.
 ___
-## Converting a foundry export to a compendium entry
+## Converting a Foundry export to a compendium entry
 JSONs exported from foundry will not work as is for a compendium because they do not have a unique ID. You can bulk convert foundry exports to compendium entries by placing them into the `\input-items` directory and running the `cleanup.ps1`. The script will remove all world specific data from the entries and generate a random Foundry compatible ID for convenience if not present.
 
 ## Compiling the entries into a compendium
