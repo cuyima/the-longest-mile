@@ -1,9 +1,7 @@
-import {
-  MODULE_NAME,
-} from "./consts.js";
+import { MODULE_NAME } from "./consts.js";
 
 Hooks.once("init", async () => {
-  injectCSS("character-sheet")
+  injectCSS("character-sheet");
 });
 
 function injectCSS(filename) {
@@ -11,7 +9,10 @@ function injectCSS(filename) {
   const mainCss = document.createElement("link");
   mainCss.setAttribute("rel", "stylesheet");
   mainCss.setAttribute("type", "text/css");
-  mainCss.setAttribute("href", "modules/" + MODULE_NAME + "/styles/" + filename + ".css");
+  mainCss.setAttribute(
+    "href",
+    "modules/" + MODULE_NAME + "/styles/" + filename + ".css"
+  );
   mainCss.setAttribute("media", "all");
   head.insertBefore(mainCss, head.lastChild);
 }

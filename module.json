@@ -52,7 +52,8 @@
     }
   ],
   "esmodules": [
-    "scripts/styling.js"
+    "scripts/styling.js",
+    "scripts/custom-buttons.js"
   ],
   "url": "",
   "manifest": "",
