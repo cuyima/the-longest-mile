@@ -20,3 +20,6 @@ If you already have compendium files that you want to unpack, you can use the `u
 ___
 ## ID Generation
 If you are not exporting content from Foundry and are instead creating your entries from scratch, you need to give them a unique ID. You can use the `id-gen.ps1` to generate 10 random IDs in a foundry compatible format.
+___
+## Releasing
+I added a release script to get this into Foundry more easily. As long as git and github cli are installed it is essentially a one-click release. To get a release on github execute the `release.ps1` script like this: `release.ps1 X.Y.Z`, with X.Y.Z being the version numbers.
