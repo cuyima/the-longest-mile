@@ -3,15 +3,10 @@
   "name": "the-longest-mile",
   "title": "The Longest Mile",
   "description": "Custom content for The Longest Mile campaign.",
-  "version": "1.0.0",
-  "minimumCoreVersion": "0.8.6",
-  "compatibleCoreVersion": "10",
   "compatibility": {
-    "minimum": "0.8.6",
     "verified": "10",
     "maximum": "10"
   },
-  "author": "Erin & Viv",
   "authors": [
     {
       "name": "Erin & Viv"
@@ -52,11 +47,11 @@
     }
   ],
   "esmodules": [
-    "scripts/styling.js",
+    "scripts/character-sheet.js",
     "scripts/custom-buttons.js"
   ],
-  "url": "",
-  "manifest": "",
-  "download": "",
-  "manifestPlusVersion": "1.2.0"
+  "url": "https://github.com/cuyima/the-longest-mile",
+  "download": "https://github.com/cuyima/the-longest-mile/releases/download/v$VERSION/module.zip",
+  "manifest": "https://github.com/cuyima/the-longest-mile/releases/latest/download/module.json",
+  "version": "$VERSION"
 }
