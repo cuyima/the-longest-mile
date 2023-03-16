@@ -39,7 +39,7 @@ Set-Content -Path $filePath -Value $newContent
 
 Compress-Archive -Path "$outputFolder\*" -DestinationPath "$outputFolder\module.zip"
 
-git tag $VERSION
+git tag v$VERSION
 git push --tags
 
 gh release create v$VERSION .\release\module.json .\release\module.zip --generate-notes
