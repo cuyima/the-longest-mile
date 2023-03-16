@@ -41,3 +41,5 @@ Compress-Archive -Path "$outputFolder\*" -DestinationPath "$outputFolder\module.
 
 git tag $VERSION
 git push --tags
+
+gh release create v$VERSION .\release\module.json .\release\module.zip --generate-notes
