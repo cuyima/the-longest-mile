@@ -38,3 +38,6 @@ $newContent = $content | ForEach-Object { $_ -replace "_VERSION", "$VERSION" }
 Set-Content -Path $filePath -Value $newContent
 
 Compress-Archive -Path "$outputFolder\*" -DestinationPath "$outputFolder\module.zip"
+
+git tag $VERSION
+git push --tags
