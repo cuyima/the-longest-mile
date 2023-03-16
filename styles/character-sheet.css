@@ -1,0 +1,41 @@
+.profile-img{ 
+  margin: 0 0 !important; 
+  min-width: 170px !important; 
+  height: 170px !important; 
+  min-height: 170px !important; 
+  background-color: rgba(0,0,0,0) !important; 
+  background-size: 100% !important; 
+  border: none !important; 
+  box-shadow: none !important; 
+  background-repeat: no-repeat !important; 
+} 
+.character-details { 
+  display: grid; 
+  grid: 
+    "img alignment deity" 46px   
+    "img details details" auto/125px 145px 1fr !important; 
+  margin-top: 4px; 
+} 
+.player-image{
+  box-shadow:none !important; 
+  max-height: 165px !important; 
+  min-width: 150px !important; 
+  margin-left: -20px !important;
+} 
+.alignment{ 
+  margin-left: 26px !important; 
+  margin-right: -26px !important; 
+} 
+.alignment::before{ 
+  background: url("/modules/the-longest-mile/images/banner-bg1.webp") no-repeat 100%; 
+  content: ""; 
+  height: 46px;  
+  position: absolute; 
+  left: -15px; 
+  top: 0px;
+  width: 15px; 
+} 
+.sheet.actor.loot section.sidebar>img.actor-icon { 
+    border: none; 
+    flex: none; 
+}

@@ -51,6 +51,9 @@
       "system": "pf2e"
     }
   ],
+  "esmodules": [
+    "scripts/styling.js"
+  ],
   "url": "",
   "manifest": "",
   "download": "",
