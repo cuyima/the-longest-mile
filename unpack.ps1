@@ -1,10 +1,10 @@
-$outputFolder = "$($PWD.Path)\decompile"
+$outputFolder = "$($PWD.Path)\output-items"
 if (Test-Path $outputFolder) {
     Remove-Item $outputFolder -Recurse -Force
 }
 New-Item -ItemType Directory -Path $outputFolder | Out-Null
 
-foreach ($G in (Get-ChildItem -File -Path "$($PWD.Path)\packs")) {
+foreach ($G in (Get-ChildItem -File -Path "$($PWD.Path)\input-items")) {
     New-Item -ItemType Directory -Path $outputFolder\$($G.BaseName) | Out-Null
     $jsonStrings = (Get-Content "$G" -Raw) -split "\r?\n"
     foreach ($jsonString in $jsonStrings) {
