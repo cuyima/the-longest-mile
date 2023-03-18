@@ -16,8 +16,7 @@
 /* Setting tah-actions display to inline-flex fixes the issue of too small grid size being calculated. (e.g. Draw Dagger)
    However, the status effects should be displayed in an even grid, so the buttons need the same size. */
 .tah-action button.toggle {
-    min-width: 130px;
-    max-width: 130px;
+    width: 130px;
 } 
 
 /* The +/- buttons in spells were so big and distracting - this makes them smaller */
