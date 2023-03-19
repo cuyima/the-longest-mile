@@ -1,0 +1,53 @@
+{
+  "name": "Alaminna",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Twin sister of Aminthar and the Lady of Hateful Flame, Alaminna is the Agony of all-consuming fire. After her torment at the hands of Golannoth, she has become the very embodiment of the wildfire.</p>\n<p><strong>Edicts: </strong>Destroy at your whim, allow natural disasters to take their due, swear vengeance.</p>\n<p><strong>Anathema: </strong>Spare those you swore vengeance against, forgive a slight, douse fires.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "alaminna",
+    "category": "deity",
+    "alignment": {
+      "own": "CE",
+      "follower": [
+        "NE",
+        "CE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "fire",
+        "destruction",
+        "dust"
+      ],
+      "alternate": [
+        "plague",
+        "zeal"
+      ]
+    },
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "str",
+      "con"
+    ],
+    "skill": "sur",
+    "weapons": [
+      "warhammer"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.y6rAdMK6EFlV6U0t",
+      "3": "Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd",
+      "7": "Compendium.pf2e.spells-srd.XS7Wyh5YC0NWeWyB"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "8oHOUxf2iD1XmKIp"
+}

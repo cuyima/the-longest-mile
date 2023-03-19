@@ -1,0 +1,55 @@
+{
+  "name": "Idonea",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Springhand serves as healer to the Empyreans, and a divine physician. A patron of medicine and healing, Idonea's influence is found in pure water and spring sun.</p>\n<p><strong>Edicts: </strong>Provide aid to the sick and wounded, seek and allow redemption, practice herbalism.</p>\n<p><strong>Anathema: </strong>Spoil natural water, deny a suffering creature warmth, shade, or water; abandon a creature in darkness.</p>\n<p><strong>Areas of Concern: </strong>Healing, sun, water, herbalism.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "idonea",
+    "category": "deity",
+    "alignment": {
+      "own": "NG",
+      "follower": [
+        "NG",
+        "LG",
+        "CG"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "healing",
+        "sun",
+        "water",
+        "truth"
+      ],
+      "alternate": [
+        "fire",
+        "repose"
+      ]
+    },
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "con",
+      "wis"
+    ],
+    "skill": "med",
+    "weapons": [
+      "sickle"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n",
+      "3": "Compendium.pf2e.spells-srd.WsUwpfmhKrKwoIe3",
+      "4": "Compendium.pf2e.spells-srd.YrzBLPLd3r9m6t1p"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "SVBsWFkng3y69rLa"
+}

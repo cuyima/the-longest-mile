@@ -1,0 +1,51 @@
+{
+  "name": "Gumoth",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Lord of the Dread Host rules the armies of Pit at Balor's hand. Gumoth emphasizes rage and martial strength, commanding his followers to test themselves in battle.</p>\n<p><strong>Edicts: </strong>Seek glory in battle, test yourself, destroy all obstacles in your path.</p>\n<p><strong>Anathema: </strong>Cower from fights, prevent conflict through negotiation, go a week without a fight.</p>\n<p><strong>Areas of Concern: </strong>Battle, strength, weapons.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "gumoth",
+    "category": "deity",
+    "alignment": {
+      "own": "CE",
+      "follower": [
+        "CN",
+        "CE",
+        "NE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "destruction",
+        "confidence",
+        "might",
+        "zeal"
+      ],
+      "alternate": []
+    },
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "str"
+    ],
+    "skill": "ath",
+    "weapons": [
+      "greataxe"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
+      "2": "Compendium.pf2e.spells-srd.wzctak6BxOW8xvFV",
+      "4": "Compendium.pf2e.spells-srd.8M03UxGXjYyDFAoy"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "L1e8tl5VdiTRBWkp"
+}

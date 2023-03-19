@@ -1,0 +1,59 @@
+{
+  "name": "Raloran",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Runesaint is a patron of magic and the clever, more concerned with wit and wisdom than morals. He assisted Meterix with the binding runes of his treaty.</p>\n<p><strong>Edicts: </strong>Seek out magic and use it, devise and study runes, avoid violence with clever strategy.</p>\n<p><strong>Anathema: </strong>Grant magic to those who cannot use it responsibly, cause a magical disaster, ignore magical misconduct.</p>\n<p><strong>Areas of Concern: </strong>Magic, runecrafting, wit.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "raloran",
+    "category": "deity",
+    "alignment": {
+      "own": "LN",
+      "follower": [
+        "LN",
+        "LG",
+        "LE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "fate",
+        "glyph",
+        "knowledge",
+        "magic"
+      ],
+      "alternate": []
+    },
+    "font": [
+      "harm",
+      "heal"
+    ],
+    "ability": [
+      "int",
+      "wis"
+    ],
+    "skill": "arc",
+    "weapons": [
+      "staff"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM",
+      "2": "Compendium.pf2e.spells-srd.eIQ86FOXK34HiNLs",
+      "3": "Compendium.pf2e.spells-srd.fI20AVwOzJMHXRdo",
+      "4": "Compendium.pf2e.spells-srd.zR67Rt3UMHKC5evy",
+      "5": "Compendium.pf2e.spells-srd.Ek5XI0aEdZhBgm21",
+      "6": "Compendium.pf2e.spells-srd.7Iela4GgVeO3LfAo",
+      "7": "Compendium.pf2e.spells-srd.8kJbiBEjMWG4VUjs",
+      "8": "Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7",
+      "9": "Compendium.pf2e.spells-srd.ihbRf964JDXztcy3"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "rYGx9KZvVdfO0nkj"
+}

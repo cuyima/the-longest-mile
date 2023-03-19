@@ -1,0 +1,53 @@
+{
+  "name": "Riadra",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Also known as Lady Luck, Riadra is the goddess of opportunism, chance, and change. Riadra smiles on those who take risks, rely on luck, and live with levity.</p>\n<p><strong>Edicts: </strong>Take risks, use stealth and guile over violence, learn the rules and strategies of games of chance played wherever you travel, laugh at your own misfortune.</p>\n<p><strong>Anathema: </strong>Suffer a bully's insults to you or another without retort, attribute a lucky turn of events to your own skill, turn down a reasonable opportunity for gain.</p>\n<p><strong>Areas of Concern: </strong>Thieves' work, games of chance, fortune.</p>"
+    },
+    "source": {
+      "value": ""
+    },
+    "rules": [],
+    "slug": "riadra",
+    "category": "deity",
+    "alignment": {
+      "own": "CN",
+      "follower": [
+        "CN",
+        "CG",
+        "CE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "confidence",
+        "luck",
+        "zeal",
+        "trickery"
+      ],
+      "alternate": []
+    },
+    "font": [
+      "harm",
+      "heal"
+    ],
+    "ability": [
+      "dex",
+      "cha"
+    ],
+    "skill": "thi",
+    "weapons": [
+      "dagger"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.aEM2cttJ2eYcLssW",
+      "2": "Compendium.pf2e.spells-srd.tlSE7Ly8vi1Dgddv",
+      "3": "Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "BpAn4ZKeEhDGsNlq"
+}

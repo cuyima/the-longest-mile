@@ -1,0 +1,54 @@
+{
+  "name": "Anfast",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Father of Muses favors those who find levity and beauty in even the darkest of places. Artists, musicians, and travelers are among those he is most likely to bless. One of the Blessings, Anfast is sometimes considered an aspect or apprentice of Turaonn.</p>\n<p><strong>Edicts: </strong>Be peaceful, choose and perfect an art, lead by example, see the beauty in all things.</p>\n<p><strong>Anathema: </strong>Destroy art or allow it to be destroyed, unless saving a life or pursuing greater art; refuse to accept surrender.</p>\n<p><strong>Areas of Concern: </strong>Art, beauty, love, music.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "anfast",
+    "category": "deity",
+    "alignment": {
+      "own": "NG",
+      "follower": [
+        "LG",
+        "NG",
+        "CG"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "creation",
+        "passion",
+        "perfection",
+        "protection"
+      ],
+      "alternate": [
+        "family"
+      ]
+    },
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "cha",
+      "wis"
+    ],
+    "skill": "cra",
+    "weapons": [
+      "glaive"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.UKsIOWmMx4hSpafl",
+      "3": "Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS",
+      "4": "Compendium.pf2e.spells-srd.TUj8eugNqAvB1vVR"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "0p6wkHYLrOsJChgX"
+}

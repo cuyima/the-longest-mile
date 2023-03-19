@@ -1,0 +1,56 @@
+{
+  "name": "The Dusktide Lord",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Anthor, or the Dusktide Lord, rules over the dead. One of the Bound, but not an Empyrean, he eschews all alignment in favor of his grim work.</p>\n<p><strong>Edicts: </strong>Destroy undead, lay bodies to rest, tend to graves.</p>\n<p><strong>Anathema: </strong>Create undead, desecrate a corpse, intervene in matters of fate or destiny.</p>\n<p><strong>Areas of Concern: </strong>Fate, destiny, death, the grave.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "anthor",
+    "category": "deity",
+    "alignment": {
+      "own": "N",
+      "follower": [
+        "NG",
+        "LN",
+        "N"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "death",
+        "fate",
+        "sorrow",
+        "soul"
+      ],
+      "alternate": [
+        "vigil",
+        "healing"
+      ]
+    },
+    "font": [
+      "harm",
+      "heal"
+    ],
+    "ability": [
+      "con",
+      "wis"
+    ],
+    "skill": "med",
+    "weapons": [
+      "staff"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n",
+      "2": "Compendium.pf2e.spells-srd.aXoh6OQAL57lgh0a",
+      "5": "Compendium.pf2e.spells-srd.GaRQlC9Yw1BGKHfN"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "7tFnPsKbNi32oHVg"
+}

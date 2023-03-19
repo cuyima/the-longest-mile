@@ -1,0 +1,54 @@
+{
+  "name": "Vilnora",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Lady Larksong is the Blessing of Song and Spirit. A handmaiden of Idonea, she is a patron of healers and artists.</p>\n<p><strong>Edicts: </strong>Give yourself fully to everything you attempt, always maintain hope that tomorrow will be a better day, treasure every gift you are given by those who matter to you.</p>\n<p><strong>Anathema: </strong>Allow perfection to be the enemy of good, lose your motivation to your regrets, spread despair.</p>\n<p><strong>Areas of Concern: </strong>Birds, spirits, cherished friends, peace.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "vilnora",
+    "category": "deity",
+    "alignment": {
+      "own": "NG",
+      "follower": [
+        "CG",
+        "NG"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "healing",
+        "passion",
+        "creation",
+        "dreams"
+      ],
+      "alternate": [
+        "soul",
+        "air"
+      ]
+    },
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "int",
+      "cha"
+    ],
+    "skill": "cra",
+    "weapons": [
+      "staff"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n",
+      "3": "Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS",
+      "5": "Compendium.pf2e.spells-srd.y0Vy7iNL3ET8K00C"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "YC9f0jrnGKF8dhEL"
+}

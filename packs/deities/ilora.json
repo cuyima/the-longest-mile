@@ -1,0 +1,56 @@
+{
+  "name": "Ilora",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Sage of Sages is a patron of all who seek truth. While less active than the other Empyreans, Ilora blesses those who value knowledge in any form.</p>\n<p><strong>Edicts: </strong>Record events, share knowledge with others, question beliefs.</p>\n<p><strong>Anathema: </strong>Sow or perpetuate lies, destroy books or monuments, keep silent when faced with false information.</p>\n<p><strong>Areas of Concern: </strong>Lore, scholars, academics, history, truth.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "ilora",
+    "category": "deity",
+    "alignment": {
+      "own": "LN",
+      "follower": [
+        "LN",
+        "N",
+        "LG",
+        "NG"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "knowledge",
+        "truth",
+        "glyph",
+        "vigil"
+      ],
+      "alternate": [
+        "change"
+      ]
+    },
+    "font": [
+      "harm",
+      "heal"
+    ],
+    "ability": [
+      "int",
+      "wis"
+    ],
+    "skill": "arc",
+    "weapons": [
+      "staff"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.nXmC2Xx9WmS5NsAo",
+      "5": "Compendium.pf2e.spells-srd.Ek5XI0aEdZhBgm21",
+      "8": "Compendium.pf2e.spells-srd.pt3gEnzA159uHcJC"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "e2PUK91l8idym5XV"
+}
