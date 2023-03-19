@@ -43,12 +43,12 @@
       "hb_partizan"
     ],
     "spells": {
-      "1": "Item.xPJ29LKBAP7SEKFe",
-      "3": "Item.74Rkk8RCCSwCyFsm",
-      "6": "Item.ASWXAvLuWOwXZY8L"
+      "1": "Compendium.the-longest-mile.spells.xPJ29LKBAP7SEKFe",
+      "3": "Compendium.the-longest-mile.spells.74Rkk8RCCSwCyFsm",
+      "6": "Compendium.the-longest-mile.spells.ASWXAvLuWOwXZY8L"
     }
   },
-  "img": "https://foundry-vtt-assets-eth.s3.us-east-2.amazonaws.com/TLM%20Tokens/Other/sioemblem.webp",
+  "img": "modules/the-longest-mile/images/siogarithax.webp",
   "effects": [],
   "_id": "04Tj3DN2yinZSKJs"
 }
