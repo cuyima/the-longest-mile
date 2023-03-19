@@ -1,0 +1,52 @@
+{
+  "name": "Golannath",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Jailer-Queen of Pit rules over those who use torment and pain to get their way. One of the Adversaries, she is credited with creating the Agonies during the First War.</p>\n<p><strong>Edicts: </strong>Push the boundaries of science and suffering, torture other creatures, take prisoners.</p>\n<p><strong>Anathema: </strong>Show or act on emotion, allow a plea for mercy to sway you, refuse to punish a fugitive.</p>\n<p><strong>Areas of Concern: </strong>Law, punishment, torture.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "golannath",
+    "category": "deity",
+    "alignment": {
+      "own": "NE",
+      "follower": [
+        "NE",
+        "CE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "pain",
+        "sorrow",
+        "creation"
+      ],
+      "alternate": [
+        "zeal"
+      ]
+    },
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "con",
+      "wis"
+    ],
+    "skill": "med",
+    "weapons": [
+      "whip"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.R8bqnYiThB6MYTxD",
+      "3": "Compendium.pf2e.spells-srd.gPvtmKMRpg9I9D7H",
+      "5": "Compendium.pf2e.spells-srd.GaRQlC9Yw1BGKHfN"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "M9JDf0UrthlS2HaR"
+}

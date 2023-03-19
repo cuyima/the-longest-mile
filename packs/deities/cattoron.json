@@ -1,0 +1,51 @@
+{
+  "name": "Cattoron",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The King of the Green is the god of the hunt and wild places. Cattoron commands and keeps those who live respectfully within his wilderness.</p>\n<p><strong>Edicts: </strong>Protect forests and other natural areas, advocate for animals and plants, take and commit to decisive actions.</p>\n<p><strong>Anathema: </strong>Take advantage of the conveniences of society, enable the destruction of wilderness, needlessly kill animals.</p>\n<p><strong>Areas of Concern: </strong>Wild places, the frontier.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "cattoron",
+    "category": "deity",
+    "alignment": {
+      "own": "NG",
+      "follower": [
+        "N",
+        "CG"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "nature",
+        "passion",
+        "freedom",
+        "air"
+      ],
+      "alternate": []
+    },
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "str",
+      "con"
+    ],
+    "skill": "nat",
+    "weapons": [
+      "longbow"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
+      "2": "Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp",
+      "3": "Compendium.pf2e.spells-srd.KsWhliKfUs3IpW3c"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "s1UhRDHu68YSEjln"
+}

@@ -1,28 +1,54 @@
 {
   "name": "Siogarithax",
   "type": "deity",
-  "effects": [],
   "system": {
     "description": {
-      "value": "<p>Siogarithax, the Cruel Star, was once a mighty Dragonknight.</p>"
+      "gm": "",
+      "value": "<p>Siogarithax, the Cruel Star, was once a Ravikan paladin in service to the Great Star Dragon. In death, she became a devil, but does not serve in the court of the Adversaries, instead keeping to her ancient alliance.</p>\n<p><strong>Edicts: </strong>Establish dominance, serve your betters unquestioningly, behave as an example to others.</p>\n<p><strong>Anathema: </strong>Relax excessively or give in to sloth, aid or grant mercy to Siogarithax's enemies, dishonor yourself or Siogarithax.</p>\n<p><strong>Areas of Concern: </strong>The Great Star Dragon, Ravika, knighthood.</p>"
     },
-    "source": { "value": "" },
+    "source": {
+      "value": "The Longest Mile"
+    },
     "rules": [],
     "slug": "siogarithax",
     "category": "deity",
-    "alignment": { "own": "LE", "follower": ["LN", "LE"] },
-    "domains": { "primary": ["star"], "alternate": ["cold", "duty"] },
-    "font": ["harm"],
-    "ability": ["str"],
+    "alignment": {
+      "own": "LE",
+      "follower": [
+        "LN",
+        "LE",
+        "NE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "star",
+        "cold",
+        "zeal",
+        "tyranny"
+      ],
+      "alternate": [
+        "duty",
+        "might"
+      ]
+    },
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "str"
+    ],
     "skill": "itm",
-    "weapons": [],
+    "weapons": [
+      "hb_partizan"
+    ],
     "spells": {
-      "1": "Compendium.the-longest-mile.spells.xPJ29LKBAP7SEKFe",
-      "3": "Compendium.the-longest-mile.spells.74Rkk8RCCSwCyFsm",
-      "6": "Compendium.the-longest-mile.spells.ASWXAvLuWOwXZY8L"
+      "1": "Item.xPJ29LKBAP7SEKFe",
+      "3": "Item.74Rkk8RCCSwCyFsm",
+      "6": "Item.ASWXAvLuWOwXZY8L"
     }
   },
-  "img": "modules/the-longest-mile/images/siogarithax.webp",
-  "flags": {},
-  "_id": "Bf6icD7q57eAtNr1"
+  "img": "https://foundry-vtt-assets-eth.s3.us-east-2.amazonaws.com/TLM%20Tokens/Other/sioemblem.webp",
+  "effects": [],
+  "_id": "04Tj3DN2yinZSKJs"
 }

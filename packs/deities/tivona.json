@@ -1,0 +1,53 @@
+{
+  "name": "Tivona",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Hearthheart's purview includes feasts and plenty. She is a patron of farmers, homesteads, the hearth, and peaceful community.</p>\n<p><strong>Edicts: </strong>Care for your home and family, appreciate a warm hearth, defend those who welcome you into their home.</p>\n<p><strong>Anathema: </strong>Salt or despoil the earth, spread plague or pestilence, destroy shelter.</p>\n<p><strong>Areas of Concern: </strong>Farming, fertility, home, wine.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "tivona",
+    "category": "deity",
+    "alignment": {
+      "own": "NG",
+      "follower": [
+        "NG",
+        "LG"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "family",
+        "nature",
+        "earth",
+        "creation"
+      ],
+      "alternate": [
+        "cities",
+        "protection"
+      ]
+    },
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "wis"
+    ],
+    "skill": "nat",
+    "weapons": [
+      "scythe"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.X9dkmh23lFwMjrYd",
+      "2": "Compendium.pf2e.spells-srd.CXICME10TkEJxz0P",
+      "3": "Compendium.pf2e.spells-srd.mwPfoYfVGSMAaUec"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "G367dh2jzoJ9eBKQ"
+}

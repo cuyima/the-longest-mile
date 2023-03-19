@@ -1,0 +1,50 @@
+{
+  "name": "Diomannor",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Master of Avarice rules over all who ruthlessly and secretly accumulate, whether that be in secrets, power, or wealth. The financier of the Adversaries promotes those who eschew morality in their pursuit of prosperity.</p>\n<p><strong>Edicts: </strong>Gather new wealth, work from the shadows, gain financial dominance.</p>\n<p><strong>Anathema: </strong>Share your wealth, give up a secret for no gain, fail to punish a thief.</p>\n<p><strong>Areas of Concern: </strong>Business, criminal enterprise, politics, cities.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "diomannor",
+    "category": "deity",
+    "alignment": {
+      "own": "LE",
+      "follower": [
+        "LE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "wealth",
+        "ambition",
+        "secrecy"
+      ],
+      "alternate": [
+        "toil"
+      ]
+    },
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "int"
+    ],
+    "skill": "thi",
+    "weapons": [
+      "spear"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.0uRpypf1Hi7ahvTl",
+      "4": "Compendium.pf2e.spells-srd.TUj8eugNqAvB1vVR",
+      "7": "Compendium.pf2e.spells-srd.vPWMEyVTreMOoFnm"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "ijYuV67bFmX0gMDr"
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Calemath",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Master of Masters, sometimes known as the Miracle-Worker, is the god of innovation, industry, and cities. While good, he does not align himself with the Empyreans, nor does he favor any who squander their inventions on the business of war.</p>\n<p><strong>Edicts: </strong>Improve yourself and your community, advance the boundaries of science, inspire and aid others with your works.</p>\n<p><strong>Anathema: </strong>Carelessly destroy others' creations or research, construct weapons of war, refuse to acknowledge or learn from mistakes.</p>\n<p><strong>Areas of Concern:</strong> Invention, research, and self-improvement.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "calemath",
+    "category": "deity",
+    "alignment": {
+      "own": "N",
+      "follower": [
+        "N",
+        "NG"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "creation",
+        "perfection",
+        "knowledge",
+        "passion"
+      ],
+      "alternate": []
+    },
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "int",
+      "con"
+    ],
+    "skill": "cra",
+    "weapons": [
+      "light-hammer"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.TPI9fRCAYsDqpAe4",
+      "4": "Compendium.pf2e.spells-srd.TUj8eugNqAvB1vVR",
+      "6": "Compendium.pf2e.spells-srd.znv4ECL7ZtuiagtA"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "oNImwHAFvaSnug3Z"
+}

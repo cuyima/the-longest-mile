@@ -1,0 +1,52 @@
+{
+  "name": "Korannar",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Stormbringer is the Fury of storms and strength above all else. Also known as Twice-Traitor, or the Pariah God, Korannar rebelled first against Paradise and then against Pit, as in neither could he be unrestrained. He is often worshipped by outcasts, nomads, and those pursuing inner strength.</p>\n<p><strong>Edicts: </strong>Follow your passions, destroy as you will, push your limits.</p>\n<p><strong>Anathema: </strong>Calm a crowd, submit to imprisonment, become rooted down.</p>\n<p><strong>Areas of Concern: </strong>Storms, gaining strength, nomadicism.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "korannar",
+    "category": "deity",
+    "alignment": {
+      "own": "CN",
+      "follower": [
+        "CG",
+        "CN",
+        "CE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "lightning",
+        "air",
+        "freedom",
+        "destruction"
+      ],
+      "alternate": []
+    },
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "str",
+      "con"
+    ],
+    "skill": "ath",
+    "weapons": [
+      "spear"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.g8QqHpv2CWDwmIm1",
+      "4": "Compendium.pf2e.spells-srd.Y3G6Y6EDgCY0s3fq",
+      "6": "Compendium.pf2e.spells-srd.TDNlDWbYb58Y55Da"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "vyltDkeJz2TabrYh"
+}

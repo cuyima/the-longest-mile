@@ -1,0 +1,56 @@
+{
+  "name": "Uthonoda",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Skittering Queen, is the Fury of undeath and a hated foe of the Dusktide Lord. Her favor falls to all who lurk in the dark, the undead, and necromancers.</p>\n<p><strong>Edicts: </strong>Become undead upon death, create or protect the undead, sate your appetites.</p>\n<p><strong>Anathema: </strong>Deny your appetites, destroy undead, sacrifice your life.</p>\n<p><strong>Areas of Concern: </strong>Disease, gluttony, and undeath.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "uthonoda",
+    "category": "deity",
+    "alignment": {
+      "own": "NE",
+      "follower": [
+        "LE",
+        "NE",
+        "CE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "indulgence",
+        "darkness",
+        "undeath",
+        "decay"
+      ],
+      "alternate": [
+        "nightmares",
+        "magic",
+        "plague"
+      ]
+    },
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "con",
+      "wis"
+    ],
+    "skill": "med",
+    "weapons": [
+      "scythe"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.zJQnkKEKbJqGB3iB",
+      "2": "Compendium.pf2e.spells-srd.8ViwItUgwT4lOvvb",
+      "7": "Compendium.pf2e.spells-srd.O6VQC1Bs4aSYDa6R"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "zdJ1p8xjXSFIyA6m"
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Saloth",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Once known as Lord of the Dead, Saloth is the Fury of death and murder. Saloth was once a reaper of souls in service to the Dusktide Lord, but he was seduced by Manseryon.</p>\n<p><strong>Edicts: </strong>Murder those who stand in your way, poison your weapons, destroy undead.</p>\n<p><strong>Anathema: </strong>Create undead, serve Brith or Uthanoda, show mercy to your foes.</p>\n<p><strong>Areas of Concern: </strong>Murder, wrath, revenge.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "saloth",
+    "category": "deity",
+    "alignment": {
+      "own": "CE",
+      "follower": [
+        "CE",
+        "NE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "death",
+        "change",
+        "destruction",
+        "zeal"
+      ],
+      "alternate": []
+    },
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "dex",
+      "int"
+    ],
+    "skill": "ste",
+    "weapons": [
+      "dagger"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.R8bqnYiThB6MYTxD",
+      "2": "Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB",
+      "3": "Compendium.pf2e.spells-srd.o6YCGx4lycsYpww4"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "YEU6wgoeI0DlPrQJ"
+}

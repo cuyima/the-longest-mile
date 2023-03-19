@@ -1,0 +1,55 @@
+{
+  "name": "Zohlos",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Zenith Lord, Zohlos, is the god of the sun and harvest. He smiles on those who toil by the light of day, and use his light to grow their crops. Lastly, he is a gentler ally of the Dusktide Lord, as death should be merely a peaceful sunset.</p>\n<p><strong>Edicts: </strong>Burn away corruption, clear the way for new growth, purify tainted areas.</p>\n<p><strong>Anathema: </strong>Deny a suffering creature warmth, shade, or water; abandon a creature in darkness.</p>\n<p><strong>Areas of Concern: </strong>The day, farming, sunlight, calendars.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "zohlos",
+    "category": "deity",
+    "alignment": {
+      "own": "NG",
+      "follower": [
+        "LG",
+        "NG",
+        "CG"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "sun",
+        "repose",
+        "toil",
+        "time"
+      ],
+      "alternate": [
+        "fire",
+        "confidence"
+      ]
+    },
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "wis",
+      "cha"
+    ],
+    "skill": "prf",
+    "weapons": [
+      "scimitar"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n",
+      "3": "Compendium.pf2e.spells-srd.AMEu5zzLN7uCX645",
+      "4": "Compendium.pf2e.spells-srd.YrzBLPLd3r9m6t1p"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "sJ1xa0KFWcrD4V9t"
+}

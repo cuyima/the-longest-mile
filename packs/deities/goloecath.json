@@ -1,0 +1,54 @@
+{
+  "name": "Goloecath",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Festerking is the Fury of decay and master of the dark wild. Fury of rotting things and wasting sicknesses, his dark blessings come to despoilers and spreaders of disease.</p>\n<p><strong>Edicts: </strong>Corrupt pieces of land, water sources, and communities; infect the weak, spread and nurture disease.</p>\n<p><strong>Anathema: </strong>Aid in ending a plague or infection, destroy something out of hand when you could have instead corrupted it or leeched off it first.</p>\n<p><strong>Areas of Concern: </strong>Disease, infection, vermin, stagnation.</p>"
+    },
+    "source": {
+      "value": ""
+    },
+    "rules": [],
+    "slug": "goloecath",
+    "category": "deity",
+    "alignment": {
+      "own": "CE",
+      "follower": [
+        "CE",
+        "NE"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "decay",
+        "plague",
+        "swarm",
+        "nature"
+      ],
+      "alternate": [
+        "air"
+      ]
+    },
+    "font": [
+      "harm",
+      "heal"
+    ],
+    "ability": [
+      "con",
+      "wis"
+    ],
+    "skill": "nat",
+    "weapons": [
+      "spear"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.zJQnkKEKbJqGB3iB",
+      "2": "Compendium.pf2e.spells-srd.cB17yFc9456Pyfec",
+      "3": "Compendium.pf2e.spells-srd.XI6Lzd2B5pernkPd"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "kSYeq5n38Hbl0VLa"
+}
