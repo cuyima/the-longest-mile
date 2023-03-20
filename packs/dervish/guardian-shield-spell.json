@@ -33,21 +33,67 @@
       "value": {
         "PcfrrbUYtBmTlPeO": {
           "value": "5",
-          "type": { "value": "", "categories": [], "subtype": "" },
+          "type": {
+            "value": "",
+            "categories": [],
+            "subtype": ""
+          },
           "applyMod": false
         }
       }
     },
-    "save": { "value": "", "basic": "" },
-    "sustained": { "value": false },
-    "cost": { "value": "" },
-    "location": { "value": null },
-    "hasCounteractCheck": { "value": false },
-    "ability": { "value": "" },
+    "save": {
+      "value": "",
+      "basic": ""
+    },
+    "sustained": {
+      "value": false
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "hasCounteractCheck": {
+      "value": false
+    },
+    "ability": {
+      "value": ""
+    },
     "heightening": {
-      "damage": { "PcfrrbUYtBmTlPeO": "5" },
+      "damage": {
+        "PcfrrbUYtBmTlPeO": "5"
+      },
       "type": "interval",
       "interval": 2
+    },
+    "overlays": {
+      "KXrrp2mqyV4CV8lj": {
+        "_id": "KXrrp2mqyV4CV8lj",
+        "sort": 1,
+        "overlayType": "override"
+      },
+      "B29ylHkTtMyt2G99": {
+        "name": "Guardian Shield (Amp)",
+        "system": {
+          "traits": {
+            "value": [
+              "amp"
+            ]
+          },
+          "damage": {
+            "value": {
+              "PcfrrbUYtBmTlPeO": {
+                "value": "1d8+5"
+              }
+            }
+          }
+        },
+        "sort": 2,
+        "_id": "B29ylHkTtMyt2G99",
+        "overlayType": "override"
+      }
     }
   },
   "img": "systems/pf2e/icons/spells/protective-ward.webp",
