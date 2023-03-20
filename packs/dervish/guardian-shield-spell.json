@@ -1,14 +1,14 @@
 {
-  "name": "Force Field",
+  "name": "Guardian Shield",
   "type": "spell",
   "effects": [],
   "system": {
     "description": {
-      "value": "<p><strong>Trigger</strong> You or another creature you can see within 30 feet of you would take damage.</p>\n<div><hr />\n<div>You create a momentary shield of telekinetic force and reduce the damage taken by 5.<hr /></div>\n<div><strong>Heightened (+2)</strong> The damage reduction increases by 5.</div>\n<div><hr /></div>\n<div><strong>Amp </strong>You reduce damage taken by an extra 1d8.</div>\n</div>"
+      "value": "<strong>Trigger</strong> You or another creature you can see within 30 feet of you would take damage.<hr />You create a momentary shield of telekinetic force and reduce the damage taken by 5.<hr /><strong>Heightened (+2)</strong> The damage reduction increases by 5.<hr /><strong>Amp </strong>You reduce damage taken by an extra 1d8."
     },
     "source": { "value": "" },
     "rules": [],
-    "slug": "force-field",
+    "slug": "guardian-shield-spell",
     "traits": { "value": [], "rarity": "rare" },
     "level": { "value": 1 },
     "spellType": { "value": "utility" },

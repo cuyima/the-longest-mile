@@ -4,7 +4,7 @@
     "effects": [],
     "system": {
         "description": {
-            "value": "<p>You can move an object or a creature up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both.<hr /><strong>Amp </strong>You can target yourself with this action.</p>"
+            "value": "You can move an object or a creature up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both.<hr /><strong>Amp </strong>You can target yourself with this action."
         },
         "source": {
             "value": ""

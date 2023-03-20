@@ -4,7 +4,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>You have learned to stretch your psychic influence further, releasing projectiles with a swing of your weapon. You can make ranged psychic Strikes; these are ranged Strikes with a maximum range of 30 feet that deal 1d6 mental damage. Your ranged weapon Strike gains all the benefits of your weapon's runes as long as they still apply to a ranged weapon.</p>\n<p>For example, if your weapon had +1, striking, and spell storing runes, you would get a +1 item bonus to hit with your ranged weapon Strike, and it would deal the additional damage from the striking rune, but it wouldn't be able to unleash a spell from the spell storing rune, as that rune can be etched onto only melee weapons.</p>"
+      "value": "<p>You have learned to stretch your psychic influence further, releasing projectiles with a swing of your weapon. You can make ranged psychic Strikes; these are ranged Strikes with a maximum range of 30 feet that deal 1d6 mental damage. Your ranged weapon Strike gains all the benefits of your weapon's runes as long as they still apply to a ranged weapon.</p><p>For example, if your weapon had +1, striking, and spell storing runes, you would get a +1 item bonus to hit with your ranged weapon Strike, and it would deal the additional damage from the striking rune, but it wouldn't be able to unleash a spell from the spell storing rune, as that rune can be etched onto only melee weapons.</p>"
     },
     "source": { "value": "" },
     "rules": [],
