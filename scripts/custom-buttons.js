@@ -6,6 +6,6 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
     .find(".open-compendium")
     .attr("data-compendium", MODULE_NAME + ".deities");
   console.log(
-    MODULE_NAME + " | Overwrote character sheet buttons with custom compendium."
+    MODULE_NAME + " | Overwrote character sheet deities with custom compendium."
   );
 });
