@@ -6,7 +6,9 @@
     "description": {
       "value": "<strong>Requirements </strong>You are wielding two melee weapons<hr />You whirl in and out of range. You Step, Strike, Step, and make another Strike. One Strike may instead be a use of Psionic Strike, but the others must be normal Strikes. You can choose not to take one or both Steps."
     },
-    "source": { "value": "" },
+     "source": {
+      "value": "The Longest Mile"
+    },
     "rules": [],
     "slug": "whirling-dervish",
     "level": { "value": 12 },

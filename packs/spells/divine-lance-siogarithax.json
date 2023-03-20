@@ -8,7 +8,7 @@
       "value": "<p>You unleash a beam of divine energy. Choose a damage type (evil, lawful or cold). Make a ranged spell attack roll against the target's AC. On a hit, the target takes damage of the chosen alignment type equal to 1d4 + your spellcasting ability modifier (double damage on a critical hit). The spell gains the trait of the damage type you chose.</p>\n<hr />\n<p><strong>Heightened (+1) </strong>The damage increases by 1d4.</p>"
     },
     "source": {
-      "value": ""
+      "value": "The Longest Mile"
     },
     "rules": [],
     "slug": "divine-lance-siogarithax",

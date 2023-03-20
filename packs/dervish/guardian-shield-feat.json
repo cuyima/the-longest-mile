@@ -6,7 +6,9 @@
     "description": {
       "value": "You gain the <em>@UUID[Compendium.the-longest-mile.dervish.5EZPr3kFv4EKfcP6]</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1."
     },
-    "source": { "value": "" },
+     "source": {
+      "value": "The Longest Mile"
+    },
     "rules": [
       {
         "key": "ActiveEffectLike",
