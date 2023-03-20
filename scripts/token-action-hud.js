@@ -1,7 +1,9 @@
-import { MODULE_NAME } from "./consts.js";
+import { MODULE_NAME, TAH } from "./consts.js";
 import { injectCSS } from "./utils.js";
 
-Hooks.once("renderTokenActionHud", async () => {
-     injectCSS("tah");
-     console.log( MODULE_NAME + " | token action hud loaded -> loaded css improvements");
+Hooks.once("render" + TAH, async () => {
+  injectCSS("tah");
+  console.log(
+    MODULE_NAME + " | Injected CSS improvements for Token Action HUD."
+  );
 });
