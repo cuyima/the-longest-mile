@@ -4,22 +4,22 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>Make a melee Strike. On a hit, you deal an extra 1 force damage. After the damage is dealt, you may choose to amp this cantrip.<hr /><strong>Heightened (+2)</strong> The damage increases by 1, and the Amp damage increases by 1d4.<hr /><strong>Amp </strong>You deal an extra 1d4 force damage. You force the target to make a Strength saving throw against a DC equal to your occult spell DC. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.</p>"
+      "value": "Make a melee Strike. On a hit, you deal an extra 1 force damage. After the damage is dealt, you may choose to amp this spell.<hr /><strong>Heightened (+2)</strong> The damage increases by 1.<hr /><strong>Amp</strong> You deal an extra 1d4 force damage. You force the target to make a Fortitude saving throw against your occult spell DC. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.<p><strong>Amp Heightened (+2)</strong> The damage increases by 1d4+1.</p>"
     },
     "source": {
-      "value": ""
+      "value": "The Longest Mile"
     },
     "rules": [],
     "slug": "psionic-strike",
     "traits": {
-      "value": ["amp", "cantrip"],
+      "value": [],
       "rarity": "rare"
     },
     "level": {
       "value": 1
     },
     "spellType": {
-      "value": "utility"
+      "value": "save"
     },
     "category": {
       "value": "focus"
@@ -89,6 +89,42 @@
       "interval": 2,
       "damage": {
         "JzQsiZjPFx5Hz9XG": "1"
+      }
+    },
+    "overlays": {
+      "YKtH0gtHpHFI9EXZ": {
+        "name": "Psionic Strike (Amp)",
+        "system": {
+          "traits": {
+            "value": [
+              "amp"
+            ]
+          },
+          "damage": {
+            "value": {
+              "JzQsiZjPFx5Hz9XG": {
+                "value": "1d4+1"
+              }
+            }
+          },
+          "heightening": {
+            "damage": {
+              "JzQsiZjPFx5Hz9XG": "1d4+1"
+            }
+          },
+          "save": {
+            "value": "fortitude",
+            "basic": "basic"
+          }
+        },
+        "sort": 1,
+        "_id": "YKtH0gtHpHFI9EXZ",
+        "overlayType": "override"
+      },
+      "sort": 2,
+      "rceQERAXZCZ2bJAW": {
+        "_id": "rceQERAXZCZ2bJAW",
+        "overlayType": "override"
       }
     }
   },

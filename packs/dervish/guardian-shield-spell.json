@@ -1,0 +1,102 @@
+{
+  "name": "Guardian Shield",
+  "type": "spell",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<strong>Trigger</strong> You or another creature you can see within 30 feet of you would take damage.<hr />You create a momentary shield of telekinetic force and reduce the damage taken by 5.<hr /><strong>Heightened (+2)</strong> The damage reduction increases by 5.<hr /><strong>Amp </strong>You reduce damage taken by an extra 1d8."
+    },
+     "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "guardian-shield-spell",
+    "traits": { "value": [], "rarity": "rare" },
+    "level": { "value": 1 },
+    "spellType": { "value": "utility" },
+    "category": { "value": "focus" },
+    "traditions": { "value": ["occult"] },
+    "school": { "value": "abjuration" },
+    "components": {
+      "focus": false,
+      "material": false,
+      "somatic": false,
+      "verbal": false
+    },
+    "materials": { "value": "" },
+    "target": { "value": "the creature which triggered the reaction" },
+    "range": { "value": "30 feet" },
+    "area": null,
+    "time": { "value": "reaction" },
+    "duration": { "value": "" },
+    "damage": {
+      "value": {
+        "PcfrrbUYtBmTlPeO": {
+          "value": "5",
+          "type": {
+            "value": "",
+            "categories": [],
+            "subtype": ""
+          },
+          "applyMod": false
+        }
+      }
+    },
+    "save": {
+      "value": "",
+      "basic": ""
+    },
+    "sustained": {
+      "value": false
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "hasCounteractCheck": {
+      "value": false
+    },
+    "ability": {
+      "value": ""
+    },
+    "heightening": {
+      "damage": {
+        "PcfrrbUYtBmTlPeO": "5"
+      },
+      "type": "interval",
+      "interval": 2
+    },
+    "overlays": {
+      "KXrrp2mqyV4CV8lj": {
+        "_id": "KXrrp2mqyV4CV8lj",
+        "sort": 1,
+        "overlayType": "override"
+      },
+      "B29ylHkTtMyt2G99": {
+        "name": "Guardian Shield (Amp)",
+        "system": {
+          "traits": {
+            "value": [
+              "amp"
+            ]
+          },
+          "damage": {
+            "value": {
+              "PcfrrbUYtBmTlPeO": {
+                "value": "1d8+5"
+              }
+            }
+          }
+        },
+        "sort": 2,
+        "_id": "B29ylHkTtMyt2G99",
+        "overlayType": "override"
+      }
+    }
+  },
+  "img": "systems/pf2e/icons/spells/protective-ward.webp",
+  "flags": {},
+  "_id": "5EZPr3kFv4EKfcP6"
+}

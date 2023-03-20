@@ -1,12 +1,14 @@
 {
-  "name": "Protective Field",
+  "name": "Guardian Shield",
   "type": "feat",
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>You gain the <em>@UUID[Compendium.the-longest-mile.dervish.5EZPr3kFv4EKfcP6]{Force Field}</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1.</p>"
+      "value": "You gain the <em>@UUID[Compendium.the-longest-mile.dervish.5EZPr3kFv4EKfcP6]</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1."
     },
-    "source": { "value": "" },
+     "source": {
+      "value": "The Longest Mile"
+    },
     "rules": [
       {
         "key": "ActiveEffectLike",
@@ -16,8 +18,8 @@
         "value": 1
       }
     ],
-    "slug": "protective-field",
-    "level": { "value": 4 },
+    "slug": "guardian-shield-feat",
+    "level": { "value": 6 },
     "traits": { "value": ["archetype"], "rarity": "rare" },
     "featType": { "value": "archetype" },
     "onlyLevel1": false,

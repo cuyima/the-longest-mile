@@ -4,9 +4,11 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>Your proficiency ranks for occult spell attack rolls and spell DCs increase to expert. Once a day you can amp each of your psi cantrips or cast a Focus Spell without expending a Focus Point.</p>"
+      "value": "Your proficiency ranks for occult spell attack rolls and spell DCs increase to expert. Once a day, while you are using <em>@UUID[Compendium.the-longest-mile.dervish.cVHWuKZUosxERFhp]</em>, you can amp each of your psi spells without expending a Focus Point."
     },
-    "source": { "value": "" },
+     "source": {
+      "value": "The Longest Mile"
+    },
     "rules": [],
     "slug": "telekinetic-expert",
     "level": { "value": 8 },
@@ -16,7 +18,7 @@
     "maxTakable": 1,
     "actionType": { "value": "passive" },
     "actions": { "value": null },
-    "prerequisites": { "value": [{ "value": "Dervish Dedication" }] },
+    "prerequisites": { "value": [{ "value": "Dervish Dedication" },{"value":"Mind's Edge"}] },
     "location": null
   },
   "img": "systems/pf2e/icons/default-icons/feats.webp",
