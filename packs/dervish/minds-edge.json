@@ -15,7 +15,7 @@
     "onlyLevel1": false,
     "maxTakable": 1,
     "actionType": { "value": "action" },
-    "actions": { "value": 2 },
+    "actions": { "value": 1 },
     "prerequisites": { "value": [{ "value": "Dervish Dedication" }] },
     "location": null
   },
