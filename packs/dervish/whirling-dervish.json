@@ -9,7 +9,7 @@
     "source": { "value": "" },
     "rules": [],
     "slug": "whirling-dervish",
-    "level": { "value": 6 },
+    "level": { "value": 12 },
     "traits": { "value": ["archetype", "flourish"], "rarity": "rare" },
     "featType": { "value": "archetype" },
     "onlyLevel1": false,
