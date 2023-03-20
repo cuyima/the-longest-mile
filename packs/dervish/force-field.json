@@ -4,7 +4,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p><strong>Trigger</strong> You or another creature you can see within 30 feet of you would take damage.</p>\n<div><hr />\n<div>You create a momentary shield of telekinetic force and reduce the damage taken by 5.<hr /></div>\n<div><strong>Heightened (+2)</strong> The damage reduction increases by 5.</div>\n<div><hr /></div>\n<div><strong>Amp </strong>You reduce damage taken by an extra 1d8.</div>\n</div>"
+      "value": "<div><p><strong>Trigger</strong> You or another creature you can see within 30 feet of you would take damage.</p><hr />You create a momentary shield of telekinetic force and reduce the damage taken by 1d4.\n<hr /><strong>Heightened (+2)</strong>The damage reduction increases by 1d4.</p></div>"
     },
     "source": { "value": "" },
     "rules": [],
@@ -30,7 +30,7 @@
     "damage": {
       "value": {
         "PcfrrbUYtBmTlPeO": {
-          "value": "5",
+          "value": "1d4",
           "type": { "value": "", "categories": [], "subtype": "" },
           "applyMod": false
         }
@@ -43,7 +43,7 @@
     "hasCounteractCheck": { "value": false },
     "ability": { "value": "" },
     "heightening": {
-      "damage": { "PcfrrbUYtBmTlPeO": "5" },
+      "damage": { "PcfrrbUYtBmTlPeO": "1d4" },
       "type": "interval",
       "interval": 2
     }

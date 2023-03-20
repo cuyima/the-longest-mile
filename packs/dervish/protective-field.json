@@ -17,7 +17,7 @@
       }
     ],
     "slug": "protective-field",
-    "level": { "value": 6 },
+    "level": { "value": 4 },
     "traits": { "value": ["archetype"], "rarity": "rare" },
     "featType": { "value": "archetype" },
     "onlyLevel1": false,

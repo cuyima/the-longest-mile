@@ -13,7 +13,8 @@
         "slug": "psionic-movement",
         "traits": {
             "value": [
-                "amp"
+                "amp",
+                "cantrip"
             ],
             "rarity": "rare"
         },
