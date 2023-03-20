@@ -1,4 +1,5 @@
-import { injectCSS, MODULE_NAME } from "./utils.js";
+import { injectCSS } from "./utils.js";
+import { MODULE_NAME } from "./consts.js";
 
 Hooks.once("init", async () => {
   injectCSS("character-sheet");
