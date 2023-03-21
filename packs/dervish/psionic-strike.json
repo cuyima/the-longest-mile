@@ -4,7 +4,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "Make a melee Strike. On a hit, you deal an extra 1 force damage. After the damage is dealt, you may choose to amp this spell.<hr /><strong>Heightened (+2)</strong> The damage increases by 1.<hr /><strong>Amp</strong> You deal an extra 1d4 force damage. You force the target to make a Fortitude saving throw against your occult spell DC. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.<p><strong>Amp Heightened (+2)</strong> The damage increases by 1d4+1.</p>"
+      "value": "Make a melee Strike. On a hit, you deal an extra 1 force damage. After the damage is dealt, you may choose to amp this spell.<hr /><strong>Heightened (+2)</strong> The damage increases by 1.<hr /><strong>Amp</strong> You deal an extra 1d4 force damage and force the target to make @Check[type:fortitude|dc:resolve(@actor.system.attributes.spellDC.value)] against your spell DC. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.<p><strong>Amp Heightened (+2)</strong> The damage increases by 1d4+1.</p>"
     },
     "source": {
       "value": "The Longest Mile"
@@ -13,7 +13,7 @@
     "slug": "psionic-strike",
     "traits": {
       "value": [],
-      "rarity": "rare"
+      "rarity": "common"
     },
     "level": {
       "value": 1

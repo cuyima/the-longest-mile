@@ -4,7 +4,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<strong>Requirements </strong>You are wielding two melee weapons<hr />You whirl in and out of range. You Step, Strike, Step, and make another Strike. One Strike may instead be a use of Psionic Strike, but the others must be normal Strikes. You can choose not to take one or both Steps."
+      "value": "<p><strong>Requirements </strong>You are wielding two melee weapons, one in each hand<hr />You whirl in and out of range. You Step, Strike, Step, and make another Strike. One Strike may instead be a use of Psionic Strike, but the others must be normal Strikes. You can choose not to take one or both Steps.</p>"
     },
      "source": {
       "value": "The Longest Mile"
@@ -12,7 +12,7 @@
     "rules": [],
     "slug": "whirling-dervish",
     "level": { "value": 12 },
-    "traits": { "value": ["archetype", "flourish"], "rarity": "rare" },
+    "traits": { "value": ["archetype", "flourish"], "rarity": "common" },
     "featType": { "value": "archetype" },
     "onlyLevel1": false,
     "maxTakable": 1,

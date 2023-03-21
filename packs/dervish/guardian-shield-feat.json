@@ -4,7 +4,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "You gain the <em>@UUID[Compendium.the-longest-mile.dervish.5EZPr3kFv4EKfcP6]</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1."
+      "value": "<p>You gain the <em>@UUID[Compendium.the-longest-mile.dervish.5EZPr3kFv4EKfcP6]</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1.</p>"
     },
      "source": {
       "value": "The Longest Mile"
@@ -20,7 +20,7 @@
     ],
     "slug": "guardian-shield-feat",
     "level": { "value": 6 },
-    "traits": { "value": ["archetype"], "rarity": "rare" },
+    "traits": { "value": ["archetype"], "rarity": "common" },
     "featType": { "value": "archetype" },
     "onlyLevel1": false,
     "maxTakable": 1,
