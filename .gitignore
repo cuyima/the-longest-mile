@@ -3,3 +3,4 @@ decompile/
 input-items/*
 output-items/
 release/
+foundryconfig.json
