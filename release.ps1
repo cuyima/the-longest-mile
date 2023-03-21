@@ -1,5 +1,5 @@
 $VERSION = $args[0]
-$errors = @()
+$errors
 
 if ((git rev-parse --abbrev-ref HEAD) -ne "master") {
     $errors += "You must release from master.`n"
@@ -54,7 +54,7 @@ Set-Content -Path $filePath -Value $newContent
 
 Compress-Archive -Path "$outputFolder\*" -DestinationPath "$outputFolder\module.zip"
 
-#git tag v$VERSION
-#git push --tags
+git tag v$VERSION
+git push --tags
 
-#gh release create v$VERSION .\release\module.json .\release\module.zip --generate-notes
+gh release create v$VERSION .\release\module.json .\release\module.zip --generate-notes
