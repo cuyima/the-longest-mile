@@ -1,15 +1,25 @@
 $VERSION = $args[0]
+$errors = @()
 
 if ((git rev-parse --abbrev-ref HEAD) -ne "master") {
-    throw "You must release from master."
+    $errors += "You must release from master.`n"
 }
 
 if (git status --porcelain) {
-    throw "Your local repository contains changes."
+    $errors += "Your local repository contains changes.`n"
+}
+
+if (git status -uno | Select-String 'branch is behind' -Quiet ) {
+    $errors += "Your branch is not up to date.`n"
 }
 
 if ($null -eq $VERSION ) {
-    throw "You need to provide a release version of the pattern X.Y.Z"
+    $errors += "You need to provide a release version of the pattern X.Y.Z`n"
+}
+
+if ($errors) {
+    Write-Error "The following errors occurred:`n$errors"
+    exit
 }
 
 $outputFolder = "$($PWD.Path)\release"
@@ -44,7 +54,7 @@ Set-Content -Path $filePath -Value $newContent
 
 Compress-Archive -Path "$outputFolder\*" -DestinationPath "$outputFolder\module.zip"
 
-git tag v$VERSION
-git push --tags
+#git tag v$VERSION
+#git push --tags
 
-gh release create v$VERSION .\release\module.json .\release\module.zip --generate-notes
+#gh release create v$VERSION .\release\module.json .\release\module.zip --generate-notes
