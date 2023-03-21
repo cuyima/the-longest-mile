@@ -1,7 +1,25 @@
 $VERSION = $args[0]
+$errors
+
+if ((git rev-parse --abbrev-ref HEAD) -ne "master") {
+    $errors += "You must release from master.`n"
+}
+
+if (git status --porcelain) {
+    $errors += "Your local repository contains changes.`n"
+}
+
+if (git status -uno | Select-String 'branch is behind' -Quiet ) {
+    $errors += "Your branch is not up to date.`n"
+}
 
 if ($null -eq $VERSION ) {
-    throw "You need to provide a release version of the pattern X.Y.Z"
+    $errors += "You need to provide a release version of the pattern X.Y.Z`n"
+}
+
+if ($errors) {
+    Write-Error "The following errors occurred:`n$errors"
+    exit
 }
 
 $outputFolder = "$($PWD.Path)\release"
