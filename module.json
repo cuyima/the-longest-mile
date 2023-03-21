@@ -44,6 +44,14 @@
       "entity": "Item",
       "type": "Item",
       "system": "pf2e"
+    },
+    {
+      "name": "journals",
+      "label": "Journals",
+      "path": "/packs/journals.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry",
+      "system": "pf2e"
     }
   ],
   "esmodules": [
