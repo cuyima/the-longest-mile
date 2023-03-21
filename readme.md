@@ -25,4 +25,4 @@ ___
 To deploy the module locally, copy and rename the `foundryconfig.json.template` to `foundryconfig.json` and enter the full path to your local Foundry install. Then execute the `deploy-local.ps1`. Changes may require a restart of Foundry to show up.
 
 ## Releasing
-I added a release script to get this into Foundry more easily. As long as git and github cli are installed it is essentially a one-click release. To get a release on github execute the `release.ps1` script like this: `release.ps1 X.Y.Z`, with X.Y.Z being the version numbers. It is a little bit scuffed and you should probably be careful when using it (eg. make sure you're on the latest revision, have no local changes etc.)
+I added a release script to get this into Foundry more easily. As long as git and github cli are installed it is essentially a one-click release. To get a release on github execute the `release.ps1` script like this: `release.ps1 X.Y.Z`, with X.Y.Z being the version numbers.
