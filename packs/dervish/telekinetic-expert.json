@@ -9,10 +9,17 @@
      "source": {
       "value": "The Longest Mile"
     },
-    "rules": [],
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.traditions.occult.rank",
+        "value": 2
+      }
+    ],
     "slug": "telekinetic-expert",
     "level": { "value": 8 },
-    "traits": { "value": ["archetype"], "rarity": "rare" },
+    "traits": { "value": ["archetype"], "rarity": "common" },
     "featType": { "value": "archetype" },
     "onlyLevel1": false,
     "maxTakable": 1,

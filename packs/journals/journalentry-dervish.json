@@ -1,0 +1,28 @@
+{
+  "name": "Dervish",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Dervish",
+      "type": "text",
+      "_id": "FsLFc9gAJuSsvy6h",
+      "title": { "show": false, "level": 1 },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>You are a whirlwind in combat. Your blades strike out faster than the eye can perceive, sending enemies reeling from your twin-bladed attacks.</p><h2 style=\"text-align:left\">@UUID[Compendium.the-longest-mile.dervish.2gf1SGjnUrtXKcYi]{Dervish Dedication} Feat 2</h2><p>You access the vast well of power that resides within your own mind, calling forth psychic magic with nothing but thought and will. You can cast occult spells using the Cast a Spell activity. You are trained in occult spell attacks and occult spell DCs using your spellcasting ability modifier (Charisma if you don't have one).</p><p>You gain a focus pool of 2 Focus Points. When you take this archetype, you gain psionic spells that cost Focus Points to cast. Additionally, you can use your Focus Points to boost or modify your psionic spells by applying amps. Each of your spells has a special amp heading. Whenever you cast a psionic spell, you can amp it by spending 1 Focus Point to add the amp effect. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to meditate or perform a physical regimen.</p><p>You gain access to the Focus Spells <em>@UUID[Compendium.the-longest-mile.dervish.VJlZs9QYTW559RCf]</em> and <em>@UUID[Compendium.the-longest-mile.dervish.8pR0eh4kACzxJilU]</em> which you can modify by spending additional Focus Points.</p><p><strong>Special</strong> You cannot select another dedication feat until you have gained two other feats from the Dervish archetype.</p><h2 style=\"text-align:left\">@UUID[Compendium.the-longest-mile.dervish.cVHWuKZUosxERFhp]{Mind's Edge} Feat 4</h2><p><strong>Prerequisites </strong>Dervish Dedication</p><hr /><p>You enter a state of intense mental focus, allowing the your psionic abilities to seamlessly interweave with your physical movements. While in this stance, your Dervish Focus spells are treated as cantrips and their amp cost is 1.</p><h2 style=\"text-align:left\">@UUID[Compendium.the-longest-mile.dervish.LzFe18643A9d8BTO]{Guardian Shield} Feat 6</h2><p><strong>Prerequisites </strong>Dervish Dedication</p><hr /><p>You gain the <em>@UUID[Compendium.the-longest-mile.dervish.5EZPr3kFv4EKfcP6]</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1.</p><h2 style=\"text-align:left\">@UUID[Compendium.the-longest-mile.dervish.k8GWKHXlUoDCg2aE]{Telekinetic Expert} Feat 8</h2><p><strong>Prerequisites </strong>Dervish Dedication, Mind's Edge</p><hr /><p>Your proficiency ranks for occult spell attack rolls and spell DCs increase to expert. Once a day, while you are using <em>@UUID[Compendium.the-longest-mile.dervish.cVHWuKZUosxERFhp]</em>, you can amp each of your psi spells without expending a Focus Point.</p><h2 style=\"text-align:left\">@UUID[Compendium.the-longest-mile.dervish.C5loaHJBKVUTs38g]{Psychic Lash} Feat 10</h2><p><strong>Prerequisites </strong>Dervish Dedication</p><hr /><p>You have learned to stretch your psychic influence further, releasing projectiles with a swing of your weapon. You can make ranged psychic Strikes; these are ranged Strikes with a maximum range of 30 feet that deal 1d6 mental damage. Your ranged weapon Strike gains all the benefits of your weapon's runes as long as they still apply to a ranged weapon.</p><p>For example, if your weapon had +1, striking, and spell storing runes, you would get a +1 item bonus to hit with your ranged weapon Strike, and it would deal the additional damage from the striking rune, but it wouldn't be able to unleash a spell from the spell storing rune, as that rune can be etched onto only melee weapons.</p><h2 style=\"text-align:left\">@UUID[Compendium.the-longest-mile.dervish.UVXKCiC9oSflU1lp]{Whirling Dervish} Feat 12</h2><p><strong>Prerequisites </strong>Dervish Dedication</p><hr /><p><strong>Requirements </strong>You are wielding two melee weapons, one in each hand</p><hr /><p>You whirl in and out of range. You Step, Strike, Step, and make another Strike. One Strike may instead be a use of Psionic Strike, but the others must be normal Strikes. You can choose not to take one or both Steps.</p>",
+        "markdown": ""
+      },
+      "video": { "controls": true, "volume": 0.5 },
+      "src": null,
+      "system": {},
+      "ownership": { "default": -1 },
+      "flags": {}
+    }
+  ],
+  "flags": { "core": { "sourceId": "JournalEntry.Q4XlMqXr82pmrJHI" } },
+  "_id": "Q4XlMqXr82pmrJHI",
+  "folder": null,
+  "sort": 0,
+  "ownership": { "default": -1 }
+}

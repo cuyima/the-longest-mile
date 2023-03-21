@@ -11,7 +11,7 @@
     },
     "rules": [],
     "slug": "guardian-shield-spell",
-    "traits": { "value": [], "rarity": "rare" },
+    "traits": { "value": [], "rarity": "common" },
     "level": { "value": 1 },
     "spellType": { "value": "utility" },
     "category": { "value": "focus" },

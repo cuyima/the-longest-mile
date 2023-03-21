@@ -12,7 +12,7 @@
     "rules": [],
     "slug": "minds-edge",
     "level": { "value": 4 },
-    "traits": { "value": ["archetype", "concentrate", "stance"], "rarity": "rare" },
+    "traits": { "value": ["archetype", "concentrate", "stance"], "rarity": "common" },
     "featType": { "value": "archetype" },
     "onlyLevel1": false,
     "maxTakable": 1,
