@@ -14,7 +14,8 @@
         "key": "ActiveEffectLike",
         "mode": "upgrade",
         "path": "system.resources.focus.max",
-        "value": 2
+        "value": 2,
+        "priority": 10
       },
       {
         "key": "ActiveEffectLike",
