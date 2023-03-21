@@ -16,17 +16,14 @@ New-Item -ItemType Directory -Path $outputFolder | Out-Null
 
 #Copy relevant folders
 foreach ($F in (Get-ChildItem -Directory -Path "$($PWD.Path)")) {
-    if ($F.Name -ne "release") {
-       # Compress-Archive $F -Update -DestinationPath "$outputFolder\module.zip"
+    if ($F.Name -ne "release" -and $F.Name -ne "input-items" -and $F.Name -ne "output-items") {
        Copy-Item -Path $F -Destination $outputFolder -Recurse -Force
     }
 }
 
 #clean packs
-foreach ($F in (Get-ChildItem -Directory -Path "$($PWD.Path)\release\packs")) {
-    if ($F.Name -ne "release") {
-        Remove-Item $F -Recurse -Force
-    }
+foreach ($F in (Get-ChildItem -Directory -Path "$outputFolder\packs")) {
+    Remove-Item -Path $F -Recurse -Force
 }
 
 Copy-Item -Path  "$($PWD.Path)\module.json" -Destination $outputFolder
