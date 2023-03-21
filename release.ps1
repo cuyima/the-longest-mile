@@ -1,5 +1,13 @@
 $VERSION = $args[0]
 
+if ((git rev-parse --abbrev-ref HEAD) -ne "master") {
+    throw "You must release from master."
+}
+
+if (git status --porcelain) {
+    throw "Your local repository contains changes."
+}
+
 if ($null -eq $VERSION ) {
     throw "You need to provide a release version of the pattern X.Y.Z"
 }
