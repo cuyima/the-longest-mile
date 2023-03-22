@@ -1,5 +1,5 @@
 {
-  "name": "Psionic Strike",
+  "name": "Psionic Strike (Amp)",
   "type": "spell",
   "effects": [],
   "system": {
@@ -10,9 +10,9 @@
       "value": "The Longest Mile"
     },
     "rules": [],
-    "slug": "psionic-strike",
+    "slug": "psionic-strike-amp",
     "traits": {
-      "value": [],
+      "value": ["amp"],
       "rarity": "common"
     },
     "level": {
@@ -55,7 +55,7 @@
     "damage": {
       "value": {
         "JzQsiZjPFx5Hz9XG": {
-          "value": "1",
+          "value": "1d4+1",
           "type": {
             "value": "force",
             "categories": [],
@@ -66,8 +66,8 @@
       }
     },
     "save": {
-      "value": "",
-      "basic": ""
+      "value": "fortitude",
+      "basic": "basic"
     },
     "sustained": {
       "value": false
@@ -88,11 +88,11 @@
       "type": "interval",
       "interval": 2,
       "damage": {
-        "JzQsiZjPFx5Hz9XG": "1"
+        "JzQsiZjPFx5Hz9XG": "1d4+1"
       }
     }
   },
   "img": "systems/pf2e/icons/spells/magic-weapon.webp",
   "flags": {},
-  "_id": "VJlZs9QYTW559RCf"
+  "_id": "r7j8hCoiFgPdXpI3"
 }
