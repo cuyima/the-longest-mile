@@ -1,15 +1,14 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
-import {
-  injectCSS,
-  cleanTAHEffects,
-  overrideTAHActionsClass,
-} from "./utils.js";
+import { injectCSS, cleanTAHEffects, overrideTAHActionsClass } from "./utils.js";
+import { checkForRestoreFocus, createDervishChatCardButton } from "./dervish.js";
 
+//replace character sheet styling
 Hooks.once("init", async () => {
   injectCSS("character-sheet");
   console.log(MODULE_NAME + " | Injected CSS for character sheets.");
 });
 
+//replace character sheet button
 Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
   html
     .find("div.pc.pc_deity")
@@ -20,13 +19,15 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
   );
 });
 
-Hooks.once("render" + TAH, async (app, html) => {
+//update TAH css
+Hooks.once("render" + TAH, async () => {
   injectCSS("tah");
   console.log(
     MODULE_NAME + " | Injected CSS improvements for Token Action HUD."
   );
 });
 
+//update TAH html
 Hooks.on("render" + TAH, async (app, html) => {
   overrideTAHActionsClass(
     html,
@@ -44,3 +45,21 @@ Hooks.on("render" + TAH, async (app, html) => {
     MODULE_NAME + " | Cleaned up Effects section of Token Action HUD."
   );
 });
+
+//add dervish buttons
+Hooks.on(
+  "renderChatMessage",
+  async (message, html) => {
+    createDervishChatCardButton(message, html);
+  },
+  { once: false }
+);
+
+Hooks.on(
+  "preCreateChatMessage",
+  (message) => {
+    checkForRestoreFocus(message);
+  },
+  { once: false }
+);
+import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
