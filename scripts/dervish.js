@@ -32,9 +32,17 @@ export function checkForRestoreFocus(message) {
     //TODO before lvl 4
   }
 }
-function consumeFocus(actor) {
-  const points = actor.system.resources.focus.value--;
-  actor.update({ "system.resources.focus.value": points });
+async function consumeFocus(actor) {
+  const currentPoints = actor.system.resources.focus?.value ?? 0;
+  if (currentPoints > 0) {
+    await actor.update({ "system.resources.focus.value": currentPoints - 1 });
+    return true;
+  } else {
+    ui.notifications.warn(
+      game.i18n.localize("PF2E.Focus.NotEnoughFocusPointsError")
+    );
+    return false;
+  }
 }
 
 async function addDamageButton(speaker, html) {
