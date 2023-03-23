@@ -90,6 +90,42 @@
       "damage": {
         "JzQsiZjPFx5Hz9XG": "1"
       }
+    },
+    "overlays": {
+      "YKtH0gtHpHFI9EXZ": {
+        "name": "Psionic Strike (Amp)",
+        "system": {
+          "traits": {
+            "value": [
+              "amp"
+            ]
+          },
+          "damage": {
+            "value": {
+              "JzQsiZjPFx5Hz9XG": {
+                "value": "1d4+1"
+              }
+            }
+          },
+          "heightening": {
+            "damage": {
+              "JzQsiZjPFx5Hz9XG": "1d4+1"
+            }
+          },
+          "save": {
+            "value": "fortitude",
+            "basic": "basic"
+          }
+        },
+        "sort": 1,
+        "_id": "YKtH0gtHpHFI9EXZ",
+        "overlayType": "override"
+      },
+      "sort": 2,
+      "rceQERAXZCZ2bJAW": {
+        "_id": "rceQERAXZCZ2bJAW",
+        "overlayType": "override"
+      }
     }
   },
   "img": "systems/pf2e/icons/spells/magic-weapon.webp",
