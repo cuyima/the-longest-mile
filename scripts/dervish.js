@@ -1,5 +1,5 @@
 import { AMPED_SPELLS, MINDS_EDGE, SUPPORTED_SPELLS } from "./consts.js";
-
+//import {ItemPF2e} from "../../../systems/pf2e/main.bundle.js";
 //Creates the button in the chat tile for actions and feats
 export async function createDervishChatCardButton(message, html) {
   const actionOrigin = message.flags.pf2e?.origin;
@@ -9,15 +9,15 @@ export async function createDervishChatCardButton(message, html) {
     if (SUPPORTED_SPELLS.includes(slug)) {
       const user = game.user;
       const speaker = message.actor;
-      html = html.find(".message-content");
+      html = html.find(".owner-buttons");
       const contentArea = html.find(".card-content");
-      contentArea.append(
+      html.prepend(
         $(
-          `<button class='dervish-amp-btn' ${
+          `<button type="button" data-action="amp" ${
             user.character?.uuid === speaker?.uuid || user.isGM
               ? ""
               : 'style="visibility:hidden"'
-          } title="Amp">${game.i18n.format("Amp", { action: name })}</button>`
+          } title="Amp">Amp</button>`
         ).on({
           click: () => {
             amp(speaker, slug);
@@ -41,28 +41,21 @@ async function amp(actor, slug) {
     case SUPPORTED_SPELLS[0]:
       spell = await fromUuid(AMPED_SPELLS[0]);
       break;
+    case SUPPORTED_SPELLS[1]:
+      spell = await fromUuid(AMPED_SPELLS[1]);
+      break;
+    case SUPPORTED_SPELLS[2]:
+      spell = await fromUuid(AMPED_SPELLS[2]);
+      break;
     default:
       break;
   }
 
-  let entry;
-  actor.itemTypes.spellcastingEntry.forEach((list) => {
-    if( list.spells.find((item) => item.slug == slug)){
-        entry = list;
-    }
-  });
-  //spell.actor = speaker;
-  //await spell.toMessage(undefined, {});
-  let flavor = `<strong>Spellstrike</strong><br>${spell.spell.link}${flavName} (${dos})<div class="tags">${ttags}</div><hr>`;
-  if (spell.isSave) {
-    let basic = false;
-    if (spell.spell.system.save.basic === "basic") { basic = true }
-    flavor += `@Check[type:${spell.spell.system.save.value}|dc:${spell.DC}|traits:damaging-effect,${spell.spell.system.traits.value.join()}|basic:${basic}]`;
-  }
+  const entry = actor.itemTypes.spellcastingEntry.find((list) =>
+    list.spells.some((item) => item.slug == slug)
+  );
+  let spellEntry = await entry.addSpell(spell, {});
 
-  const dmg = await spell.getDamage() ?? false;
-  const roll = dmg ? dmg.template.damage.roll : undefined;
-  await roll.toMessage({ flavor: flavor, speaker: ChatMessage.getSpeaker() });
-  await entry.cast(spell,{message: false});
-
+  entry.cast(spellEntry, {});
+  actor.items.find((item) => item.id === spellEntry.id).delete();
 }

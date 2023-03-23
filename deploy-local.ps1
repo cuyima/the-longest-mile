@@ -24,4 +24,7 @@ foreach ($F in (Get-ChildItem -Directory -Path "$outputFolder\packs")) {
 
 Copy-Item -Path  "$($PWD.Path)\module.json" -Destination $outputFolder
 
-Copy-Item .\release\* -Destination "$dataPath/$moduleName" -Recurse -Force
+#Copy-Item .\release\* -Destination "$dataPath/$moduleName" -Recurse -Force
+
+New-Item -ItemType SymbolicLink -Path "$dataPath/$moduleName" -Target ".\release\"
+Start-Process powershell -ArgumentList "-Command `"New-Item -ItemType SymbolicLink -Path `"$dataPath/$moduleName`" -Target `"$($PWD.Path)`"`"" -WindowStyle Hidden -Verb RunAs
