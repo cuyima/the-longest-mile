@@ -92,6 +92,11 @@
       }
     },
     "overlays": {
+      "sort": 1,
+      "rceQERAXZCZ2bJAW": {
+        "_id": "rceQERAXZCZ2bJAW",
+        "overlayType": "override"
+      },
       "YKtH0gtHpHFI9EXZ": {
         "name": "Psionic Strike (Amp)",
         "system": {
@@ -119,11 +124,6 @@
         },
         "sort": 1,
         "_id": "YKtH0gtHpHFI9EXZ",
-        "overlayType": "override"
-      },
-      "sort": 2,
-      "rceQERAXZCZ2bJAW": {
-        "_id": "rceQERAXZCZ2bJAW",
         "overlayType": "override"
       }
     }

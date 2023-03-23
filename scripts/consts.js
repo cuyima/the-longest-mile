@@ -7,8 +7,3 @@ export const SUPPORTED_SPELLS = [
   "psionic-movement",
 ];
 export const MINDS_EDGE = "stance-minds-edge";
-export const AMPED_SPELLS = [
-  "Compendium." + MODULE_NAME + ".dervish.r7j8hCoiFgPdXpI3",
-  "psionic-movement",
-  "psionic-strike",
-];
