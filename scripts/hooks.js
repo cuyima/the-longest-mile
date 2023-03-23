@@ -2,7 +2,7 @@ import { injectCSS } from "./utils.js";
 import { CHARACTER_SHEET, MODULE_NAME, TAH } from "./consts.js";
 import {
   checkForRestoreFocus,
-  createDervishChatCardButton,
+  createDervishChatCardButtons,
 } from "./dervish.js";
 
 //replace character sheet styling
@@ -34,7 +34,7 @@ Hooks.once("render" + TAH, async () => {
 Hooks.on(
   "renderChatMessage",
   async (message, html) => {
-    createDervishChatCardButton(message, html);
+    createDervishChatCardButtons(message, html);
   },
   { once: false }
 );
