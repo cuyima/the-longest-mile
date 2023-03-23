@@ -1,6 +1,6 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
 import { injectCSS, cleanTAHEffects, overrideTAHActionsClass } from "./utils.js";
-import { checkForRestoreFocus, createDervishChatCardButton } from "./dervish.js";
+import { checkForRestoreFocus, createDervishChatCardButtons } from "./dervish.js";
 
 //replace character sheet styling
 Hooks.once("init", async () => {
@@ -50,7 +50,7 @@ Hooks.on("render" + TAH, async (app, html) => {
 Hooks.on(
   "renderChatMessage",
   async (message, html) => {
-    createDervishChatCardButton(message, html);
+    createDervishChatCardButtons(message, html);
   },
   { once: false }
 );

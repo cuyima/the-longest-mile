@@ -1,42 +1,28 @@
 import { AMPED_SPELLS, MINDS_EDGE, SUPPORTED_SPELLS } from "./consts.js";
-//import {ItemPF2e} from "../../../systems/pf2e/main.bundle.js";
-//Creates the button in the chat tile for actions and feats
-export async function createDervishChatCardButton(message, html) {
+
+
+export async function createDervishChatCardButtons(message, html) {
   const actionOrigin = message.flags.pf2e?.origin;
 
   if (actionOrigin?.type === "spell") {
     const spell = await fromUuid(actionOrigin.uuid);
     const { slug } = spell || {};
-    if (SUPPORTED_SPELLS.includes(slug)) {
-      const user = game.user;
-      const speaker = message.actor;
-
-      const chatId = html
-        .find(".pf2e.chat-card.item-card")
-        .eq(0)
-        .attr("data-item-id");
-      const ampId = spell.overlays.contents[1]._id;
-
-      html = html.find(".owner-buttons");
-      if (ampId != chatId) {
-        html.append(
-          $(
-            `<button type="button"  ${
-              user.character?.uuid === speaker?.uuid || user.isGM
-                ? ""
-                : 'style="visibility:hidden"'
-            } data-action="spellDamage">Damage</button>`
-          )
-        );
-      }
-
-      const variantButton = html.find("[data-action=selectVariant]");
-      variantButton.eq(0).remove();
-      variantButton.eq(1).find("span:last-child").text("Amp!");
-      variantButton.eq(1).on("click", () => {
-        consumeFocus(speaker);
-      });
+    if (!SUPPORTED_SPELLS.includes(slug)) {
+      return;
     }
+
+    const user = game.user;
+    const speaker = message.actor;
+    const ampedId = spell.overlays.contents[1]._id;
+    const spellId = html
+      .find(".pf2e.chat-card.item-card")
+      .eq(0)
+      .attr("data-item-id");
+
+    if (ampedId != spellId) {
+      addDamageButton(user, speaker, html);
+    }
+    removeVariantsButton(speaker, html)
   }
 }
 
@@ -47,6 +33,28 @@ export function checkForRestoreFocus(message) {
   }
 }
 function consumeFocus(actor) {
-  const points = actor.system.resources.focus.value --;
+  const points = actor.system.resources.focus.value--;
   actor.update({ "system.resources.focus.value": points });
+}
+
+function addDamageButton(user, speaker, html) {
+  html = html.find(".owner-buttons");
+  html.append(
+    $(
+      `<button type="button"  ${
+        user.character?.uuid === speaker?.uuid || user.isGM
+          ? ""
+          : 'style="visibility:hidden"'
+      } data-action="spellDamage">Damage</button>`
+    )
+  );
+}
+
+function removeVariantsButton(speaker, html) {
+  const variantButton = html.find("[data-action=selectVariant]");
+  variantButton.eq(0).remove();
+  variantButton.eq(1).find("span:last-child").text("Amp!");
+  variantButton.eq(1).on("click", () => {
+    consumeFocus(speaker);
+  });
 }
