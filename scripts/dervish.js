@@ -5,25 +5,37 @@ export async function createDervishChatCardButton(message, html) {
   const actionOrigin = message.flags.pf2e?.origin;
 
   if (actionOrigin?.type === "spell") {
-    const { name, slug } = (await fromUuid(actionOrigin.uuid)) || {};
+    const spell = await fromUuid(actionOrigin.uuid);
+    const { slug } = spell || {};
     if (SUPPORTED_SPELLS.includes(slug)) {
       const user = game.user;
       const speaker = message.actor;
+
+      const chatId = html
+        .find(".pf2e.chat-card.item-card")
+        .eq(0)
+        .attr("data-item-id");
+      const ampId = spell.overlays.contents[1]._id;
+
       html = html.find(".owner-buttons");
-      const contentArea = html.find(".card-content");
-      html.prepend(
-        $(
-          `<button type="button" data-action="amp" ${
-            user.character?.uuid === speaker?.uuid || user.isGM
-              ? ""
-              : 'style="visibility:hidden"'
-          } title="Amp">Amp</button>`
-        ).on({
-          click: () => {
-            amp(speaker, slug);
-          },
-        })
-      );
+      if (ampId != chatId) {
+        html.append(
+          $(
+            `<button type="button"  ${
+              user.character?.uuid === speaker?.uuid || user.isGM
+                ? ""
+                : 'style="visibility:hidden"'
+            } data-action="spellDamage">Damage</button>`
+          )
+        );
+      }
+
+      const variantButton = html.find("[data-action=selectVariant]");
+      variantButton.eq(0).remove();
+      variantButton.eq(1).find("span:last-child").text("Amp!");
+      variantButton.eq(1).on("click", () => {
+        consumeFocus(speaker);
+      });
     }
   }
 }
@@ -34,28 +46,7 @@ export function checkForRestoreFocus(message) {
     //TODO before lvl 4
   }
 }
-
-async function amp(actor, slug) {
-  let spell;
-  switch (slug) {
-    case SUPPORTED_SPELLS[0]:
-      spell = await fromUuid(AMPED_SPELLS[0]);
-      break;
-    case SUPPORTED_SPELLS[1]:
-      spell = await fromUuid(AMPED_SPELLS[1]);
-      break;
-    case SUPPORTED_SPELLS[2]:
-      spell = await fromUuid(AMPED_SPELLS[2]);
-      break;
-    default:
-      break;
-  }
-
-  const entry = actor.itemTypes.spellcastingEntry.find((list) =>
-    list.spells.some((item) => item.slug == slug)
-  );
-  let spellEntry = await entry.addSpell(spell, {});
-
-  entry.cast(spellEntry, {});
-  actor.items.find((item) => item.id === spellEntry.id).delete();
+function consumeFocus(actor) {
+  const points = actor.system.resources.focus.value --;
+  actor.update({ "system.resources.focus.value": points });
 }
