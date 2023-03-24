@@ -1,19 +1,17 @@
 import { MINDS_EDGE, SUPPORTED_SPELLS } from "./consts.js";
 
 export async function createDervishChatCardButtons(message, html) {
-  const actionOrigin = message.flags.pf2e?.origin;
-  const speaker = message.actor;
 
-  if (!actionOrigin?.type === "spell") {
+  if (isSpell(message)) {
     return;
   }
-
   const spell = await fromUuid(actionOrigin.uuid);
   const { slug } = spell || {};
 
   if (!SUPPORTED_SPELLS.includes(slug)) {
     return;
   }
+  const speaker = message.actor;
   const ampedId = spell.overlays.contents[1]._id;
   const spellId = html
     .find(".pf2e.chat-card.item-card")
@@ -76,6 +74,16 @@ function overrideDamageButton(html, slug) {
 }
 
 export async function consumePoints(actor) {
+  if (isSpell(message)) {
+    return;
+  }
+  const spell = await fromUuid(actionOrigin.uuid);
+  const { slug } = spell || {};
+
+  if (!SUPPORTED_SPELLS.includes(slug)) {
+    return;
+  }
+  
   const currentPoints = actor.system.resources.focus?.value ?? 0;
   if (currentPoints > 0) {
     await actor.update({ "system.resources.focus.value": currentPoints - 1 });
@@ -85,5 +93,13 @@ export async function consumePoints(actor) {
       game.i18n.localize("You do not have enough Focus Points!")
     );
     return false;
+  }
+}
+
+function isSpell(message) {
+  const actionOrigin = message.flags.pf2e?.origin;
+ 
+  if (!actionOrigin?.type === "spell") {
+    return;
   }
 }
