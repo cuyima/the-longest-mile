@@ -21,14 +21,10 @@ export async function createDervishChatCardButtons(message, html) {
     .attr("data-item-id");
 
   removeVariantsButton(speaker, html);
-  if (speaker.system.resources.focus.value > 0) {
-    if (ampedId != spellId) {
-      addDamageButton(speaker, html);
-    }
-    overrideDamageButton(html, slug);
-  } else {
-    console.log("We're removing the buttons now so zera can't use them");
+  if (ampedId != spellId) {
+    addDamageButton(speaker, html);
   }
+  overrideDamageButton(html, slug);
 }
 export function checkForRestoreFocus(message) {
   const actor = message.actor;
