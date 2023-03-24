@@ -1,7 +1,7 @@
 import { injectCSS } from "./utils.js";
 import { CHARACTER_SHEET, MODULE_NAME, TAH } from "./consts.js";
 import {
-  checkForRestoreFocus,
+  consumePoints,
   createDervishChatCardButtons,
 } from "./dervish.js";
 
@@ -42,7 +42,7 @@ Hooks.on(
 Hooks.on(
   "preCreateChatMessage",
   (message) => {
-    checkForRestoreFocus(message);
+    consumePoints(message.actor);
   },
   { once: false }
 );
