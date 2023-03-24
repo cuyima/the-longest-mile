@@ -58,7 +58,7 @@ Hooks.on(
 Hooks.on(
   "preCreateChatMessage",
   (message) => {
-    consumePoints(message.actor);
+    consumePoints(message);
   },
   { once: false }
 );
