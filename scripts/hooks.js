@@ -1,6 +1,6 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
 import { injectCSS, cleanTAHEffects, overrideTAHActionsClass } from "./utils.js";
-import { checkForRestoreFocus, createDervishChatCardButtons } from "./dervish.js";
+import { consumePoints, createDervishChatCardButtons } from "./dervish.js";
 
 //replace character sheet styling
 Hooks.once("init", async () => {
@@ -58,7 +58,7 @@ Hooks.on(
 Hooks.on(
   "preCreateChatMessage",
   (message) => {
-    checkForRestoreFocus(message);
+    consumePoints(message.actor);
   },
   { once: false }
 );
