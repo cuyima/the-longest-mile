@@ -55,9 +55,7 @@
     }
   ],
   "esmodules": [
-    "scripts/character-sheet-styling.js",
-    "scripts/custom-buttons.js",
-    "scripts/token-action-hud.js"
+    "scripts/hooks.js"
   ],
   "url": "https://github.com/cuyima/the-longest-mile",
   "download": "https://github.com/cuyima/the-longest-mile/releases/download/v_VERSION/module.zip",
