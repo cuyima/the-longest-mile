@@ -1,5 +1,9 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
-import { injectCSS, cleanTAHEffects, overrideTAHActionsClass } from "./utils.js";
+import {
+  injectCSS,
+  cleanTAHEffects,
+  overrideTAHActionsClass,
+} from "./utils.js";
 
 Hooks.once("init", async () => {
   injectCSS("character-sheet");
@@ -24,11 +28,17 @@ Hooks.once("render" + TAH, async (app, html) => {
 });
 
 Hooks.on("render" + TAH, async (app, html) => {
-  overrideTAHActionsClass(html,"tah-category-attack","tah-actions tlm-nowrap");
-  overrideTAHActionsClass(html,"tah-category-actions","tah-actions tlm-nowrap");
-  console.log(
-    MODULE_NAME + " | Updated HTML classes of of Token Action HUD."
+  overrideTAHActionsClass(
+    html,
+    "tah-category-attack",
+    "tah-actions tlm-nowrap"
   );
+  overrideTAHActionsClass(
+    html,
+    "tah-category-actions",
+    "tah-actions tlm-nowrap"
+  );
+  console.log(MODULE_NAME + " | Updated HTML classes of of Token Action HUD.");
   cleanTAHEffects(html);
   console.log(
     MODULE_NAME + " | Cleaned up Effects section of Token Action HUD."
