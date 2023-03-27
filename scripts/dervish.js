@@ -1,11 +1,13 @@
-import { MINDS_EDGE, SUPPORTED_SPELLS,TELEKINETIC_EXPERT } from "./consts.js";
+import { MINDS_EDGE, SUPPORTED_SPELLS, TELEKINETIC_EXPERT } from "./consts.js";
 
 export async function createDervishChatCardButtons(message, html) {
+  //if flagged make invisible
   if (message.getFlag("the-longest-mile", "isVisible") === false) {
     html.addClass("tlm-hide");
     return;
   }
 
+  //get spell from message if supported
   const spell = await isSupported(message);
   if (!spell) {
     return;
@@ -19,22 +21,27 @@ export async function createDervishChatCardButtons(message, html) {
     .eq(0)
     .attr("data-item-id");
 
+  //prevent actor from switching between variants
   removeVariantsButton(message, html, spell);
   if (ampedId != spellId) {
+    //add damage button to base variant
     addDamageButton(speaker, html);
   }
+
+  //style it a little
   overrideDamageButton(html, slug);
 }
 
 async function isSupported(message) {
+  //accept only spells
   const actionOrigin = message.flags.pf2e?.origin;
-
   if (!actionOrigin?.type === "spell") {
     return;
   }
   const spell = await fromUuid(actionOrigin.uuid);
   const { slug } = spell || {};
 
+  //if spell is not on list return nothing
   if (!SUPPORTED_SPELLS.includes(slug)) {
     return;
   }
@@ -42,18 +49,28 @@ async function isSupported(message) {
 }
 
 export async function consumePoints(message, amp) {
+  //if spell is not on our list ignore and return
   if (!(await isSupported(message))) {
     return true;
   }
 
+  //if actor actor has mind's edge and isn't amping make it free
   if (message.actor.items.find((item) => item.slug === MINDS_EDGE) && !amp) {
     return true;
   }
 
-  if (message.actor.items.find((item) => item.slug === TELEKINETIC_EXPERT) && amp) {
-    ui.notifications.info("You have the feat Telekinetic Expert that lets you amp spells for free once a day.\nMake sure to adjust Focus Points accordingly if you have already used it.");
+  //if actor actor has telekinetic expert make it free but notify
+  if (
+    message.actor.items.find((item) => item.slug === TELEKINETIC_EXPERT) &&
+    amp
+  ) {
+    ui.notifications.info(
+      "You have the feat Telekinetic Expert that lets you amp spells for free once a day.\nMake sure to adjust Focus Points accordingly if you have already used it."
+    );
     return true;
   }
+
+  //otherwise consume points
   const currentPoints = message.actor.system.resources.focus?.value ?? 0;
   if (currentPoints > 0) {
     await message.actor.update({
@@ -61,6 +78,7 @@ export async function consumePoints(message, amp) {
     });
     return true;
   } else {
+    //if not enough points then warn and return false
     ui.notifications.warn(
       game.i18n.localize("PF2E.Focus.NotEnoughFocusPointsError")
     );
@@ -70,18 +88,20 @@ export async function consumePoints(message, amp) {
 
 function removeVariantsButton(message, html, spell) {
   const variantButtons = html.find("[data-action=selectVariant]");
+  //remove default version from button selection
   variantButtons.eq(0).remove();
 
-
-    let ampButton = variantButtons.eq(1);
-    ampButton.find("span:last-child").text("Amp!");
-    ampButton.removeAttr("data-action");
-    ampButton.on("click", () => {
-      ampSpell(spell, ampButton, html, message);
-    });
+  //remove original variant funtion from amp version and glue on our own
+  let ampButton = variantButtons.eq(1);
+  ampButton.find("span:last-child").text("Amp!");
+  ampButton.removeAttr("data-action");
+  ampButton.on("click", () => {
+    ampSpell(spell, ampButton, html, message);
+  });
 }
 
 async function addDamageButton(speaker, html) {
+  //adding a new damage button to base variant so it can be cast
   const user = game.user;
   html = html.find(".owner-buttons");
   html.append(
@@ -95,10 +115,12 @@ async function addDamageButton(speaker, html) {
   );
 }
 async function ampSpell(spell, button, html, message) {
-  if(!consumePoints(message, true)){
+  //check if we have enough points to amp otherwise return
+  if (!consumePoints(message, true)) {
     return;
   }
-  
+
+  //taken from pf2e selectVariant but shortened for our purposes
   const castLevel =
     Number(
       html.find(".pf2e.chat-card.item-card").eq(0).attr("data-spell-lvl")
@@ -121,6 +143,7 @@ async function ampSpell(spell, button, html, message) {
 }
 
 function overrideDamageButton(html, slug) {
+  //spice up damage buttons a little and remove it entirely for psi movement
   const btn = html.find("[data-action=spellDamage]").eq(0);
   switch (slug) {
     case SUPPORTED_SPELLS[1]:

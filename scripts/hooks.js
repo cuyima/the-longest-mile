@@ -51,7 +51,7 @@ Hooks.on("render" + TAH, async (app, html) => {
   );
 });
 
-//add dervish buttons
+//add custom buttons to dervish chat cards
 Hooks.on(
   "renderChatMessage",
   (message, html, data) => {
@@ -59,6 +59,7 @@ Hooks.on(
   }
 );
 
+//flag invalid dervish spells as invisible
 Hooks.on(
   "createChatMessage",
   async (message) => {
