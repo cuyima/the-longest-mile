@@ -12,7 +12,7 @@
           "rules": [],
           "slug": "psionic-movement",
           "traits": {
-            "value": [],
+            "value": ["cantrip"],
             "rarity": "common"
           },
           "level": {

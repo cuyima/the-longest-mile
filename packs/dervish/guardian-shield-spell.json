@@ -6,12 +6,15 @@
     "description": {
       "value": "<strong>Trigger</strong> You or another creature you can see within 30 feet of you would take damage.<hr />You create a momentary shield of telekinetic force and reduce the damage taken by 5.<hr /><strong>Heightened (+2)</strong> The damage reduction increases by 5.<hr /><strong>Amp </strong>You reduce damage taken by an extra 1d8."
     },
-     "source": {
+    "source": {
       "value": "The Longest Mile"
     },
     "rules": [],
     "slug": "guardian-shield-spell",
-    "traits": { "value": [], "rarity": "common" },
+    "traits": {
+      "value": ["cantrip"],
+      "rarity": "common"
+    },
     "level": { "value": 1 },
     "spellType": { "value": "utility" },
     "category": { "value": "focus" },
@@ -78,9 +81,7 @@
         "name": "Guardian Shield (Amp)",
         "system": {
           "traits": {
-            "value": [
-              "amp"
-            ]
+            "value": ["amp"]
           },
           "damage": {
             "value": {
