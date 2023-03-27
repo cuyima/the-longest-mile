@@ -1,6 +1,7 @@
 .tah-actions {
     display: inline-flex !important;
     width: 100% !important;
+    flex-grow: 2;
 }
 
 .tah-action {
@@ -23,4 +24,16 @@
 .tah-action.shrink {
     min-width: fit-content !important;
     width: fit-content;
+}
+
+.tah-subcategories{
+    overflow: visible;
+}
+
+.tah-actions.tlm-nowrap {
+    flex-wrap: nowrap;
+}
+
+.tah-subcategory{
+    max-width: 600px
 }
