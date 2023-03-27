@@ -62,4 +62,3 @@ Hooks.on(
   },
   { once: false }
 );
-import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
