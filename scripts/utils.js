@@ -18,6 +18,7 @@ export function cleanTAHEffects(html) {
   const actions = html.find(".tah-actions")[0];
   let buttonsnew = $();
 
+  //add unique effects
   html.find(".tah-action.toggle").each(function (index, element) {
     let elemvalue = $(element).find(".toggle")[0].value;
     let selector = "[value=" + elemvalue.replace(/([|])/g, "\\$1") + "]";
@@ -27,6 +28,7 @@ export function cleanTAHEffects(html) {
     }
   });
 
+  //sort alphabetically
   buttonsnew.sort(function (a, b) {
     let nameA = $(a).find(".toggle")[0].value.split("|")[3];
     let nameB = $(b).find(".toggle")[0].value.split("|")[3];
@@ -39,6 +41,7 @@ export function cleanTAHEffects(html) {
     return 0;
   });
 
+  //replace original buttons
   actions.innerHTML = "";
   buttonsnew.each(function (index, element) {
     actions.append(element);
