@@ -1,8 +1,16 @@
-import { MINDS_EDGE, SUPPORTED_SPELLS } from "./consts.js";
+import { MINDS_EDGE, SUPPORTED_SPELLS,TELEKINETIC_EXPERT } from "./consts.js";
 
 export async function createDervishChatCardButtons(message, html) {
-  const spell = await (isSupported(message));
-  if (!spell) {return};
+  if (message.getFlag("the-longest-mile", "isVisible") === false) {
+    html.addClass("tlm-hide");
+    return;
+  }
+
+  const spell = await isSupported(message);
+  if (!spell) {
+    return;
+  }
+
   const speaker = message.actor;
   const { slug } = spell || {};
   const ampedId = spell.overlays.contents[1]._id;
@@ -11,16 +19,68 @@ export async function createDervishChatCardButtons(message, html) {
     .eq(0)
     .attr("data-item-id");
 
-  removeVariantsButton(message, html);
+  removeVariantsButton(message, html, spell);
   if (ampedId != spellId) {
     addDamageButton(speaker, html);
   }
   overrideDamageButton(html, slug);
 }
 
-export function checkForRestoreFocus(message) {
-  if (message.actor.items.find((item) => item.slug === MINDS_EDGE)) {
-    //TODO before lvl 4
+async function isSupported(message) {
+  const actionOrigin = message.flags.pf2e?.origin;
+
+  if (!actionOrigin?.type === "spell") {
+    return;
+  }
+  const spell = await fromUuid(actionOrigin.uuid);
+  const { slug } = spell || {};
+
+  if (!SUPPORTED_SPELLS.includes(slug)) {
+    return;
+  }
+  return spell;
+}
+
+export async function consumePoints(message, amp) {
+  if (!(await isSupported(message))) {
+    return true;
+  }
+
+  if (message.actor.items.find((item) => item.slug === MINDS_EDGE) && !amp) {
+    return true;
+  }
+
+  if (message.actor.items.find((item) => item.slug === TELEKINETIC_EXPERT) && amp) {
+    ui.notifications.info("You have the feat Telekinetic Expert that lets you amp spells for free once a day.\nMake sure to adjust Focus Points accordingly if you have already used it.");
+    return true;
+  }
+  const currentPoints = message.actor.system.resources.focus?.value ?? 0;
+  if (currentPoints > 0) {
+    await message.actor.update({
+      "system.resources.focus.value": currentPoints - 1,
+    });
+    return true;
+  } else {
+    ui.notifications.warn(
+      game.i18n.localize("PF2E.Focus.NotEnoughFocusPointsError")
+    );
+    return false;
+  }
+}
+
+function removeVariantsButton(message, html, spell) {
+  const variantButtons = html.find("[data-action=selectVariant]");
+  variantButtons.eq(0).remove();
+
+  if (message.actor.system.resources.focus.value > 0) {
+    let ampButton = variantButtons.eq(1);
+    ampButton.find("span:last-child").text("Amp!");
+    ampButton.removeAttr("data-action");
+    ampButton.on("click", () => {
+      ampSpell(spell, ampButton, html, message);
+    });
+  } else {
+    variantButtons.eq(1).remove();
   }
 }
 
@@ -37,18 +97,29 @@ async function addDamageButton(speaker, html) {
     )
   );
 }
-
-function removeVariantsButton(message, html) {
-  const variantButton = html.find("[data-action=selectVariant]");
-  variantButton.eq(0).remove();
-
-  if (message.actor.system.resources.focus.value > 0) {
-    variantButton.eq(1).find("span:last-child").text("Amp!");
-    variantButton.eq(1).on("click", () => {
-      consumePoints(message);
-    });
-  } else {
-    variantButton.eq(1).remove();
+async function ampSpell(spell, button, html, message) {
+  if(!consumePoints(message, true)){
+    return;
+  }
+  
+  const castLevel =
+    Number(
+      html.find(".pf2e.chat-card.item-card").eq(0).attr("data-spell-lvl")
+    ) || 1;
+  const overlayIdString = button.attr("data-overlay-ids");
+  if (overlayIdString) {
+    const overlayIds = overlayIdString.split(",").map((id) => id.trim());
+    const variantSpell = spell?.loadVariant({ overlayIds, castLevel });
+    if (variantSpell) {
+      const variantMessage = await variantSpell.toMessage(undefined, {
+        create: false,
+        data: { castLevel },
+      });
+      if (variantMessage) {
+        const messageSource = variantMessage.toObject();
+        await message.update(messageSource);
+      }
+    }
   }
 }
 
@@ -64,35 +135,4 @@ function overrideDamageButton(html, slug) {
     default:
       break;
   }
-}
-
-export async function consumePoints(message) {
-  if (! await (isSupported(message))) {
-    return;
-  }
-  const currentPoints = message.actor.system.resources.focus?.value ?? 0;
-  if (currentPoints > 0) {
-    await message.actor.update({ "system.resources.focus.value": currentPoints - 1 });
-    return true;
-  } else {
-    ui.notifications.warn(
-      game.i18n.localize("You do not have enough Focus Points!")
-    );
-    return false;
-  }
-}
-
-async function isSupported(message) {
-  const actionOrigin = message.flags.pf2e?.origin;
-
-  if (!actionOrigin?.type === "spell") {
-    return;
-  }
-  const spell = await fromUuid(actionOrigin.uuid);
-  const { slug } = spell || {};
-
-  if (!SUPPORTED_SPELLS.includes(slug)) {
-    return;
-  }
-  return spell;
 }

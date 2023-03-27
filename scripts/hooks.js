@@ -1,11 +1,16 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
-import { injectCSS, cleanTAHEffects, overrideTAHActionsClass } from "./utils.js";
+import {
+  injectCSS,
+  cleanTAHEffects,
+  overrideTAHActionsClass,
+} from "./utils.js";
 import { consumePoints, createDervishChatCardButtons } from "./dervish.js";
 
 //replace character sheet styling
 Hooks.once("init", async () => {
   injectCSS("character-sheet");
   console.log(MODULE_NAME + " | Injected CSS for character sheets.");
+  injectCSS("tlm-dervish");
 });
 
 //replace character sheet button
@@ -49,16 +54,20 @@ Hooks.on("render" + TAH, async (app, html) => {
 //add dervish buttons
 Hooks.on(
   "renderChatMessage",
-  async (message, html) => {
+  (message, html, data) => {
     createDervishChatCardButtons(message, html);
   },
   { once: false }
 );
 
 Hooks.on(
-  "preCreateChatMessage",
-  (message) => {
-    consumePoints(message);
+  "createChatMessage",
+  async (message) => {
+    if (!message.isRoll && ! await consumePoints(message, undefined)) {
+      message.update({
+        "flags.the-longest-mile.isVisible": false,
+      });
+    }
   },
   { once: false }
 );

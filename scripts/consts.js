@@ -7,3 +7,4 @@ export const SUPPORTED_SPELLS = [
   "psionic-movement",
 ];
 export const MINDS_EDGE = "stance-minds-edge";
+export const TELEKINETIC_EXPERT = "telekinetic-expert";
