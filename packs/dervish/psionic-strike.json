@@ -4,7 +4,7 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "Make a melee Strike. On a hit, you deal an extra 1 force damage. After the damage is dealt, you may choose to amp this spell.<hr /><strong>Heightened (+2)</strong> The damage increases by 1.<hr /><strong>Amp</strong> You deal an extra 1d4 force damage and force the target to make @Check[type:fortitude|dc:resolve(@actor.system.attributes.spellDC.value)] against your spell DC. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.<p><strong>Amp Heightened (+2)</strong> The damage increases by 1d4+1.</p>"
+      "value": "Make a melee Strike. On a hit, you deal an extra 1 force damage. After the damage is dealt, you may choose to amp this spell.<hr /><strong>Heightened (+2)</strong> The damage increases by 1.<hr /><strong>Amp</strong> You deal an extra 1d4 force damage and force the target to make @Check[type:fortitude|dc:resolve(@actor.system.attributes.spellDC.value)] against your spell DC. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.<p><strong>Amp Heightened (+2)</strong> The additional damage increases by 1d4.</p>"
     },
     "source": {
       "value": "The Longest Mile"
@@ -92,10 +92,10 @@
       }
     },
     "overlays": {
-      "sort": 1,
       "rceQERAXZCZ2bJAW": {
         "_id": "rceQERAXZCZ2bJAW",
-        "overlayType": "override"
+        "overlayType": "override",
+        "sort": 1
       },
       "YKtH0gtHpHFI9EXZ": {
         "name": "Psionic Strike (Amp)",
@@ -108,13 +108,13 @@
           "damage": {
             "value": {
               "JzQsiZjPFx5Hz9XG": {
-                "value": "1d4+1"
+                "value": "1d4"
               }
             }
           },
           "heightening": {
             "damage": {
-              "JzQsiZjPFx5Hz9XG": "1d4+1"
+              "JzQsiZjPFx5Hz9XG": "1d4"
             }
           },
           "save": {
@@ -122,7 +122,7 @@
             "basic": "basic"
           }
         },
-        "sort": 1,
+        "sort": 2,
         "_id": "YKtH0gtHpHFI9EXZ",
         "overlayType": "override"
       }

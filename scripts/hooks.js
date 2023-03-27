@@ -56,8 +56,7 @@ Hooks.on(
   "renderChatMessage",
   (message, html, data) => {
     createDervishChatCardButtons(message, html);
-  },
-  { once: false }
+  }
 );
 
 Hooks.on(
@@ -68,6 +67,5 @@ Hooks.on(
         "flags.the-longest-mile.isVisible": false,
       });
     }
-  },
-  { once: false }
+  }
 );

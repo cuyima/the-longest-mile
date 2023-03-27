@@ -72,16 +72,13 @@ function removeVariantsButton(message, html, spell) {
   const variantButtons = html.find("[data-action=selectVariant]");
   variantButtons.eq(0).remove();
 
-  if (message.actor.system.resources.focus.value > 0) {
+
     let ampButton = variantButtons.eq(1);
     ampButton.find("span:last-child").text("Amp!");
     ampButton.removeAttr("data-action");
     ampButton.on("click", () => {
       ampSpell(spell, ampButton, html, message);
     });
-  } else {
-    variantButtons.eq(1).remove();
-  }
 }
 
 async function addDamageButton(speaker, html) {
