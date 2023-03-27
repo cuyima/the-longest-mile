@@ -47,3 +47,12 @@ export function cleanTAHEffects(html) {
     actions.append(element);
   });
 }
+
+export function overrideTAHActionsClass(html,id,className) {
+  html
+    .find(`[id='${id}']`)
+    .find(".tah-actions")
+    .each(function (i, e) {
+      e.className = className;
+    });
+}

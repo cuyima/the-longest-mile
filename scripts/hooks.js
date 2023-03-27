@@ -1,5 +1,5 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
-import { injectCSS, cleanTAHEffects } from "./utils.js";
+import { injectCSS, cleanTAHEffects, overrideTAHActionsClass } from "./utils.js";
 
 Hooks.once("init", async () => {
   injectCSS("character-sheet");
@@ -23,7 +23,8 @@ Hooks.once("render" + TAH, async (app, html) => {
   );
 });
 
-
 Hooks.on("render" + TAH, async (app, html) => {
+  overrideTAHActionsClass(html,"tah-category-attack","tah-actions tlm-nowrap");
+  overrideTAHActionsClass(html,"tah-category-actions","tah-actions tlm-nowrap");
   cleanTAHEffects(html);
 });
