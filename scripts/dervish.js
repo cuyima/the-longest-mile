@@ -116,7 +116,7 @@ async function addDamageButton(speaker, html) {
 }
 async function ampSpell(spell, button, html, message) {
   //check if we have enough points to amp otherwise return
-  if (!consumePoints(message, true)) {
+  if (! await consumePoints(message, true)) {
     return;
   }
 
