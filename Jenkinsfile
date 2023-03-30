@@ -5,13 +5,13 @@ pipeline {
         MODULE_NAME = "the-longest-mile"
     }
     parameters {
-        booleanParam(name: 'deploy', defaultValue: false, description: 'Deploy to Foundry')
+        booleanParam(name: 'Deploy', defaultValue: false, description: 'Deploy to Foundry')
     }
     stages {
         stage('Deploy') {
             when {
                 expression {
-                    params.deploy == true
+                    params.Deploy == true
                 }
             }
             steps {
