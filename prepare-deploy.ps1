@@ -1,6 +1,4 @@
 $outputFolder = "$($PWD.Path)\release"
-$dataPath = (Get-Content ".\foundryconfig.json" | ConvertFrom-Json).dataPath
-$moduleName = (Get-Content ".\module.json" | ConvertFrom-Json).name
 
 if (Test-Path $outputFolder) {
     Remove-Item $outputFolder -Recurse -Force
@@ -23,6 +21,3 @@ foreach ($F in (Get-ChildItem -Directory -Path "$outputFolder\packs")) {
 }
 
 Copy-Item -Path  "$($PWD.Path)\module.json" -Destination $outputFolder
-
-New-Item -ItemType SymbolicLink -Path "$dataPath/$moduleName" -Target ".\release\"
-Start-Process powershell -ArgumentList "-Command `"New-Item -ItemType SymbolicLink -Path `"$dataPath/$moduleName`" -Target `"$($PWD.Path)`"`"" -WindowStyle Hidden -Verb RunAs
