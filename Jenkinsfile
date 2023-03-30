@@ -2,14 +2,42 @@
 pipeline {
     agent any
     environment {
-        MODULE_NAME = "the-longest-mile"
+        MODULE_NAME = ''
     }
     parameters {
         booleanParam(name: 'Deploy', defaultValue: false, description: 'Deploy to Foundry')
     }
     stages {
         stage('Pack Compendiums') {
-            sh "./pack-compendium.ps1"
+            steps {
+                script {
+                    def outputFolder = './release'
+                    env.MODULE_NAME = readJSON(file: 'module.json').name
+                    sh "rm -rf $outputFolder"
+                    sh "mkdir -p $outputFolder"
+
+                    sh 'find ./packs -type f -delete'
+
+                    sh """
+                        for F in ./*; do
+                            if [ "\$(basename \$F)" != "release" ] && \
+                            [ "\$(basename \$F)"  != "input-items" ] && \
+                            [ "\$(basename \$F)" != "output-items" ]; then
+                                cp -r \$F $outputFolder
+                            fi
+                        done
+                      """
+
+                    sh """
+                        for F in ${outputFolder}/packs/*; do
+                            rm -rf \$F
+                        done
+                       """
+
+                    sh "cp ./module.json $outputFolder"
+
+                }
+            }
         }
 
         stage('Deploy') {
@@ -19,9 +47,9 @@ pipeline {
                 }
             }
             steps {
-              sh "mkdir -p ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}"
-              sh "rm -rf ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/*"
-              sh "cp -r ${env.WORKSPACE}/* ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/"
+                sh "mkdir -p ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}"
+                sh "rm -rf ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/*"
+                sh "cp -r ${env.WORKSPACE}/* ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/"
             }
         }
     }
