@@ -11,7 +11,9 @@ pipeline {
     stages {
         stage('Pack Compendiums') {
             steps{
-                env.MODULE_NAME = readJSON(file: 'module.json').name
+                script{
+                    env.MODULE_NAME = readJSON(file: 'module.json').name
+                }
                 sh "$PWSH ./pack-compendium.ps1"
             }
         }
