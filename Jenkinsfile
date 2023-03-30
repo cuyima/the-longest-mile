@@ -10,8 +10,10 @@ pipeline {
     }
     stages {
         stage('Pack Compendiums') {
-            env.MODULE_NAME = readJSON(file: 'module.json').name
-            sh "$PWSH ./pack-compendium.ps1"
+            steps{
+                env.MODULE_NAME = readJSON(file: 'module.json').name
+                sh "$PWSH ./pack-compendium.ps1"
+            }
         }
 
         stage('Deploy') {
