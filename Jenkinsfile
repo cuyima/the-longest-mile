@@ -13,10 +13,8 @@ pipeline {
                 script {
                     def outputFolder = './release'
                     env.MODULE_NAME = readJSON(file: 'module.json').name
-                    sh "rm -rf $outputFolder"
                     sh "mkdir -p $outputFolder"
-
-                    sh 'find ./packs -type f -delete'
+                    sh "rm -rf $outputFolder/*"
 
                     sh """
                         for F in ./*; do
@@ -28,11 +26,11 @@ pipeline {
                         done
                       """
 
-                    sh """
+                    /*sh """
                         for F in ${outputFolder}/packs/*; do
                             rm -rf \$F
                         done
-                       """
+                       """*/
 
                     sh "cp ./module.json $outputFolder"
 
