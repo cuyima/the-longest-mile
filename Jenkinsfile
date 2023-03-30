@@ -18,6 +18,12 @@ pipeline {
             }
         }
 
+        stage('Prepare Deploy') {
+            steps{
+                sh "$PWSH ./prepare-deploy.ps1"
+            }
+        }
+
         stage('Deploy') {
             when {
                 expression {
