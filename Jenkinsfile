@@ -33,7 +33,7 @@ pipeline {
             steps {
                 sh "mkdir -p ${env.FOUNDRY_FOLDER}/${MODULE_NAME}"
                 sh "rm -rf ${env.FOUNDRY_FOLDER}/${MODULE_NAME}/*"
-                sh "cp -r ${env.WORKSPACE}/* ${env.FOUNDRY_FOLDER}/${MODULE_NAME}/"
+                sh "cp -r ${env.WORKSPACE}/release/* ${env.FOUNDRY_FOLDER}/${MODULE_NAME}/"
             }
         }
     }
