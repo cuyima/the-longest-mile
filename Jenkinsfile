@@ -8,6 +8,10 @@ pipeline {
         booleanParam(name: 'Deploy', defaultValue: false, description: 'Deploy to Foundry')
     }
     stages {
+        stage('Pack Compendiums') {
+            sh "./pack-compendium.ps1"
+        }
+
         stage('Deploy') {
             when {
                 expression {
