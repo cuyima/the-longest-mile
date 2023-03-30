@@ -11,8 +11,9 @@ pipeline {
         stage('Pack Compendiums') {
             steps{
                 script{
-                    env.MODULE_NAME = readJSON(file: 'module.json').name
+                    MODULE_NAME = readJSON(file: 'module.json').name
                 }
+                echo "$MODULE_NAME"
                 sh "${env.PWSH} ./pack-compendium.ps1"
             }
         }
@@ -30,9 +31,9 @@ pipeline {
                 }
             }
             steps {
-                sh "mkdir -p ${env.FOUNDRY_FOLDER}/${env.MODULE_NAME}"
-                sh "rm -rf ${env.FOUNDRY_FOLDER}/${env.MODULE_NAME}/*"
-                sh "cp -r ${env.WORKSPACE}/* ${env.FOUNDRY_FOLDER}/${env.MODULE_NAME}/"
+                sh "mkdir -p ${env.FOUNDRY_FOLDER}/${MODULE_NAME}"
+                sh "rm -rf ${env.FOUNDRY_FOLDER}/${MODULE_NAME}/*"
+                sh "cp -r ${env.WORKSPACE}/* ${env.FOUNDRY_FOLDER}/${MODULE_NAME}/"
             }
         }
     }
