@@ -11,29 +11,17 @@ pipeline {
         stage('Pack Compendiums') {
             steps {
                 script {
-                    def outputFolder = './release'
+                    def outputFolder = 'release'
                     env.MODULE_NAME = readJSON(file: 'module.json').name
                     sh "mkdir -p $outputFolder"
                     sh "rm -rf $outputFolder/*"
 
-                    sh """
-                        for F in ./*; do
-                            if [ "\$(basename \$F)" != "release" ] && \
-                            [ "\$(basename \$F)"  != "input-items" ] && \
-                            [ "\$(basename \$F)" != "output-items" ]; then
-                                cp -r \$F $outputFolder
-                            fi
-                        done
-                      """
+                    sh "rsync -a --exclude '$outputFolder/' */ ./$outputFolder/"
 
-                    /*sh """
-                        for F in ${outputFolder}/packs/*; do
-                            rm -rf \$F
-                        done
-                       """*/
+
+                    sh "find ./${outputFolder}/packs -type d -exec rm -rf {} \;"
 
                     sh "cp ./module.json $outputFolder"
-
                 }
             }
         }
