@@ -2,14 +2,28 @@
 pipeline {
     agent any
     environment {
-        MODULE_NAME = "the-longest-mile"
+        MODULE_NAME = ''
     }
     parameters {
         booleanParam(name: 'Deploy', defaultValue: false, description: 'Deploy to Foundry')
     }
     stages {
         stage('Pack Compendiums') {
-            sh "./pack-compendium.ps1"
+            steps {
+                script {
+                    def outputFolder = 'release'
+                    env.MODULE_NAME = readJSON(file: 'module.json').name
+                    sh "mkdir -p $outputFolder"
+                    sh "rm -rf $outputFolder/*"
+
+                    sh "rsync -a --exclude '$outputFolder/' */ ./$outputFolder/"
+
+
+                    sh "find ./${outputFolder}/packs -type d -exec rm -rf {} \;"
+
+                    sh "cp ./module.json $outputFolder"
+                }
+            }
         }
 
         stage('Deploy') {
@@ -19,9 +33,9 @@ pipeline {
                 }
             }
             steps {
-              sh "mkdir -p ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}"
-              sh "rm -rf ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/*"
-              sh "cp -r ${env.WORKSPACE}/* ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/"
+                sh "mkdir -p ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}"
+                sh "rm -rf ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/*"
+                sh "cp -r ${env.WORKSPACE}/* ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/"
             }
         }
     }
