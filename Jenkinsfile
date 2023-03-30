@@ -3,7 +3,6 @@ pipeline {
     agent any
     environment {
         MODULE_NAME = ''
-        PWSH = '/opt/powershell/pwsh'
     }
     parameters {
         booleanParam(name: 'Deploy', defaultValue: false, description: 'Deploy to Foundry')
@@ -14,13 +13,13 @@ pipeline {
                 script{
                     env.MODULE_NAME = readJSON(file: 'module.json').name
                 }
-                sh "$PWSH ./pack-compendium.ps1"
+                sh "${env.PWSH} ./pack-compendium.ps1"
             }
         }
 
         stage('Prepare Deploy') {
             steps{
-                sh "$PWSH ./prepare-deploy.ps1"
+                sh "${env.PWSH} ./prepare-deploy.ps1"
             }
         }
 
@@ -31,9 +30,9 @@ pipeline {
                 }
             }
             steps {
-                sh "mkdir -p ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}"
-                sh "rm -rf ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/*"
-                sh "cp -r ${env.WORKSPACE}/* ${env.DESTINATION_FOLDER}/${env.MODULE_NAME}/"
+                sh "mkdir -p ${env.FOUNDRY_FOLDER}/${env.MODULE_NAME}"
+                sh "rm -rf ${env.FOUNDRY_FOLDER}/${env.MODULE_NAME}/*"
+                sh "cp -r ${env.WORKSPACE}/* ${env.FOUNDRY_FOLDER}/${env.MODULE_NAME}/"
             }
         }
     }
