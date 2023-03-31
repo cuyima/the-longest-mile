@@ -8,6 +8,7 @@ import {
   consumePoints,
   createDervishChatCardButtons,
   isOwnerOrGM,
+  isSupported
 } from "./dervish.js";
 
 //replace character sheet styling
@@ -57,16 +58,21 @@ Hooks.on("render" + TAH, async (app, html) => {
 
 //add custom buttons to dervish chat cards
 Hooks.on("renderChatMessage", async (message, html) => {
+  if (!game.settings.get(MODULE_NAME, "dervish-ui")) return;
   createDervishChatCardButtons(message, html);
 });
 
 //flag invalid dervish spells as invisible
 Hooks.on("createChatMessage", async (message) => {
   if (
-    !message.isRoll &&
-    isOwnerOrGM(message) &&
-    !(await consumePoints(message, undefined))
-  ) {
+    !game.settings.get(MODULE_NAME, "dervish-ui") ||
+    message.isRoll ||
+    !isOwnerOrGM(message) ||
+    ! await isSupported(message)
+  ){
+    return;
+  }
+  if (!(await consumePoints(message, undefined))) {
     message.update({
       "flags.the-longest-mile.isVisible": false,
     });

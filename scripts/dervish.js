@@ -31,7 +31,7 @@ export async function createDervishChatCardButtons(message, html) {
   overrideDamageButton(html, slug);
 }
 
-async function isSupported(message) {
+export async function isSupported(message) {
   //accept only spells
   const actionOrigin = message.flags.pf2e?.origin;
   if (actionOrigin?.type !== "spell") {
@@ -48,24 +48,17 @@ async function isSupported(message) {
 }
 
 export async function consumePoints(message, amp) {
-  //if spell is not on our list ignore and return
-  if (!(await isSupported(message))) {
-    return true;
+   //if actor actor has telekinetic expert make it free but notify
+  if (message.actor.items.find((item) => item.slug === TELEKINETIC_EXPERT)) {
+    if (amp) {
+      return true;
+    } else {
+      postReminder(message);
+    }
   }
 
-  //if actor actor has mind's edge and isn't amping make it free
-  if (message.actor.items.find((item) => item.slug === MINDS_EDGE) && !amp) {
-    return true;
-  }
-
-  //if actor actor has telekinetic expert make it free but notify
-  if (
-    message.actor.items.find((item) => item.slug === TELEKINETIC_EXPERT) &&
-    amp
-  ) {
-    ui.notifications.info(
-      "You have the feat Telekinetic Expert that lets you amp spells for free once a day.\nMake sure to adjust Focus Points accordingly if you have already used it."
-    );
+   //if actor actor has mind's edge and isn't amping make it free
+   if (message.actor.items.find((item) => item.slug === MINDS_EDGE) && !amp) {
     return true;
   }
 
@@ -154,4 +147,23 @@ function overrideDamageButton(html, slug) {
 
 export function isOwnerOrGM(message) {
   return game.user.character?.uuid === message.actor?.uuid || game.user.isGM;
+}
+
+async function postReminder() {
+  const content = [
+    `<div class="tlm-dervish-notif">
+    <p>You have the @UUID[Compendium.the-longest-mile.dervish.k8GWKHXlUoDCg2aE] feat that lets you amp spells for free once a day.</p>
+    <p>Make sure to adjust your Focus Points manually if you have already used it.</p>
+    </div>
+  `,
+  ];
+  const gm = game.users.find((u) => u.isGM);
+  const data = [
+    {
+      speaker: { alias: "Telekinetic Expert" },
+      content: content,
+      whisper: [game.user.id],
+    },
+  ];
+  await ChatMessage.create(data);
 }
