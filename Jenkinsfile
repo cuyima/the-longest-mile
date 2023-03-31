@@ -13,7 +13,6 @@ pipeline {
                 script{
                     MODULE_NAME = readJSON(file: 'module.json').name
                 }
-                echo "$MODULE_NAME"
                 sh "${env.PWSH} ./pack-compendium.ps1"
             }
         }
