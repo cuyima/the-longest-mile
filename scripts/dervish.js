@@ -24,7 +24,7 @@ export async function createDervishChatCardButtons(message, html) {
   removeVariantsButton(message, html, spell);
   if (ampedId != spellId) {
     //add damage button to base variant
-    addDamageButton(message, html);
+    addDamageButton(html);
   }
 
   //style it a little
