@@ -157,7 +157,6 @@ async function postReminder() {
     </div>
   `,
   ];
-  const gm = game.users.find((u) => u.isGM);
   const data = [
     {
       speaker: { alias: "Telekinetic Expert" },
