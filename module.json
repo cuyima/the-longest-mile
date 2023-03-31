@@ -55,7 +55,8 @@
     }
   ],
   "esmodules": [
-    "scripts/hooks.js"
+    "scripts/hooks.js",
+    "scripts/settings.js"
   ],
   "url": "https://github.com/cuyima/the-longest-mile",
   "download": "https://github.com/cuyima/the-longest-mile/releases/download/v_VERSION/module.zip",

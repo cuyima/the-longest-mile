@@ -12,7 +12,7 @@
           "rules": [],
           "slug": "psionic-movement",
           "traits": {
-            "value": [],
+            "value": ["cantrip"],
             "rarity": "common"
           },
           "level": {
@@ -55,7 +55,17 @@
             "value": ""
           },
           "damage": {
-            "value": {}
+            "value": {
+              "JzQsiZjPFx5Hz9XG": {
+                "value": "",
+                "type": {
+                  "value": "",
+                  "categories": [],
+                  "subtype": ""
+                },
+                "applyMod": false
+              }
+            }
           },
           "save": {
             "value": "",
