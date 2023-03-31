@@ -13,7 +13,6 @@ export async function createDervishChatCardButtons(message, html) {
     return;
   }
 
-  const speaker = message.actor;
   const { slug } = spell || {};
   const ampedId = spell.overlays.contents[1]._id;
   const spellId = html
@@ -25,7 +24,7 @@ export async function createDervishChatCardButtons(message, html) {
   removeVariantsButton(message, html, spell);
   if (ampedId != spellId) {
     //add damage button to base variant
-    addDamageButton(speaker, html);
+    addDamageButton(message, html);
   }
 
   //style it a little
@@ -35,7 +34,7 @@ export async function createDervishChatCardButtons(message, html) {
 async function isSupported(message) {
   //accept only spells
   const actionOrigin = message.flags.pf2e?.origin;
-  if (!actionOrigin?.type === "spell") {
+  if (actionOrigin?.type !== "spell") {
     return;
   }
   const spell = await fromUuid(actionOrigin.uuid);
@@ -98,25 +97,21 @@ function removeVariantsButton(message, html, spell) {
   ampButton.on("click", () => {
     ampSpell(spell, ampButton, html, message);
   });
+  if (!isOwnerOrGM(message)) {
+    ampButton.attr("style", "display: none !important");
+  }
 }
 
-async function addDamageButton(speaker, html) {
+async function addDamageButton(html) {
   //adding a new damage button to base variant so it can be cast
-  const user = game.user;
   html = html.find(".owner-buttons");
   html.append(
-    $(
-      `<button type="button"  ${
-        user.character?.uuid === speaker?.uuid || user.isGM
-          ? ""
-          : 'style="visibility:hidden"'
-      } data-action="spellDamage">Damage</button>`
-    )
+    $(`<button type="button" data-action="spellDamage">Damage</button>`)
   );
 }
 async function ampSpell(spell, button, html, message) {
   //check if we have enough points to amp otherwise return
-  if (! await consumePoints(message, true)) {
+  if (!(await consumePoints(message, true))) {
     return;
   }
 
@@ -155,4 +150,8 @@ function overrideDamageButton(html, slug) {
     default:
       break;
   }
+}
+
+export function isOwnerOrGM(message) {
+  return game.user.character?.uuid === message.actor?.uuid || game.user.isGM;
 }

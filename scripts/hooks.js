@@ -4,7 +4,11 @@ import {
   cleanTAHEffects,
   overrideTAHActionsClass,
 } from "./utils.js";
-import { consumePoints, createDervishChatCardButtons } from "./dervish.js";
+import {
+  consumePoints,
+  createDervishChatCardButtons,
+  isOwnerOrGM,
+} from "./dervish.js";
 
 //replace character sheet styling
 Hooks.once("init", async () => {
@@ -52,21 +56,19 @@ Hooks.on("render" + TAH, async (app, html) => {
 });
 
 //add custom buttons to dervish chat cards
-Hooks.on(
-  "renderChatMessage",
-  (message, html, data) => {
-    createDervishChatCardButtons(message, html);
-  }
-);
+Hooks.on("renderChatMessage", async (message, html) => {
+  createDervishChatCardButtons(message, html);
+});
 
 //flag invalid dervish spells as invisible
-Hooks.on(
-  "createChatMessage",
-  async (message) => {
-    if (!message.isRoll && ! await consumePoints(message, undefined)) {
-      message.update({
-        "flags.the-longest-mile.isVisible": false,
-      });
-    }
+Hooks.on("createChatMessage", async (message) => {
+  if (
+    !message.isRoll &&
+    isOwnerOrGM(message) &&
+    !(await consumePoints(message, undefined))
+  ) {
+    message.update({
+      "flags.the-longest-mile.isVisible": false,
+    });
   }
-);
+});
