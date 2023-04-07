@@ -1,0 +1,208 @@
+.simple-calendar-tlm .window-content {
+    padding: 0 !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+
+.simple-calendar-tlm .fsc-pf {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.simple-calendar-tlm .fsc-qf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.simple-calendar-tlm .fsc-fg {
+    flex: 1;
+}
+
+.simple-calendar-tlm .fsc-vf {
+    flex: 0 0 3.875rem;
+    display: flex;
+    flex-direction: column;
+    width: 3.875rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.simple-calendar-tlm .fsc-mf.fsc-c {
+    visibility: hidden;
+}
+
+.simple-calendar-tlm .fsc-if {
+    display: flex;
+    flex-direction: column;
+}
+
+.fsc-ga.fsc-ha {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.simple-calendar-tlm .fsc-pf .fsc-hh {
+    margin: 0 0 0.5rem 0;
+    flex: 1;
+}
+
+.simple-calendar-tlm button.fsc-xb {
+    display: block;
+    position: relative;
+    font-family: var(--font-family) !important;
+    font-size: .875rem !important;
+    border: var(--btn-border);
+    border-image: var(--btn-border-image) !important;
+    background-image: var(--btn-bg-image) !important;
+    padding: 0.15rem 0.48rem;
+    border-radius: 3px;
+    line-height: 1rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.simple-calendar-tlm .fsc-ub.fsc-vb {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.simple-calendar-tlm .fsc-ub {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.simple-calendar-tlm .fsc-wb {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.simple-calendar-tlm .fsc-wb .fsc-_b {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 100%;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    border: var(--btn-border);
+    border-image: var(--btn-border-image);
+    font-size: .875rem;
+}
+
+.simple-calendar-tlm .fsc-pf .fsc-qf .fsc-tf {
+    flex: 1;
+}
+
+.simple-calendar-tlm .fsc-ej {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto 0;
+    gap: 0.1rem;
+}
+
+.simple-calendar-tlm .fsc-mf {
+    position: absolute;
+    top: 1.875rem;
+    color: var(--side-drawer-color);
+    height: 75%;
+    min-width: 18.75rem;
+    z-index: -1;
+    box-shadow: 2px 2px 0.625rem rgb(0 0 0 / 67%);
+}
+
+.simple-calendar-tlm .fsc-vf button.fsc-xb {
+    margin: 0 0 0.5rem 0 !important;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.simple-calendar-tlm .fsc-ub button svg {
+    height: 1.125rem;
+    margin-bottom: -0.25rem;
+}
+
+.simple-calendar-tlm .fsc-mf.fsc-b {
+    visibility: visible;
+    left: 100%;
+}
+
+.simple-calendar-tlm .fsc-wb g,
+.simple-calendar-tlm .fsc-wb line,
+.simple-calendar-tlm .fsc-wb path,
+.simple-calendar-tlm .fsc-wb circle {
+    fill: var(--color-text-light-heading);
+    stroke: var(--color-text-light-heading);
+}
+
+.simple-calendar-tlm .sc-right>h2 {
+    flex: none
+}
+
+.simple-calendar-tlm .fsc-ak.fsc-lh,
+.simple-calendar-tlm label.fsc-ak.fsc-lh,
+.simple-calendar-tlm .form-fields .fsc-ak.fsc-lh {
+    background-color: var(--note-cat-danger-bg-color);
+    border-color: var(--note-cat-danger-bg-color);
+    color: var(--note-cat-danger-color);
+}
+
+
+.simple-calendar-tlm .fsc-ak,
+.simple-calendar-tlm label.fsc-ak,
+.simple-calendar-tlm .form-fields .fsc-ak {
+    font-size: .725rem;
+    border-radius: 0.4375rem;
+    padding: 0.2rem 0.4rem;
+    margin-right: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--note-cat-bg-color);
+    border-color: var(--note-cat-bg-color);
+    color: var(--note-cat-color);
+    box-shadow: 1px 1px 5px var(--note-cat-box-shadow-color);
+}
+
+.simple-calendar-tlm .fsc-ak span,
+.simple-calendar-tlm label.fsc-ak span,
+.simple-calendar-tlm .form-fields .fsc-ak span {
+    margin-right: 0.35rem;
+    white-space: nowrap;
+}
+
+.simple-calendar-tlm .fsc-ig {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    padding: 0.5rem;
+    font-size: .875rem;
+}
+
+.simple-calendar-tlm .fsc-ig input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0;
+    height: 1.625rem;
+    color: var(--search-box-color) !important;
+    font-size: .875rem;
+    text-align: left;
+}
+
+.simple-calendar-tlm .fsc-ig .fsc-xb:last-child {
+    border-right-width: 1px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

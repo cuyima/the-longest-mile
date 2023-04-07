@@ -8,7 +8,7 @@ import {
   consumePoints,
   createDervishChatCardButtons,
   isOwnerOrGM,
-  isSupported
+  isSupported,
 } from "./dervish.js";
 
 //replace character sheet styling
@@ -28,7 +28,6 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
     MODULE_NAME + " | Overwrote character sheet deities with custom compendium."
   );
 });
-
 
 //update TAH effects
 Hooks.on("render" + TAH, async (app, html) => {
@@ -50,8 +49,8 @@ Hooks.on("createChatMessage", async (message) => {
     !game.settings.get(MODULE_NAME, "dervish-ui") ||
     message.isRoll ||
     !isOwnerOrGM(message) ||
-    ! await isSupported(message)
-  ){
+    !(await isSupported(message))
+  ) {
     return;
   }
   if (!(await consumePoints(message, undefined))) {
@@ -59,4 +58,17 @@ Hooks.on("createChatMessage", async (message) => {
       "flags.the-longest-mile.isVisible": false,
     });
   }
+});
+
+Hooks.once("simple-calendar-ready", async (app, html, data) => {
+  injectCSS("tlm-simple-calender");
+});
+
+
+Hooks.on("renderApplication", async (app, html, data) => {
+  if ( html.eq(0).attr("id") !== "fsc-ng") {
+    return;
+  }
+  html.removeClass("simple-calendar").addClass("simple-calendar-tlm");
+  html.find(".sc-right").addClass("window-content")
 });
