@@ -2,13 +2,12 @@ import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
 import {
   injectCSS,
   cleanTAHEffects,
-  overrideTAHActionsClass,
 } from "./utils.js";
 import {
   consumePoints,
   createDervishChatCardButtons,
   isOwnerOrGM,
-  isSupported
+  isSupported,
 } from "./dervish.js";
 
 //replace character sheet styling
@@ -28,7 +27,6 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
     MODULE_NAME + " | Overwrote character sheet deities with custom compendium."
   );
 });
-
 
 //update TAH effects
 Hooks.on("render" + TAH, async (app, html) => {
@@ -50,8 +48,8 @@ Hooks.on("createChatMessage", async (message) => {
     !game.settings.get(MODULE_NAME, "dervish-ui") ||
     message.isRoll ||
     !isOwnerOrGM(message) ||
-    ! await isSupported(message)
-  ){
+    !(await isSupported(message))
+  ) {
     return;
   }
   if (!(await consumePoints(message, undefined))) {
