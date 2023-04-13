@@ -1,8 +1,5 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
-import {
-  injectCSS,
-  cleanTAHEffects,
-} from "./utils.js";
+import { injectCSS, cleanTAHEffects } from "./utils.js";
 import {
   consumePoints,
   createDervishChatCardButtons,
@@ -63,9 +60,11 @@ Hooks.once("simple-calendar-ready", async (app, html, data) => {
   injectCSS("tlm-simple-calendar");
 });
 
-
 Hooks.on("renderApplication", async (app, html, data) => {
-  if ( html.eq(0).attr("id") !== "fsc-ng") {
+  if (
+    !game.settings.get(MODULE_NAME, "sc-hack") ||
+    html.eq(0).attr("id") !== "fsc-ng"
+  ) {
     return;
   }
   html.removeClass("simple-calendar").addClass("simple-calendar-tlm");
