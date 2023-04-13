@@ -61,7 +61,7 @@ Hooks.on("createChatMessage", async (message) => {
 });
 
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
-  injectCSS("tlm-simple-calender");
+  injectCSS("tlm-simple-calendar");
 });
 
 
@@ -70,5 +70,4 @@ Hooks.on("renderApplication", async (app, html, data) => {
     return;
   }
   html.removeClass("simple-calendar").addClass("simple-calendar-tlm");
-  html.find(".sc-right").addClass("window-content")
 });
