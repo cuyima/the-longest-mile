@@ -18,7 +18,7 @@ export function cleanTAHEffects(html) {
   const actions = html.find(".tah-actions")[0];
   let buttonsnew = $();
 
-  //add unique effects
+  //add only unique effects
   html.find(".tah-action.toggle").each(function (index, element) {
     let elemvalue = $(element).find(".toggle")[0].value;
     let selector = "[value=" + elemvalue.replace(/([|])/g, "\\$1") + "]";
@@ -30,8 +30,8 @@ export function cleanTAHEffects(html) {
 
   //sort alphabetically
   buttonsnew.sort(function (a, b) {
-    let nameA = $(a).find(".toggle")[0].value.split("|")[3];
-    let nameB = $(b).find(".toggle")[0].value.split("|")[3];
+    let nameA = $(a).find(".toggle")[0].value.split("|")[1];
+    let nameB = $(b).find(".toggle")[0].value.split("|")[1];
     if (nameA < nameB) {
       return -1;
     }
@@ -48,7 +48,7 @@ export function cleanTAHEffects(html) {
   });
 }
 
-export function overrideTAHActionsClass(html,id,className) {
+export function overrideTAHActionsClass(html, id, className) {
   html
     .find(`[id='${id}']`)
     .find(".tah-actions")

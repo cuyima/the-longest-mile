@@ -87,6 +87,7 @@ function removeVariantsButton(message, html, spell) {
   let ampButton = variantButtons.eq(1);
   ampButton.find("span:last-child").text("Amp!");
   ampButton.removeAttr("data-action");
+  ampButton.find("img").remove()
   ampButton.on("click", () => {
     ampSpell(spell, ampButton, html, message);
   });
@@ -97,7 +98,7 @@ function removeVariantsButton(message, html, spell) {
 
 async function addDamageButton(html) {
   //adding a new damage button to base variant so it can be cast
-  html = html.find(".owner-buttons");
+  html = html.find(".card-buttons");
   html.append(
     $(`<button type="button" data-action="spellDamage">Damage</button>`)
   );

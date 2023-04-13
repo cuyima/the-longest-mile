@@ -2,7 +2,6 @@ import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
 import {
   injectCSS,
   cleanTAHEffects,
-  overrideTAHActionsClass,
 } from "./utils.js";
 import {
   consumePoints,
