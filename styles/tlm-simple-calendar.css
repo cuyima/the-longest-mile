@@ -309,3 +309,54 @@
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
 }
+
+.simple-calendar-tlm .fsc-if .fsc-mg {
+    padding: 0 0.5rem 0.5rem;
+    overflow: hidden;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    max-height: 0;
+}
+
+.simple-calendar-tlm .fsc-if .fsc-mg.fsc-b {
+    visibility: visible;
+    max-height: 12.5rem;
+}
+
+.simple-calendar-tlm .fsc-if .fsc-mg.fsc-c {
+    visibility: hidden;
+}
+
+.simple-calendar-tlm .fsc-if .fsc-mg .fsc-kg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: .75rem;
+}
+
+.simple-calendar-tlm  .fsc-if .fsc-mg p {
+    font-size: .75rem;
+}
+
+.simple-calendar-tlm .fsc-if .fsc-mg .fsc-kg label input[type=checkbox] {
+    width: 0.75rem;
+    height: 0.75rem;
+    filter: unset;
+}
+
+.simple-calendar-tlm .fsc-if .fsc-jg {
+    padding: 0 0.5rem 0.25rem;
+    margin: 0;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+.simple-calendar-tlm .fsc-if .fsc-hf {
+    padding-top: 0.5rem;
+}
+
+.simple-calendar-tlm .fsc-mf em {
+    font-size: .875rem;
+    padding: 0 0.5rem;
+}
