@@ -15,4 +15,13 @@ Hooks.once("init", () => {
           },
 		default: true
 	});
+
+	game.settings.register(MODULE_NAME, "sc-hack", {
+		scope: "user",
+		config: true,
+		name: "Enable Dorako Calendar",
+		hint: "Enable Simple Calendar styling to mimick Dorako UI (dark theme only).",
+		type: Boolean,
+		default: true
+	  });
 });
