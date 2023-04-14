@@ -10,8 +10,9 @@ import {
 //replace character sheet styling
 Hooks.once("init", async () => {
   injectCSS("character-sheet");
-  console.log(MODULE_NAME + " | Injected CSS for character sheets.");
+  console.log(MODULE_NAME + " | Injected character sheets CSS.");
   injectCSS("tlm-dervish");
+  console.log(MODULE_NAME + " | Injected hidden messages CSS.");
 });
 
 //replace character sheet button
@@ -29,7 +30,7 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
 Hooks.on("render" + TAH, async (app, html) => {
   cleanTAHEffects(html);
   console.log(
-    MODULE_NAME + " | Cleaned up Effects section of Token Action HUD."
+    MODULE_NAME + " | Cleaned up effects section of Token Action HUD."
   );
 });
 
@@ -57,7 +58,10 @@ Hooks.on("createChatMessage", async (message) => {
 });
 
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
-  injectCSS("tlm-simple-calendar");
+  if (game.settings.get(MODULE_NAME, "sc-hack")) {
+    injectCSS("tlm-simple-calendar");
+    console.log(MODULE_NAME + " | Injected CSS for Simple Calendar.");
+  }
 });
 
 Hooks.on("renderApplication", async (app, html, data) => {
@@ -68,4 +72,5 @@ Hooks.on("renderApplication", async (app, html, data) => {
     return;
   }
   html.removeClass("simple-calendar").addClass("simple-calendar-tlm");
+  console.log(MODULE_NAME + " | Injected HTML for Simple Calendar.");
 });

@@ -1,9 +1,10 @@
-import { MINDS_EDGE, SUPPORTED_SPELLS, TELEKINETIC_EXPERT } from "./consts.js";
+import { MODULE_NAME, MINDS_EDGE, SUPPORTED_SPELLS, TELEKINETIC_EXPERT } from "./consts.js";
 
 export async function createDervishChatCardButtons(message, html) {
   //if flagged make invisible
-  if (message.getFlag("the-longest-mile", "isVisible") === false) {
+  if (await message.getFlag("the-longest-mile", "isVisible") === false) {
     html.addClass("tlm-hide");
+    console.log(MODULE_NAME + " | Hid invalid chat message.");
     return;
   }
 
@@ -29,6 +30,7 @@ export async function createDervishChatCardButtons(message, html) {
 
   //style it a little
   overrideDamageButton(html, slug);
+  console.log(MODULE_NAME + " | Finished updating chat message.");
 }
 
 export async function isSupported(message) {
