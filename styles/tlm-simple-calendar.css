@@ -130,7 +130,7 @@
     padding: 1px
 }
 
-.simple-calendar-tlm *::-webkit-scrollbar-thumb {
+.simple-calendar-tlm .window-content ::-webkit-scrollbar-thumb {
     background: var(--tlm-gold) !important;
     border-color: var(--tlm-brown) !important;
     width: 6px;
@@ -260,6 +260,10 @@
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w {
     border: 1px solid var(--color-border-dark-1) !important;
+}
+
+body.game .fsc-h .fsc-r {
+    background-color: var(--glass-bg-light);
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w .fsc-ba .fsc-ta {
