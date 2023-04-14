@@ -106,7 +106,7 @@
 
 .simple-calendar-tlm .fsc-mf {
     position: absolute;
-    top: 1.875rem;
+    top: 2rem;
     height: 75%;
     min-width: 18.75rem;
     z-index: -1;
@@ -127,6 +127,7 @@
     visibility: visible;
     left: 100%;
     overflow: auto;
+    padding: 1px
 }
 
 .simple-calendar-tlm *::-webkit-scrollbar-thumb {
@@ -147,7 +148,6 @@
 .simple-calendar-tlm .sc-right>h2 {
     flex: none;
     padding: 0.2rem 0.5rem;
-    margin: 1px;
 }
 
 .simple-calendar-tlm .fsc-ak.fsc-lh,
@@ -292,6 +292,7 @@
     background: none;
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
+    left: 30%;
 }
 
 .simple-calendar-tlm .fsc-mf.fsc-if.sc-right .fsc-ig>.fsc-xb {
@@ -314,9 +315,7 @@
 .simple-calendar-tlm .fsc-if .fsc-mg {
     padding: 0 0.5rem 0.5rem;
     overflow: hidden;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--tlm-gold);
     max-height: 0;
 }
 
@@ -349,7 +348,7 @@
 .simple-calendar-tlm .fsc-if .fsc-jg {
     padding: 0 0.5rem 0.25rem;
     margin: 0;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--tlm-gold);
     cursor: pointer;
 }
 
@@ -360,4 +359,9 @@
 .simple-calendar-tlm .fsc-mf em {
     font-size: .875rem;
     padding: 0 0.5rem;
+}
+
+.simple-calendar-tlm .fsc-ga .fsc-ja .fsc-la .fsc-na {
+    background-color: var(--glass-bg) !important;
+    box-shadow: var(--glassy);
 }
