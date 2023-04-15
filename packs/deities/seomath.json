@@ -1,0 +1,54 @@
+{
+  "name": "Seomath",
+  "type": "deity",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Mistress Moonlight is the goddess of the Greater Moon, sometimes called Quiridh. She favors those who wield illusion and concealment, and for this reason is sometimes called the Clever Mistress. Unlike Prinnandi, who rules the Lesser Moon, or Maridhil, Seomath looks down on pointless mischief.</p>\n<p><strong>Edicts:</strong> Dance even when there is no music, cast light in places of darkness, lead the lost.</p>\n<p><strong>Anathema: </strong>Desecrate graves, abandon a creature in darkness, create mischief for mischief's sake.</p>\n<p><strong>Areas of Concern: </strong>Dance, navigation, concealment, guile.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "seomath",
+    "category": "deity",
+    "alignment": {
+      "own": "CG",
+      "follower": [
+        "NG",
+        "CG",
+        "CN"
+      ]
+    },
+    "domains": {
+      "primary": [
+        "moon",
+        "soul",
+        "darkness",
+        "water"
+      ],
+      "alternate": [
+        "repose"
+      ]
+    },
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "dex",
+      "cha"
+    ],
+    "skill": "prf",
+    "weapons": [
+      "fauchard"
+    ],
+    "spells": {
+      "1": "Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n",
+      "2": "Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE",
+      "8": "Compendium.pf2e.spells-srd.Jvyy6oVIQsD34MHB"
+    }
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "_id": "Zj4uQzJsvamCxAR1"
+}
