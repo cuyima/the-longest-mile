@@ -6,10 +6,12 @@
 
 .simple-calendar-tlm {
     height: fit-content !important;
+    width: fit-content !important;
 }
 
 .simple-calendar-tlm .window-content {
     padding: 0 !important;
+    overflow: visible;
 }
 
 .simple-calendar-tlm .fsc-pf {
@@ -32,7 +34,7 @@
     flex: 0 0 3.875rem;
     display: flex;
     flex-direction: column;
-    width: 3.875rem;
+    width: 3.7rem;
     margin-left: 0.5rem;
     padding: 0 0.5rem;
 }
@@ -94,6 +96,7 @@
 
 .simple-calendar-tlm .fsc-pf .fsc-qf .fsc-tf {
     flex: 1;
+    margin-bottom: 0.2rem;
 }
 
 .simple-calendar-tlm .fsc-ej {
@@ -259,11 +262,11 @@
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w {
-    border: 1px solid var(--color-border-dark-1) !important;
+    border: 1px solid var(--color-border-dark-4) !important;
 }
 
 body.game .fsc-h .fsc-r {
-    background-color: var(--glass-bg-light);
+    background-color: var(--text-dark);
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w .fsc-ba .fsc-ta {
@@ -273,7 +276,7 @@ body.game .fsc-h .fsc-r {
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w.fsc-x {
-    box-shadow: inset 0 0 5px var(--color-border-dark-1) !important;
+    box-shadow: inset 0 0 5px darkseagreen !important;
     background-color: var(--mats-green-dark) !important;
 }
 
@@ -368,4 +371,157 @@ body.game .fsc-h .fsc-r {
 .simple-calendar-tlm .fsc-ga .fsc-ja .fsc-la .fsc-na {
     background-color: var(--glass-bg) !important;
     box-shadow: var(--glassy);
+}
+
+.simple-calendar-tlm.fsc-uf header>*:not(.close) {
+    display: none;
+}
+
+.simple-calendar-tlm.fsc-uf header {
+    flex: 0 0 1rem !important;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.simple-calendar-tlm.fsc-uf header a.header-button.close {
+    font-size: 0 !important;
+    line-height: 0;
+    padding-top: 2px;
+}
+
+.simple-calendar-tlm.fsc-uf header a.header-button.close i[class^=fa] {
+    font-size: var(--font-size-14);
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-nj {
+    position: absolute;
+    top: 0;
+    left: 0.4rem;
+    height: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-nj .fsc-ca {
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-nj .fsc-ca .fsc-va {
+    height: 1rem;
+    margin-top: 0.125rem;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj {
+    position: absolute;
+    top: 0;
+    right: 1.125rem;
+    height: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj .fsc-pj {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    height: 1rem;
+    margin-right: 0.25rem;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj .fsc-pj button{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj .fsc-pj button {
+    border: none;
+    border-radius: 3px;
+    background: none;
+    background-color: unset;
+    box-shadow:none;
+    text-shadow: 0 0 3px black;
+    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-tf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.25rem;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-vb {
+    flex-wrap: nowrap; 
+}
+
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-tf .fsc-ej {
+    display: flex;
+    width: 2rem;
+    margin-left: 0.25rem;
+}
+
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-xb svg {
+    height: 0.875rem;
+}
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-rf {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-mf.fsc-b {
+    height: 12.5rem;
+}
+
+.simple-calendar-tlm .fsc-qf .fsc-lb {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: unset;
+    color: unset;
+}
+
+.simple-calendar-tlm .fsc-lb .fsc-mb {
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.simple-calendar-tlm .fsc-v .fsc-w.fsc-aa {
+    box-shadow: inset 0 0 5px var(--color-border-light-tertiary) !important;
+    background-color: var(--color-border-dark-3) !important;
+}
+
+
+.simple-calendar-tlm  .fsc-nj .fsc-ca svg{
+    width: 0.6875rem;
+    height: 0.6875rem;
+    margin-right: 2px;
+    font-size: .6875rem;
+}
+
+.simple-calendar-tlm  .fsc-nj .fsc-n{
+    height: 0.6rem;
+    width: 0.6rem;
+    margin-right: 4px;
+    font-size: .6875rem;
 }
