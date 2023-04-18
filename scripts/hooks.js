@@ -60,6 +60,16 @@ Hooks.on("createChatMessage", async (message) => {
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
   if (game.settings.get(MODULE_NAME, "sc-hack")) {
     injectCSS("tlm-simple-calendar");
+   
+    const theme = game.settings.get("pf2e-dorako-ui", "theme.application-theme");
+    if (theme === "light-theme"){
+      injectCSS("tlm-simple-calendar-light");
+    }else if(theme === "dark-theme"){
+      injectCSS("tlm-simple-calendar-dark");
+    }else if (theme === "no-theme") {
+      injectCSS("tlm-simple-calendar-def");
+    }
+
     console.log(MODULE_NAME + " | Injected CSS for Simple Calendar.");
   }
 });
