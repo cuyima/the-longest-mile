@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Hearthheart's purview includes feasts and plenty. She is a patron of farmers, homesteads, the hearth, and peaceful community.</p>\n<p><strong>Edicts: </strong>Care for your home and family, appreciate a warm hearth, defend those who welcome you into their home.</p>\n<p><strong>Anathema: </strong>Salt or despoil the earth, spread plague or pestilence, destroy shelter.</p>\n<p><strong>Areas of Concern: </strong>Farming, fertility, home, wine.</p>"
     },
     "source": {
@@ -15,33 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "NG",
-      "follower": [
-        "NG",
-        "LG"
-      ]
+      "follower": ["NG", "LG"]
     },
     "domains": {
-      "primary": [
-        "family",
-        "nature",
-        "earth",
-        "creation"
-      ],
-      "alternate": [
-        "cities",
-        "protection"
-      ]
+      "primary": ["family", "nature", "earth", "creation"],
+      "alternate": ["cities", "protection"]
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "wis"
-    ],
+    "font": ["heal"],
+    "ability": ["wis"],
     "skill": "nat",
-    "weapons": [
-      "scythe"
-    ],
+    "weapons": ["scythe"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.X9dkmh23lFwMjrYd",
       "2": "Compendium.pf2e.spells-srd.CXICME10TkEJxz0P",

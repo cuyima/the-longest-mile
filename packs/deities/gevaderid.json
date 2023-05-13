@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Dawnmarshal, a general of Aminthar, is the god of righteous rebellion. Gevaderid favors those who fight oppression at great cost. His blazing sword is the promised dawn, even in the darkest nights.</p>\n<p><strong>Edicts: </strong>Avenge the wronged, destroy evildoers, lead the charge in battle.</p>\n<p><strong>Anathema: </strong>Cower from combat, forgive those who have irreparably sinned, leave allies unwillingly in darkness.</p>\n<p><strong>Areas of Concern: </strong>Devotion, hope, uprisings, the dawn.</p>\n<p> </p>"
     },
     "source": {
@@ -15,34 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "NG",
-      "follower": [
-        "NG",
-        "CG"
-      ]
+      "follower": ["NG", "CG"]
     },
     "domains": {
-      "primary": [
-        "duty",
-        "sun",
-        "zeal",
-        "change"
-      ],
-      "alternate": [
-        "fire",
-        "destruction"
-      ]
+      "primary": ["duty", "sun", "zeal", "change"],
+      "alternate": ["fire", "destruction"]
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "str",
-      "cha"
-    ],
+    "font": ["heal"],
+    "ability": ["str", "cha"],
     "skill": "itm",
-    "weapons": [
-      "bastard-sword"
-    ],
+    "weapons": ["bastard-sword"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
       "3": "Compendium.pf2e.spells-srd.o6YCGx4lycsYpww4",

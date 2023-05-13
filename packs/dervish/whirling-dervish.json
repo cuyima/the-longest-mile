@@ -4,24 +4,43 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p><strong>Requirements </strong>You are wielding two melee weapons, one in each hand<hr />You whirl in and out of range. You Step, Strike, Step, and make another Strike. One Strike may instead be a use of Psionic Strike, but the others must be normal Strikes. You can choose not to take one or both Steps.</p>"
+      "value": "<p><strong>Requirements </strong>You are wielding two melee weapons, one in each hand</p><hr />You whirl in and out of range. You Step, Strike, Step, and make another Strike. One Strike may instead be a use of Psionic Strike, but the others must be normal Strikes. You can choose not to take one or both Steps.<p></p>"
     },
-     "source": {
+    "source": {
       "value": "The Longest Mile"
     },
     "rules": [],
     "slug": "whirling-dervish",
-    "level": { "value": 12 },
-    "traits": { "value": ["archetype", "flourish"], "rarity": "common" },
-    "featType": { "value": "archetype" },
+    "level": {
+      "value": 12
+    },
+    "traits": {
+      "value": [
+        "archetype",
+        "flourish"
+      ],
+      "rarity": "common"
+    },
+    "category": "class",
     "onlyLevel1": false,
     "maxTakable": 1,
-    "actionType": { "value": "action" },
-    "actions": { "value": 2 },
-    "prerequisites": { "value": [{ "value": "Dervish Dedication" }] },
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dervish Dedication"
+        }
+      ]
+    },
     "location": null
   },
   "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "flags": {},
-  "_id": "UVXKCiC9oSflU1lp"
+  "_id": "OyQplUbDt7PwodvT",
+  "folder": null,
+  "sort": 0
 }

@@ -4,9 +4,9 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "Your proficiency ranks for occult spell attack rolls and spell DCs increase to expert. Once a day, while you are using <em>@UUID[Compendium.the-longest-mile.dervish.cVHWuKZUosxERFhp]</em>, you can amp each of your psi spells without expending a Focus Point."
+      "value": "Your proficiency ranks for occult spell attack rolls and spell DCs increase to expert. Once a day, while you are using <em>@UUID[Compendium.the-longest-mile.dervish.IkNySbzKMRLGhV8P]</em>, you can amp each of your psi spells without expending a Focus Point."
     },
-     "source": {
+    "source": {
       "value": "The Longest Mile"
     },
     "rules": [
@@ -18,17 +18,38 @@
       }
     ],
     "slug": "telekinetic-expert",
-    "level": { "value": 8 },
-    "traits": { "value": ["archetype"], "rarity": "common" },
-    "featType": { "value": "archetype" },
+    "level": {
+      "value": 8
+    },
+    "traits": {
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "category": "class",
     "onlyLevel1": false,
     "maxTakable": 1,
-    "actionType": { "value": "passive" },
-    "actions": { "value": null },
-    "prerequisites": { "value": [{ "value": "Dervish Dedication" },{"value":"Mind's Edge"}] },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dervish Dedication"
+        },
+        {
+          "value": "Mind's Edge"
+        }
+      ]
+    },
     "location": null
   },
   "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "flags": {},
-  "_id": "k8GWKHXlUoDCg2aE"
+  "_id": "u9Ce4HN6VXpfQStI",
+  "folder": null,
+  "sort": 0
 }

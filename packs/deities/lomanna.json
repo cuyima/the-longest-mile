@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Sallow Maiden oversees nightmares and the monstrous. An ancient enemy of Vorunar, the Fury of dark beasts is the mother of monsters.</p>\n<p><strong>Edicts: </strong>Bring power to outcasts and the downtrodden, make the beautiful monstrous, reveal the corruption and flaws in all things.</p>\n<p><strong>Anathema: </strong>Root out a population of monsters, spread hope.</p>\n<p><strong>Areas of Concern: </strong>Monsters, night terrors.</p>"
     },
     "source": {
@@ -15,35 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "CE",
-      "follower": [
-        "CE",
-        "CN",
-        "NE"
-      ]
+      "follower": ["CE", "CN", "NE"]
     },
     "domains": {
-      "primary": [
-        "family",
-        "might",
-        "darkness",
-        "nightmares"
-      ],
-      "alternate": [
-        "destruction"
-      ]
+      "primary": ["family", "might", "darkness", "nightmares"],
+      "alternate": ["destruction"]
     },
-    "font": [
-      "harm",
-      "heal"
-    ],
-    "ability": [
-      "con",
-      "str"
-    ],
+    "font": ["harm", "heal"],
+    "ability": ["con", "str"],
     "skill": "sur",
-    "weapons": [
-      "whip"
-    ],
+    "weapons": ["whip"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.EE7Q5BHIrfWNCPtT",
       "2": "Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp",

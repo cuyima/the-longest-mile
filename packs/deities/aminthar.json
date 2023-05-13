@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>Twin brother of Alaminna, the Marshal of the Just zealously defends all those who fight on the side of good. One of the Empyreans, he serves at the right hand of Melion.</p>\n<p><strong>Edicts: </strong>Avenge the wronged, destroy evildoers, hold valor in your heart.</p>\n<p><strong>Anathema: </strong>Abandon a companion in need, dishonor yourself, refuse a challenge from an equal.</p>\n<p><strong>Areas of Concern: </strong>Honor, valor, and justice.</p>"
     },
     "source": {
@@ -15,34 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "LG",
-      "follower": [
-        "LG",
-        "NG",
-        "LN"
-      ]
+      "follower": ["LG", "NG", "LN"]
     },
     "domains": {
-      "primary": [
-        "confidence",
-        "might",
-        "zeal",
-        "fire"
-      ],
-      "alternate": [
-        "duty"
-      ]
+      "primary": ["confidence", "might", "zeal", "fire"],
+      "alternate": ["duty"]
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "str",
-      "cha"
-    ],
+    "font": ["heal"],
+    "ability": ["str", "cha"],
     "skill": "itm",
-    "weapons": [
-      "longsword"
-    ],
+    "weapons": ["longsword"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
       "2": "Compendium.pf2e.spells-srd.wzctak6BxOW8xvFV",

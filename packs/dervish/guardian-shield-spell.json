@@ -12,26 +12,50 @@
     "rules": [],
     "slug": "guardian-shield-spell",
     "traits": {
-      "value": ["cantrip"],
+      "value": [
+        "cantrip"
+      ],
       "rarity": "common"
     },
-    "level": { "value": 1 },
-    "spellType": { "value": "utility" },
-    "category": { "value": "focus" },
-    "traditions": { "value": ["occult"] },
-    "school": { "value": "abjuration" },
+    "level": {
+      "value": 1
+    },
+    "spellType": {
+      "value": "utility"
+    },
+    "category": {
+      "value": "focus"
+    },
+    "traditions": {
+      "value": [
+        "occult"
+      ]
+    },
+    "school": {
+      "value": "abjuration"
+    },
     "components": {
       "focus": false,
       "material": false,
       "somatic": false,
       "verbal": false
     },
-    "materials": { "value": "" },
-    "target": { "value": "the creature which triggered the reaction" },
-    "range": { "value": "30 feet" },
+    "materials": {
+      "value": ""
+    },
+    "target": {
+      "value": "the creature which triggered the reaction"
+    },
+    "range": {
+      "value": "30 feet"
+    },
     "area": null,
-    "time": { "value": "reaction" },
-    "duration": { "value": "" },
+    "time": {
+      "value": "reaction"
+    },
+    "duration": {
+      "value": ""
+    },
     "damage": {
       "value": {
         "PcfrrbUYtBmTlPeO": {
@@ -81,7 +105,9 @@
         "name": "Guardian Shield (Amp)",
         "system": {
           "traits": {
-            "value": ["amp"]
+            "value": [
+              "amp"
+            ]
           },
           "damage": {
             "value": {
@@ -98,6 +124,5 @@
     }
   },
   "img": "systems/pf2e/icons/spells/protective-ward.webp",
-  "flags": {},
   "_id": "5EZPr3kFv4EKfcP6"
 }

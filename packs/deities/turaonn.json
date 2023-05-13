@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Forgemarshal of Paradise is the preeminent master of artifice. One of the Empyreans, his works are of unparalleled quality.</p>\n<p><strong>Edicts: </strong>Improve your craft, serve your people, profit through honest work.</p>\n<p><strong>Anathema: </strong>Intentionally create inferior works, destroy creations without reason, fail to correct a critical error in a craft.</p>\n<p><strong>Areas of Concern: </strong>The forge, protection, art, and the pursuit of perfection.</p>"
     },
     "source": {
@@ -15,34 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "LG",
-      "follower": [
-        "LG",
-        "LN"
-      ]
+      "follower": ["LG", "LN"]
     },
     "domains": {
-      "primary": [
-        "creation",
-        "earth",
-        "family",
-        "toil"
-      ],
-      "alternate": [
-        "fire",
-        "wealth"
-      ]
+      "primary": ["creation", "earth", "family", "toil"],
+      "alternate": ["fire", "wealth"]
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "con",
-      "wis"
-    ],
+    "font": ["heal"],
+    "ability": ["con", "wis"],
     "skill": "cra",
-    "weapons": [
-      "warhammer"
-    ],
+    "weapons": ["warhammer"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.TPI9fRCAYsDqpAe4",
       "4": "Compendium.pf2e.spells-srd.TUj8eugNqAvB1vVR",

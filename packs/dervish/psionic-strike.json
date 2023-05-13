@@ -12,7 +12,9 @@
     "rules": [],
     "slug": "psionic-strike",
     "traits": {
-      "value": ["cantrip"],
+      "value": [
+        "cantrip"
+      ],
       "rarity": "common"
     },
     "level": {
@@ -25,7 +27,9 @@
       "value": "focus"
     },
     "traditions": {
-      "value": ["occult"]
+      "value": [
+        "occult"
+      ]
     },
     "school": {
       "value": "evocation"
@@ -108,7 +112,7 @@
           "damage": {
             "value": {
               "JzQsiZjPFx5Hz9XG": {
-                "value": "1d4"
+                "value": "1d4+1"
               }
             }
           },
@@ -129,6 +133,5 @@
     }
   },
   "img": "systems/pf2e/icons/spells/magic-weapon.webp",
-  "flags": {},
   "_id": "VJlZs9QYTW559RCf"
 }

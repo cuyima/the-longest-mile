@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The White Wheel, also known as the First King, leads the Empyreans. He is the patron of just rule, and a storm god.</p>\n<p><strong>Edicts:</strong> Lead others, keep the peace, fulfill your duties, protect the community.</p>\n<p><strong>Anathema: </strong>Abandon your followers, yourself over your community, tarnish your reputation, tell lies.</p>\n<p><strong>Areas of Concern: </strong>Rulership, family, honor, storms.</p>"
     },
     "source": {
@@ -15,34 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "LG",
-      "follower": [
-        "LG",
-        "LN"
-      ]
+      "follower": ["LG", "LN"]
     },
     "domains": {
-      "primary": [
-        "might",
-        "lightning",
-        "duty",
-        "family"
-      ],
-      "alternate": [
-        "confidence",
-        "cities"
-      ]
+      "primary": ["might", "lightning", "duty", "family"],
+      "alternate": ["confidence", "cities"]
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "str",
-      "cha"
-    ],
+    "font": ["heal"],
+    "ability": ["str", "cha"],
     "skill": "soc",
-    "weapons": [
-      "warhammer"
-    ],
+    "weapons": ["warhammer"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.EUMjrJJwSgsqNidi",
       "4": "Compendium.pf2e.spells-srd.2BV2yYPfVJ5zirZt",

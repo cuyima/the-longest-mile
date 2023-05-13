@@ -29,12 +29,13 @@
       "value": 2
     },
     "traits": {
-      "value": ["archetype", "dedication"],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
       "rarity": "rare"
     },
-    "featType": {
-      "value": "archetype"
-    },
+    "category": "class",
     "onlyLevel1": false,
     "maxTakable": 1,
     "actionType": {
@@ -49,6 +50,7 @@
     "location": null
   },
   "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "flags": {},
-  "_id": "2gf1SGjnUrtXKcYi"
+  "_id": "pndsiC2kFN1Ug6Bl",
+  "folder": null,
+  "sort": 0
 }
