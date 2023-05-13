@@ -1,8 +1,13 @@
-import { MODULE_NAME, MINDS_EDGE, SUPPORTED_SPELLS, TELEKINETIC_EXPERT } from "./consts.js";
+import {
+  MODULE_NAME,
+  MINDS_EDGE,
+  SUPPORTED_SPELLS,
+  TELEKINETIC_EXPERT,
+} from "./consts.js";
 
 export async function createDervishChatCardButtons(message, html) {
   //if flagged make invisible
-  if (await message.getFlag("the-longest-mile", "isVisible") === false) {
+  if ((await message.getFlag("the-longest-mile", "isVisible")) === false) {
     html.addClass("tlm-hide");
     console.log(MODULE_NAME + " | Hid invalid chat message.");
     return;
@@ -15,17 +20,19 @@ export async function createDervishChatCardButtons(message, html) {
   }
 
   const { slug } = spell || {};
-  const ampedId = spell.overlays.contents[1]._id;
   const spellId = html
     .find(".pf2e.chat-card.item-card")
     .eq(0)
     .attr("data-item-id");
 
-  //prevent actor from switching between variants
-  removeVariantsButton(message, html, spell);
-  if (ampedId != spellId) {
-    //add damage button to base variant
-    addDamageButton(html);
+  const isVariant = spell.overlays.contents.find(
+    (overlay) => overlay._id === spellId
+  );
+
+  hackAmpButton(message, html, spell);
+
+  if (isVariant) {
+    removeVariantsButton(message, html, spell);
   }
 
   //style it a little
@@ -50,7 +57,7 @@ export async function isSupported(message) {
 }
 
 export async function consumePoints(message, amp) {
-   //if actor actor has telekinetic expert make it free but notify
+  //if actor actor has telekinetic expert make it free but notify
   if (message.actor.items.find((item) => item.slug === TELEKINETIC_EXPERT)) {
     if (amp) {
       return true;
@@ -59,8 +66,8 @@ export async function consumePoints(message, amp) {
     }
   }
 
-   //if actor actor has mind's edge and isn't amping make it free
-   if (message.actor.items.find((item) => item.slug === MINDS_EDGE) && !amp) {
+  //if actor actor has mind's edge and isn't amping make it free
+  if (message.actor.items.find((item) => item.slug === MINDS_EDGE) && !amp) {
     return true;
   }
 
@@ -82,14 +89,13 @@ export async function consumePoints(message, amp) {
 
 function removeVariantsButton(message, html, spell) {
   const variantButtons = html.find("[data-action=selectVariant]");
-  //remove default version from button selection
   variantButtons.eq(0).remove();
+}
 
-  //remove original variant funtion from amp version and glue on our own
+function hackAmpButton(message, html, spell) {
+  const variantButtons = html.find("[data-action=selectVariant]");
   let ampButton = variantButtons.eq(1);
-  ampButton.find("span:last-child").text("Amp!");
   ampButton.removeAttr("data-action");
-  ampButton.find("img").remove()
   ampButton.on("click", () => {
     ampSpell(spell, ampButton, html, message);
   });
@@ -98,13 +104,6 @@ function removeVariantsButton(message, html, spell) {
   }
 }
 
-async function addDamageButton(html) {
-  //adding a new damage button to base variant so it can be cast
-  html = html.find(".card-buttons");
-  html.append(
-    $(`<button type="button" data-action="spellDamage">Damage</button>`)
-  );
-}
 async function ampSpell(spell, button, html, message) {
   //check if we have enough points to amp otherwise return
   if (!(await consumePoints(message, true))) {

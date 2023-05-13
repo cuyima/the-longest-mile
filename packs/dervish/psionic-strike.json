@@ -108,7 +108,7 @@
           "damage": {
             "value": {
               "JzQsiZjPFx5Hz9XG": {
-                "value": "1d4"
+                "value": "1d4+1"
               }
             }
           },
