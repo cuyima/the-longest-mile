@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Father of Feasts concerns himself with the joy of community. One of the Blessings, Belaunatar's greatest servants are those who mend old feuds and join with their neighbors.</p>\n<p><strong>Edicts: </strong>Seek to improve yourself and your community, trust those you work with, encourage cooperation.</p>\n<p><strong>Anathema: </strong>Betray another's trust, place conflict between ideological differences over people's lives.</p>\n<p><strong>Areas of Concern: </strong>Balance, community, negotiation, twilight.</p>"
     },
     "source": {
@@ -15,33 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "NG",
-      "follower": [
-        "NG"
-      ]
+      "follower": ["NG"]
     },
     "domains": {
-      "primary": [
-        "cities",
-        "family",
-        "knowledge",
-        "perfection"
-      ],
-      "alternate": [
-        "duty",
-        "nature"
-      ]
+      "primary": ["cities", "family", "knowledge", "perfection"],
+      "alternate": ["duty", "nature"]
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "wis",
-      "cha"
-    ],
+    "font": ["heal"],
+    "ability": ["wis", "cha"],
     "skill": "dip",
-    "weapons": [
-      "shield-boss"
-    ],
+    "weapons": ["shield-boss"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.nXmC2Xx9WmS5NsAo",
       "4": "Compendium.pf2e.spells-srd.McnPlLFvKtQVXNcG",

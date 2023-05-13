@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Breath of the End reigns over the slow creeping cold of winter and its toll. One of the Agonies, he lives only to see the world succumb to dust.</p>\n<p><strong>Edicts: </strong>Preach of the upcoming end times, destroy that which has outlived its usefulness, put the suffering out of their misery.</p>\n<p><strong>Anathema: </strong>Construct shelter against the elements, spread hope, save someone dying from exposure.</p>"
     },
     "source": {
@@ -15,34 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "CN",
-      "follower": [
-        "CN",
-        "CE"
-      ]
+      "follower": ["CN", "CE"]
     },
     "domains": {
-      "primary": [
-        "cold",
-        "decay",
-        "dust",
-        "void"
-      ],
-      "alternate": [
-        "darkness",
-        "air"
-      ]
+      "primary": ["cold", "decay", "dust", "void"],
+      "alternate": ["darkness", "air"]
     },
-    "font": [
-      "harm"
-    ],
-    "ability": [
-      "con",
-      "cha"
-    ],
+    "font": ["harm"],
+    "ability": ["con", "cha"],
     "skill": "itm",
-    "weapons": [
-      "war-flail"
-    ],
+    "weapons": ["war-flail"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.8TQiFzGf4feoHeH0",
       "5": "Compendium.pf2e.spells-srd.GaRQlC9Yw1BGKHfN",

@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Sword of Liberation smiles on those who fight to free others. One of the Blessings, she acts as a counterpart to Aminthar and Gevaderid, in ensuring that injustices are struck down. Iocatha blesses those who free slaves, overturn wrongful sentences, and fight against oppression.</p>\n<p><strong>Edicts: </strong>Confront oppression in all its forms, defend the common folk, overcome despair to seize victory.</p>\n<p><strong>Anathema: </strong>Abandon those in need, enslave or oppress others, harm the innocent through direct or inadvertent action.</p>\n<p><strong>Areas of Concern: </strong>Justice, freedom, devotion.<br /></p>"
     },
     "source": {
@@ -15,35 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "CG",
-      "follower": [
-        "CG",
-        "NG",
-        "CN"
-      ]
+      "follower": ["CG", "NG", "CN"]
     },
     "domains": {
-      "primary": [
-        "change",
-        "freedom",
-        "zeal",
-        "sun"
-      ],
-      "alternate": [
-        "destruction",
-        "fire"
-      ]
+      "primary": ["change", "freedom", "zeal", "sun"],
+      "alternate": ["destruction", "fire"]
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "str",
-      "wis"
-    ],
+    "font": ["heal"],
+    "ability": ["str", "wis"],
     "skill": "soc",
-    "weapons": [
-      "morningstar"
-    ],
+    "weapons": ["morningstar"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.aAbfKn8maGjJjk2W",
       "3": "Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS",

@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Lord of Conquest reigns over despots, conquerors, tyrants, and the iron-fisted. He promotes cruel rule, and was once a warlord of the Adversaries himself.</p>\n<p><strong>Edicts: </strong>Topple unworthy rulers, dominate those beneath you, show deference to your betters.</p>\n<p><strong>Anathema: </strong>Show mercy, show deference to the weak or unworthy, make peace when you have the advantage.</p>\n<p><strong>Areas of Concern: </strong>War, tyranny, hierarchy.</p>"
     },
     "source": {
@@ -15,32 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "LE",
-      "follower": [
-        "LE",
-        "NE"
-      ]
+      "follower": ["LE", "NE"]
     },
     "domains": {
-      "primary": [
-        "tyranny",
-        "might",
-        "zeal"
-      ],
-      "alternate": [
-        "ambition",
-        "confidence"
-      ]
+      "primary": ["tyranny", "might", "zeal"],
+      "alternate": ["ambition", "confidence"]
     },
-    "font": [
-      "harm"
-    ],
-    "ability": [
-      "str"
-    ],
+    "font": ["harm"],
+    "ability": ["str"],
     "skill": "itm",
-    "weapons": [
-      "mace"
-    ],
+    "weapons": ["mace"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
       "3": "Compendium.pf2e.spells-srd.DCQHaLrYXMI37dvW",

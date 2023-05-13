@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Lady of Reprisals is the goddess of victory, and a patron of underdogs. Among those most cherished by Desna are those who succeed against great odds through wit and guile. A Blessing, Desna is notable for having once been imprisoned, but freed by Iocatha. For this reason, she is sometimes considered an Empyrean.</p>\n<p><strong>Edicts: </strong>Seek out and challenge oppressors and tyrants, defend friends and the innocent, overcome despair and seize victory.</p>\n<p><strong>Anathema: </strong>Suffer a bully's insults to you or another without retort, abandon a friend in need, harm the innocent through direct or inadvertent action.</p>"
     },
     "source": {
@@ -15,31 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "NG",
-      "follower": [
-        "CG",
-        "NG"
-      ]
+      "follower": ["CG", "NG"]
     },
     "domains": {
-      "primary": [
-        "confidence",
-        "luck",
-        "trickery",
-        "zeal"
-      ],
+      "primary": ["confidence", "luck", "trickery", "zeal"],
       "alternate": []
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "dex",
-      "cha"
-    ],
+    "font": ["heal"],
+    "ability": ["dex", "cha"],
     "skill": "thi",
-    "weapons": [
-      "morningstar"
-    ],
+    "weapons": ["morningstar"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.aEM2cttJ2eYcLssW",
       "2": "Compendium.pf2e.spells-srd.c2bTWBNO1BYX4Zfg",

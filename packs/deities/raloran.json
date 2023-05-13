@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Runesaint is a patron of magic and the clever, more concerned with wit and wisdom than morals. He assisted Meterix with the binding runes of his treaty.</p>\n<p><strong>Edicts: </strong>Seek out magic and use it, devise and study runes, avoid violence with clever strategy.</p>\n<p><strong>Anathema: </strong>Grant magic to those who cannot use it responsibly, cause a magical disaster, ignore magical misconduct.</p>\n<p><strong>Areas of Concern: </strong>Magic, runecrafting, wit.</p>"
     },
     "source": {
@@ -15,33 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "LN",
-      "follower": [
-        "LN",
-        "LG",
-        "LE"
-      ]
+      "follower": ["LN", "LG", "LE"]
     },
     "domains": {
-      "primary": [
-        "fate",
-        "glyph",
-        "knowledge",
-        "magic"
-      ],
+      "primary": ["fate", "glyph", "knowledge", "magic"],
       "alternate": []
     },
-    "font": [
-      "harm",
-      "heal"
-    ],
-    "ability": [
-      "int",
-      "wis"
-    ],
+    "font": ["harm", "heal"],
+    "ability": ["int", "wis"],
     "skill": "arc",
-    "weapons": [
-      "staff"
-    ],
+    "weapons": ["staff"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM",
       "2": "Compendium.pf2e.spells-srd.eIQ86FOXK34HiNLs",

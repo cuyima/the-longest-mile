@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Prince of Plots is a patron to those who use subterfuge and cruelty to get their way. The mastermind of the First War and shadow ruler of the Adversaries champions the manipulation of others for ones own ends.</p>\n<p><strong>Edicts: </strong>Deceive those around you, seize any opportunity that would benefit you, scheme for more power.</p>\n<p><strong>Anathema: </strong>Use brute force when a weakness or loophole was available to exploit, renounce an advantage, show mercy to a foe.</p>\n<p><strong>Areas of Concern: </strong>Pride, deceit, schemes.</p>\n<p>*The animal form granted by Manseryon is snake-only.</p>"
     },
     "source": {
@@ -15,33 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "NE",
-      "follower": [
-        "LE",
-        "NE"
-      ]
+      "follower": ["LE", "NE"]
     },
     "domains": {
-      "primary": [
-        "duty",
-        "trickery",
-        "ambition"
-      ],
-      "alternate": [
-        "zeal",
-        "knowledge"
-      ]
+      "primary": ["duty", "trickery", "ambition"],
+      "alternate": ["zeal", "knowledge"]
     },
-    "font": [
-      "harm"
-    ],
-    "ability": [
-      "cha",
-      "dex"
-    ],
+    "font": ["harm"],
+    "ability": ["cha", "dex"],
     "skill": "dec",
-    "weapons": [
-      "dagger"
-    ],
+    "weapons": ["dagger"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6",
       "2": "Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp",

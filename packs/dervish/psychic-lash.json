@@ -22,24 +22,42 @@
         },
         "label": "Psychic Lash",
         "range": 30,
-        "traits": ["range-30", "finesse", "agile"],
+        "traits": [
+          "range-30",
+          "finesse",
+          "agile"
+        ],
         "img": "systems/pf2e/icons/spells/dazzling-flash.webp"
       }
     ],
     "slug": "psychic-lash",
-    "level": { "value": 10 },
-    "traits": { "value": ["archetype"], "rarity": "common" },
-    "featType": { "value": "archetype" },
+    "level": {
+      "value": 10
+    },
+    "traits": {
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "category": "class",
     "onlyLevel1": false,
     "maxTakable": 1,
-    "actionType": { "value": "passive" },
-    "actions": { "value": null },
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
     "prerequisites": {
-      "value": [{ "value": "Dervish Dedication" }]
+      "value": [
+        {
+          "value": "Dervish Dedication"
+        }
+      ]
     },
     "location": null
   },
   "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "flags": {},
-  "_id": "C5loaHJBKVUTs38g"
+  "_id": "kpcVMJon1R7Igva4"
 }

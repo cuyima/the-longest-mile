@@ -3,7 +3,6 @@
   "type": "deity",
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>Siogarithax, the Cruel Star, was once a Ravikan paladin in service to the Great Star Dragon. In death, she became a devil, but does not serve in the court of the Adversaries, instead keeping to her ancient alliance.</p>\n<p><strong>Edicts: </strong>Establish dominance, serve your betters unquestioningly, behave as an example to others.</p>\n<p><strong>Anathema: </strong>Relax excessively or give in to sloth, aid or grant mercy to Siogarithax's enemies, dishonor yourself or Siogarithax.</p>\n<p><strong>Areas of Concern: </strong>The Great Star Dragon, Ravika, knighthood.</p>"
     },
     "source": {
@@ -14,34 +13,16 @@
     "category": "deity",
     "alignment": {
       "own": "LE",
-      "follower": [
-        "LN",
-        "LE",
-        "NE"
-      ]
+      "follower": ["LN", "LE", "NE"]
     },
     "domains": {
-      "primary": [
-        "star",
-        "cold",
-        "zeal",
-        "tyranny"
-      ],
-      "alternate": [
-        "duty",
-        "might"
-      ]
+      "primary": ["star", "cold", "zeal", "tyranny"],
+      "alternate": ["duty", "might"]
     },
-    "font": [
-      "harm"
-    ],
-    "ability": [
-      "str"
-    ],
+    "font": ["harm"],
+    "ability": ["str"],
     "skill": "itm",
-    "weapons": [
-      "hb_partizan"
-    ],
+    "weapons": ["hb_partizan"],
     "spells": {
       "1": "Compendium.the-longest-mile.spells.xPJ29LKBAP7SEKFe",
       "3": "Compendium.the-longest-mile.spells.74Rkk8RCCSwCyFsm",

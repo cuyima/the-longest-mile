@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Lawkeeper serves as the god of comeuppance, balance, and mineral wealth. While not a blessing himself, he penned the treaty between the Blessings and Furies.</p>\n<p><strong>Edicts: </strong>Pursue perfection in your surroundings, earn wealth through hard work and trade, follow the rule of law.</p>\n<p><strong>Anathema: </strong>Break a contract, steal, undermine a law-abiding court.</p>\n<p><strong>Areas of Concern: </strong>Law, bureaucracy, cities, mining.</p>"
     },
     "source": {
@@ -15,33 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "LN",
-      "follower": [
-        "N",
-        "LN",
-        "LG"
-      ]
+      "follower": ["N", "LN", "LG"]
     },
     "domains": {
-      "primary": [
-        "cities",
-        "earth",
-        "wealth",
-        "duty"
-      ],
+      "primary": ["cities", "earth", "wealth", "duty"],
       "alternate": []
     },
-    "font": [
-      "harm",
-      "heal"
-    ],
-    "ability": [
-      "con",
-      "int"
-    ],
+    "font": ["harm", "heal"],
+    "ability": ["con", "int"],
     "skill": "soc",
-    "weapons": [
-      "crossbow"
-    ],
+    "weapons": ["crossbow"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.MVrxZarUTnJxAUN8",
       "4": "Compendium.pf2e.spells-srd.qwlh6aDgi86U3Q7H",

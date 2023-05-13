@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>The Lady of Retribution was once a mere judge in the court of Melion. Though she despises the Adversaries, her twisted mind fixates only on vengeance. She is the patron to all who seek justice long denied, and implores her followers to seek it at their own hands.</p>\n<p><strong>Edicts: </strong>Take revenge, despise and never forgive those who have hurt you.</p>\n<p><strong>Anathema: </strong>Obstruct justice, continue to seek vengeance after fair punishment has been dealt, obstruct redemption.</p>\n<p><strong>Areas of Concern: </strong>Vengeance, justice, law.</p>"
     },
     "source": {
@@ -15,34 +14,16 @@
     "category": "deity",
     "alignment": {
       "own": "LE",
-      "follower": [
-        "LN",
-        "LE",
-        "NE"
-      ]
+      "follower": ["LN", "LE", "NE"]
     },
     "domains": {
-      "primary": [
-        "duty",
-        "pain",
-        "zeal",
-        "lightning"
-      ],
-      "alternate": [
-        "tyranny"
-      ]
+      "primary": ["duty", "pain", "zeal", "lightning"],
+      "alternate": ["tyranny"]
     },
-    "font": [
-      "heal"
-    ],
-    "ability": [
-      "wis",
-      "cha"
-    ],
+    "font": ["heal"],
+    "ability": ["wis", "cha"],
     "skill": "dip",
-    "weapons": [
-      "ranseur"
-    ],
+    "weapons": ["ranseur"],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.4c1c6eNzU1PFGkAy",
       "3": "Compendium.pf2e.spells-srd.gPvtmKMRpg9I9D7H",
