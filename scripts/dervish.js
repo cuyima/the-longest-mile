@@ -154,7 +154,7 @@ export function isOwnerOrGM(message) {
 async function postReminder() {
   const content = [
     `<div class="tlm-dervish-notif">
-    <p>You have the @UUID[Compendium.the-longest-mile.dervish.k8GWKHXlUoDCg2aE] feat that lets you amp spells for free once a day.</p>
+    <p>You have the @UUID[Compendium.the-longest-mile.dervish.u9Ce4HN6VXpfQStI] feat that lets you amp spells for free once a day.</p>
     <p>Make sure to adjust your Focus Points manually if you have already used it.</p>
     </div>
   `,

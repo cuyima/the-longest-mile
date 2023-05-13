@@ -15,7 +15,10 @@
       "value": 12
     },
     "traits": {
-      "value": ["archetype", "flourish"],
+      "value": [
+        "archetype",
+        "flourish"
+      ],
       "rarity": "common"
     },
     "category": "class",
@@ -37,5 +40,7 @@
     "location": null
   },
   "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "_id": "OyQplUbDt7PwodvT"
+  "_id": "OyQplUbDt7PwodvT",
+  "folder": null,
+  "sort": 0
 }

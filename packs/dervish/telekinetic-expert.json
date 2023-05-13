@@ -22,7 +22,9 @@
       "value": 8
     },
     "traits": {
-      "value": ["archetype"],
+      "value": [
+        "archetype"
+      ],
       "rarity": "common"
     },
     "category": "class",
@@ -47,5 +49,7 @@
     "location": null
   },
   "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "_id": "u9Ce4HN6VXpfQStI"
+  "_id": "u9Ce4HN6VXpfQStI",
+  "folder": null,
+  "sort": 0
 }
