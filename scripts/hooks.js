@@ -5,8 +5,6 @@ import { injectCSS, cleanTAHEffects } from "./utils.js";
 Hooks.once("init", async () => {
   injectCSS("character-sheet");
   console.log(MODULE_NAME + " | Injected character sheets CSS.");
-  injectCSS("tlm-dervish");
-  console.log(MODULE_NAME + " | Injected hidden messages CSS.");
 });
 
 //replace character sheet button
