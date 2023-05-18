@@ -1,11 +1,5 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
 import { injectCSS, cleanTAHEffects } from "./utils.js";
-import {
-  consumePoints,
-  createDervishChatCardButtons,
-  isOwnerOrGM,
-  isSupported,
-} from "./dervish.js";
 
 //replace character sheet styling
 Hooks.once("init", async () => {
@@ -34,39 +28,19 @@ Hooks.on("render" + TAH, async (app, html) => {
   );
 });
 
-//add custom buttons to dervish chat cards
-Hooks.on("renderChatMessage", async (message, html) => {
-  if (!game.settings.get(MODULE_NAME, "dervish-ui")) return;
-  createDervishChatCardButtons(message, html);
-});
-
-//flag invalid dervish spells as invisible
-Hooks.on("createChatMessage", async (message) => {
-  if (
-    !game.settings.get(MODULE_NAME, "dervish-ui") ||
-    message.isRoll ||
-    !isOwnerOrGM(message) ||
-    !(await isSupported(message))
-  ) {
-    return;
-  }
-  if (!(await consumePoints(message, undefined))) {
-    message.update({
-      "flags.the-longest-mile.isVisible": false,
-    });
-  }
-});
-
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
   if (game.settings.get(MODULE_NAME, "sc-hack")) {
     injectCSS("tlm-simple-calendar");
-   
-    const theme = game.settings.get("pf2e-dorako-ui", "theme.application-theme");
-    if (theme === "light-theme"){
+
+    const theme = game.settings.get(
+      "pf2e-dorako-ui",
+      "theme.application-theme"
+    );
+    if (theme === "light-theme") {
       injectCSS("tlm-simple-calendar-light");
-    }else if(theme === "dark-theme"){
+    } else if (theme === "dark-theme") {
       injectCSS("tlm-simple-calendar-dark");
-    }else if (theme === "no-theme") {
+    } else if (theme === "no-theme") {
       injectCSS("tlm-simple-calendar-def");
     }
 
