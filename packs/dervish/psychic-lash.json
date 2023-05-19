@@ -1,0 +1,47 @@
+{
+  "name": "Psychic Lash",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have learned to stretch your psychic influence further, releasing projectiles with a swing of your weapon. When you have psionic focus, you can make a psychic Strike with one of the melee weapons you are wielding; This is a ranged Strike with a maximum range of 30 feet that deals mental damage instead of the weapon's normal damage. Your ranged weapon Strike gains all the benefits of your weapon's runes as long as they still apply to a ranged weapon.</p>"
+    },
+    "source": {
+      "value": ""
+    },
+    "rules": [],
+    "slug": "psychic-lash",
+    "level": {
+      "value": 8
+    },
+    "traits": {
+      "value": [
+        "archetype",
+        "hb_psi-burst"
+      ],
+      "rarity": "common"
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dervish Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "folder": null,
+  "sort": 0,
+  "_id": "TvOyV3n37tVZzCEr"
+}

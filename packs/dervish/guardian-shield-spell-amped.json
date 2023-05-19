@@ -1,0 +1,92 @@
+{
+  "name": "Guardian Shield (Amped)",
+  "type": "spell",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p>\n<hr />\n<p>You create a momentary shield of telekinetic force around the target that has Hardness 10.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 30.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 40.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 50.</p>"
+    },
+    "source": {
+      "value": "The Longest Mile"
+    },
+    "rules": [],
+    "slug": "guardian-shield-spell-amped",
+    "traits": {
+      "value": [
+        "abjuration",
+        "hb_psi-burst"
+      ],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "spellType": {
+      "value": "utility"
+    },
+    "category": {
+      "value": "focus"
+    },
+    "traditions": {
+      "value": [
+        "occult"
+      ]
+    },
+    "school": {
+      "value": "abjuration"
+    },
+    "components": {
+      "focus": false,
+      "material": false,
+      "somatic": false,
+      "verbal": false
+    },
+    "materials": {
+      "value": ""
+    },
+    "target": {
+      "value": "the creature which triggered the reaction"
+    },
+    "range": {
+      "value": "20 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "reaction"
+    },
+    "duration": {
+      "value": ""
+    },
+    "damage": {
+      "value": {}
+    },
+    "save": {
+      "value": "",
+      "basic": ""
+    },
+    "sustained": {
+      "value": false
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "hasCounteractCheck": {
+      "value": false
+    },
+    "ability": {
+      "value": ""
+    },
+    "overlays": {},
+    "heightening": {
+      "damage": {}
+    }
+  },
+  "img": "systems/pf2e/icons/spells/protective-ward.webp",
+  "_id": "16AOcHLTEvBLoXU0",
+  "folder": null,
+  "sort": 0
+}

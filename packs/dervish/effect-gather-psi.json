@@ -1,0 +1,44 @@
+{
+  "img": "systems/pf2e/icons/spells/perfected-mind.webp",
+  "name": "Effect: Gather Psi",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can use actions that have the Psi Burst trait, after which your Gathered Psi subsides.</p>"
+    },
+    "source": {
+      "value": "Pathfinder Dark Archive"
+    },
+    "rules": [],
+    "slug": "effect-gather-psi",
+    "traits": {
+      "value": [],
+      "rarity": "common"
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 2,
+      "unit": "rounds",
+      "sustained": false,
+      "expiry": "turn-end"
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "target": null,
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "type": "effect",
+  "effects": [],
+  "_id": "coWYuzbu9Awoy34r",
+  "folder": null,
+  "sort": 0
+}
