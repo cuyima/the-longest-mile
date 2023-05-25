@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra Force damage equal to to 1 plus your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1.</p>"
+      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra Force damage equal to to 1 plus your spellcasting ability modifier.</p><hr /><p><strong>Heightened (+1)</strong> Increase the damage by 1.</p>"
     },
     "source": {
       "value": "The Longest Mile"

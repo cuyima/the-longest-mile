@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p>\n<hr />\n<p>You create a momentary shield of telekinetic force around the target that has Hardness 5.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p>\n<p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p>\n<p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p>\n<p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
+      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 5.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
     },
     "source": {
       "value": "The Longest Mile"
