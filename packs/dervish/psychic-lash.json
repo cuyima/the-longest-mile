@@ -4,39 +4,21 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>You have learned to stretch your psychic influence further, releasing projectiles with a swing of your weapon. You can make ranged psychic Strikes; these are ranged Strikes with a maximum range of 30 feet that deal 1d6 mental damage. Your ranged weapon Strike gains all the benefits of your weapon's runes as long as they still apply to a ranged weapon.</p><p>For example, if your weapon had +1, striking, and spell storing runes, you would get a +1 item bonus to hit with your ranged weapon Strike, and it would deal the additional damage from the striking rune, but it wouldn't be able to unleash a spell from the spell storing rune, as that rune can be etched onto only melee weapons.</p>"
+      "gm": "",
+      "value": "<p>You have learned to stretch your psychic influence further, releasing projectiles with a swing of your weapon. When you have psionic focus, you can make a psychic Strike with one of the melee weapons you are wielding; This is a ranged Strike with a maximum range of 30 feet that deals mental damage instead of the weapon's normal damage. Your ranged weapon Strike gains all the benefits of your weapon's runes, traits and critical specialization as long as they still apply to a ranged weapon.</p>"
     },
     "source": {
-      "value": "The Longest Mile"
+      "value": ""
     },
-    "rules": [
-      {
-        "key": "Strike",
-        "category": "martial",
-        "damage": {
-          "base": {
-            "damageType": "mental",
-            "dice": 1,
-            "die": "d6"
-          }
-        },
-        "label": "Psychic Lash",
-        "range": 30,
-        "traits": [
-          "range-30",
-          "finesse",
-          "agile"
-        ],
-        "img": "systems/pf2e/icons/spells/dazzling-flash.webp"
-      }
-    ],
+    "rules": [],
     "slug": "psychic-lash",
     "level": {
-      "value": 10
+      "value": 8
     },
     "traits": {
       "value": [
-        "archetype"
+        "archetype",
+        "hb_psi-burst"
       ],
       "rarity": "common"
     },
@@ -44,10 +26,10 @@
     "onlyLevel1": false,
     "maxTakable": 1,
     "actionType": {
-      "value": "passive"
+      "value": "action"
     },
     "actions": {
-      "value": null
+      "value": 1
     },
     "prerequisites": {
       "value": [
@@ -58,6 +40,8 @@
     },
     "location": null
   },
-  "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "_id": "kpcVMJon1R7Igva4"
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "folder": null,
+  "sort": 0,
+  "_id": "TvOyV3n37tVZzCEr"
 }

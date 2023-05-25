@@ -4,21 +4,22 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>You gain the <em>@UUID[Compendium.the-longest-mile.dervish.5EZPr3kFv4EKfcP6]</em> Focus Spell, and you increase the number of Focus Points in your focus pool by 1.</p>"
+      "gm": "",
+      "value": "<p>You get the psi cantrip @UUID[Compendium.the-longest-mile.dervish.fpPKRfaKQncXsamA]{Guardian Shield} and one additional Focus Point.</p>"
     },
     "source": {
-      "value": "The Longest Mile"
+      "value": ""
     },
     "rules": [
       {
         "key": "ActiveEffectLike",
         "mode": "add",
         "path": "system.resources.focus.max",
-        "priority": 10,
-        "value": 1
+        "value": 1,
+        "priority": 10
       }
     ],
-    "slug": "guardian-shield-feat",
+    "slug": "guardian-shield",
     "level": {
       "value": 6
     },
@@ -46,8 +47,8 @@
     },
     "location": null
   },
-  "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "_id": "OwK6RzbQG5qWs9mv",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
   "folder": null,
-  "sort": 0
+  "sort": 0,
+  "_id": "oqyhoRtfiuW5uJJ5"
 }

@@ -1,20 +1,20 @@
 {
-  "name": "Guardian Shield",
+  "name": "Guardian Shield (Amped)",
   "type": "spell",
   "effects": [],
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 5.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
+      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 10.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 20.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 30.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 40.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 50.</p>"
     },
     "source": {
       "value": "The Longest Mile"
     },
     "rules": [],
-    "slug": "guardian-shield-spell",
+    "slug": "guardian-shield-spell-amped",
     "traits": {
       "value": [
-        "cantrip",
+        "abjuration",
         "hb_psi-burst"
       ],
       "rarity": "common"
@@ -72,7 +72,7 @@
       "value": ""
     },
     "location": {
-      "value": ""
+      "value": null
     },
     "hasCounteractCheck": {
       "value": false
@@ -86,7 +86,7 @@
     }
   },
   "img": "systems/pf2e/icons/spells/protective-ward.webp",
-  "_id": "fpPKRfaKQncXsamA",
+  "_id": "16AOcHLTEvBLoXU0",
   "folder": null,
   "sort": 0
 }

@@ -4,25 +4,42 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>You access the vast well of power that resides within your own mind, calling forth psychic magic with nothing but thought and will. You can cast occult spells using the Cast a Spell activity. You are trained in occult spell attacks and occult spell DCs using your spellcasting ability modifier (Charisma if you don't have one).</p><p>You gain a focus pool of 2 Focus Points. When you take this archetype, you gain psionic spells that cost Focus Points to cast. Additionally, you can use your Focus Points to boost or modify your psionic spells by applying amps. Each of your spells has a special amp heading. Whenever you cast a psionic spell, you can amp it by spending 1 Focus Point to add the amp effect. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to meditate or perform a physical regimen.</p><p>You gain access to the Focus Spells <em>@UUID[Compendium.the-longest-mile.dervish.VJlZs9QYTW559RCf]</em> and <em>@UUID[Compendium.the-longest-mile.dervish.8pR0eh4kACzxJilU]</em> which you can modify by spending additional Focus Points.</p><p><strong>Special</strong> You cannot select another dedication feat until you have gained two other feats from the @UUID[Compendium.the-longest-mile.journals.Q4XlMqXr82pmrJHI.JournalEntryPage.FsLFc9gAJuSsvy6h]{Dervish} archetype.</p>"
+      "gm": "",
+      "value": "<p>You channel the inner strength of your mind, unleashing a barrage of psionic energy through the deadly weapons you wield.</p><p>You can cast occult spells using the @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} activity. You're trained in occult spell attack rolls and occult spell DCs. Your key spellcasting ability for dervish archetype spells is Charisma and they are occult dervish spells.</p><p>You gain the psi cantrip @UUID[Compendium.the-longest-mile.dervish.wLkMp60XTDQYqV6p]{Psionic Strike} which you can amplify by spending Focus Points. If you don't have one, you also gain a focus pool of 1 Focus Point, which you can use to amp your psi cantrips. You can Refocus by meditating on your new powers or performing a physical regimen.</p><p>You gain the @UUID[Compendium.pf2e.feats-srd.onde0SxLoxLBTnvm]{Double Slice} fighter feat. This serves as Double Slice for the purpose of meeting prerequisites.</p><p>You gain access to the @UUID[Compendium.the-longest-mile.dervish.YCZg2etveOOeJJJT]{Gather Psi} action that allows you to to use actions with the Psi Burst trait.</p><p><strong>Special</strong> You can't select another dedication feat until you gain two other feats from the @UUID[Compendium.the-longest-mile.journals.Q4XlMqXr82pmrJHI]{Dervish} archetype.</p>"
     },
     "source": {
-      "value": "The Longest Mile"
+      "value": ""
     },
     "rules": [
       {
-        "key": "ActiveEffectLike",
-        "mode": "upgrade",
-        "path": "system.resources.focus.max",
-        "value": 2,
-        "priority": 10
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.onde0SxLoxLBTnvm",
+        "allowDuplicate": false
       },
       {
         "key": "ActiveEffectLike",
         "mode": "upgrade",
+        "path": "system.resources.focus.max",
+        "value": 1,
+        "priority": 10
+      },
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.the-longest-mile.dervish.YCZg2etveOOeJJJT"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.occ.rank",
+        "value": 1
+    },
+    {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
         "path": "system.proficiencies.traditions.occult.rank",
         "value": 1
-      }
+    }
     ],
     "slug": "dervish-dedication",
     "level": {
@@ -49,8 +66,8 @@
     },
     "location": null
   },
-  "img": "systems/pf2e/icons/default-icons/feats.webp",
-  "_id": "pndsiC2kFN1Ug6Bl",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "_id": "sgPrCkIhDs8xd0tO",
   "folder": null,
   "sort": 0
 }

@@ -1,20 +1,19 @@
 {
-  "name": "Guardian Shield",
+  "name": "Psionic Strike (Amped)",
   "type": "spell",
   "effects": [],
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 5.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
+      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra Force damage equal to to 1d4 plus your spellcasting ability modifier.</p><hr /><p><strong>Heightened (+1)</strong> Increase the damage by 1d4.</p>"
     },
     "source": {
       "value": "The Longest Mile"
     },
     "rules": [],
-    "slug": "guardian-shield-spell",
+    "slug": "psionic-strike-amped",
     "traits": {
       "value": [
-        "cantrip",
         "hb_psi-burst"
       ],
       "rarity": "common"
@@ -34,7 +33,7 @@
       ]
     },
     "school": {
-      "value": "abjuration"
+      "value": "evocation"
     },
     "components": {
       "focus": false,
@@ -46,20 +45,30 @@
       "value": ""
     },
     "target": {
-      "value": "the creature which triggered the reaction"
+      "value": ""
     },
     "range": {
-      "value": "20 feet"
+      "value": ""
     },
     "area": null,
     "time": {
-      "value": "reaction"
+      "value": "0"
     },
     "duration": {
-      "value": ""
+      "value": "until the end of your turn"
     },
     "damage": {
-      "value": {}
+      "value": {
+        "ZIuYm6J0CjONUeeJ": {
+          "value": "1d4",
+          "type": {
+            "value": "force",
+            "categories": [],
+            "subtype": ""
+          },
+          "applyMod": true
+        }
+      }
     },
     "save": {
       "value": "",
@@ -72,21 +81,21 @@
       "value": ""
     },
     "location": {
-      "value": ""
+      "value": null
     },
     "hasCounteractCheck": {
       "value": false
     },
-    "ability": {
-      "value": ""
-    },
-    "overlays": {},
     "heightening": {
-      "damage": {}
+      "type": "interval",
+      "interval": 1,
+      "damage": {
+        "ZIuYm6J0CjONUeeJ": "1d4"
+      }
     }
   },
-  "img": "systems/pf2e/icons/spells/protective-ward.webp",
-  "_id": "fpPKRfaKQncXsamA",
+  "img": "systems/pf2e/icons/spells/magic-weapon.webp",
+  "_id": "vXju4k80sOmvbMez",
   "folder": null,
   "sort": 0
 }

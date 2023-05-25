@@ -1,17 +1,17 @@
 {
-  "name": "Guardian Shield",
+  "name": "Psionic Movement",
   "type": "spell",
   "effects": [],
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 5.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
+      "value": "<p>Your psionic influence telekinetically lifts and transports someone to a new location at your will. Choose a willing creature within 60 feet of you. The target jumps up to 30 feet in any direction. You choose the direction of this jump but it must end on solid ground that you can see.</p><hr /><p><strong>Heightened (5th) </strong>You can either move the target up to 60 feet or target up to five creatures in range.</p>"
     },
     "source": {
       "value": "The Longest Mile"
     },
     "rules": [],
-    "slug": "guardian-shield-spell",
+    "slug": "psionic-movement-spell",
     "traits": {
       "value": [
         "cantrip",
@@ -34,7 +34,7 @@
       ]
     },
     "school": {
-      "value": "abjuration"
+      "value": "enchantment"
     },
     "components": {
       "focus": false,
@@ -46,20 +46,30 @@
       "value": ""
     },
     "target": {
-      "value": "the creature which triggered the reaction"
+      "value": "1 loose object that is Large or smaller or 1 willing creature"
     },
     "range": {
-      "value": "20 feet"
+      "value": "30 feet"
     },
     "area": null,
     "time": {
-      "value": "reaction"
+      "value": "2"
     },
     "duration": {
       "value": ""
     },
     "damage": {
-      "value": {}
+      "value": {
+        "JzQsiZjPFx5Hz9XG": {
+          "value": "",
+          "type": {
+            "value": "",
+            "categories": [],
+            "subtype": ""
+          },
+          "applyMod": false
+        }
+      }
     },
     "save": {
       "value": "",
@@ -80,13 +90,8 @@
     "ability": {
       "value": ""
     },
-    "overlays": {},
-    "heightening": {
-      "damage": {}
-    }
+    "overlays": {}
   },
-  "img": "systems/pf2e/icons/spells/protective-ward.webp",
-  "_id": "fpPKRfaKQncXsamA",
-  "folder": null,
-  "sort": 0
+  "img": "systems/pf2e/icons/spells/unfolding-wind-rush.webp",
+  "_id": "ijnv8dbIc1UrWsXT"
 }
