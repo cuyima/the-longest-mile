@@ -4,3 +4,8 @@ input-items/*
 output-items/
 release/
 foundryconfig.json
+packs/*/CURRENT
+packs/*/LOCK
+packs/*/LOG
+packs/*/MANIFEST*
+packs/*/*.log
