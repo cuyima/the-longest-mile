@@ -1,8 +1,10 @@
 import { MODULE_NAME, CHARACTER_SHEET, TAH } from "./consts.js";
 import { injectCSS, cleanTAHEffects } from "./utils.js";
+import  {registerSettings} from "./settings.js";
 
 //replace character sheet styling
 Hooks.once("init", async () => {
+  registerSettings();
   injectCSS("character-sheet");
   console.log(MODULE_NAME + " | Injected character sheets CSS.");
 });
