@@ -5,8 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "esno ./build/build.ts",
-    "build:packs": "esno ./build/build-packs.ts"
+    "build": "esno ./build/build.ts"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
@@ -17,6 +16,7 @@
     "esno": "^0.16.3",
     "fs-extra": "^11.1.1",
     "prettier": "^2.8.8",
+    "remeda": "^1.19.0",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.3"
   }
