@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>You get the psi cantrip @UUID[Compendium.the-longest-mile.dervish.fpPKRfaKQncXsamA]{Guardian Shield} and one additional Focus Point.</p>"
+      "value": "<p>You get the psi cantrip @UUID[Compendium.the-longest-mile.dervish.Item.fpPKRfaKQncXsamA]{Guardian Shield} and one additional Focus Point.</p>"
     },
     "source": {
       "value": ""

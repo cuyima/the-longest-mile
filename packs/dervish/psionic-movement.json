@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>You gain the psi cantrip @UUID[Compendium.the-longest-mile.dervish.ijnv8dbIc1UrWsXT]{Psionic Movement} and one additional Focus point.</p>"
+      "value": "<p>You gain the psi cantrip @UUID[Compendium.the-longest-mile.dervish.Item.ijnv8dbIc1UrWsXT]{Psionic Movement} and one additional Focus point.</p>"
     },
     "source": {
       "value": ""
