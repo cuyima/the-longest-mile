@@ -31,7 +31,7 @@ function getFolders(path: fs.PathLike) {
 }
 
 function getItems(path: fs.PathLike) {
-  return fs.readFileSync(path).filter(function (file) {
+  return fs.readdirSync(path).filter(function (file) {
     return fs.statSync(path + "/" + file).isFile();
   });
 }
@@ -47,7 +47,9 @@ function buildPacks() {
       const db = new ClassicLevel(`dist/${folder}`);
       getItems(`packs/${folder}`).forEach((item) => {
         console.log(item);
-        //console.log(getId(item))
+        const obj = fs.readFileSync(`packs/${folder}/${item}`, 'utf-8');
+        const json = JSON.parse(obj);
+        db.put(json._id, obj)
       });
     }
   });
