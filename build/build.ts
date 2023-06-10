@@ -28,7 +28,7 @@ async function handlePack(compendiumName: string) {
   }
 
   console.log(
-    `[Packing ${chalk.blue(compendiumName)} from "${chalk.blue(
+    `Packing ${chalk.blue(compendiumName)} from "${chalk.blue(
       inputDir
     )}" into "${chalk.blue(packDir)}"`
   );
@@ -40,7 +40,7 @@ async function handlePack(compendiumName: string) {
   }
 }
 
-async function packClassicLevel(packDir, inputDir) {
+async function packClassicLevel(packDir: string, inputDir: string) {
   // Load the directory as a ClassicLevel db
   const db = new ClassicLevel(packDir, {
     keyEncoding: "utf8",
