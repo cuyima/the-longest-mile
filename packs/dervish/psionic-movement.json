@@ -1,14 +1,14 @@
 {
+  "_id": "lnTB0Djhk5SffBVb",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
   "name": "Psionic Movement",
   "type": "feat",
-  "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>You gain the psi cantrip @UUID[Compendium.the-longest-mile.dervish.ijnv8dbIc1UrWsXT]{Psionic Movement} and one additional Focus point.</p>"
     },
     "source": {
-      "value": ""
+      "value": "The Longest Mile"
     },
     "rules": [
       {
@@ -44,11 +44,6 @@
           "value": "Dervish Dedication"
         }
       ]
-    },
-    "location": null
-  },
-  "img": "systems/pf2e/icons/features/feats/feats.webp",
-  "folder": null,
-  "sort": 0,
-  "_id": "lnTB0Djhk5SffBVb"
+    }
+  }
 }

@@ -1,14 +1,14 @@
 {
+  "_id": "oqyhoRtfiuW5uJJ5",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
   "name": "Guardian Shield",
   "type": "feat",
-  "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>You get the psi cantrip @UUID[Compendium.the-longest-mile.dervish.fpPKRfaKQncXsamA]{Guardian Shield} and one additional Focus Point.</p>"
     },
     "source": {
-      "value": ""
+      "value": "The Longest Mile"
     },
     "rules": [
       {
@@ -44,11 +44,6 @@
           "value": "Dervish Dedication"
         }
       ]
-    },
-    "location": null
-  },
-  "img": "systems/pf2e/icons/features/feats/feats.webp",
-  "folder": null,
-  "sort": 0,
-  "_id": "oqyhoRtfiuW5uJJ5"
+    }
+  }
 }

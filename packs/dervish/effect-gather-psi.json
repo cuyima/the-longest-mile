@@ -1,13 +1,13 @@
 {
+  "_id": "coWYuzbu9Awoy34r",
   "img": "systems/pf2e/icons/spells/perfected-mind.webp",
   "name": "Effect: Gather Psi",
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>You can use actions that have the Psi Burst trait, after which your Gathered Psi subsides.</p>"
     },
     "source": {
-      "value": "Pathfinder Dark Archive"
+      "value": "The Longest Mile"
     },
     "rules": [],
     "slug": "effect-gather-psi",
@@ -38,7 +38,5 @@
   },
   "type": "effect",
   "effects": [],
-  "_id": "coWYuzbu9Awoy34r",
-  "folder": null,
   "sort": 0
 }

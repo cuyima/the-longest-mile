@@ -4,7 +4,6 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p><strong>Requirements</strong> You're in an encounter and you aren't @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied}.</p><hr /><p>You carefully gather your mind's psychic might, preparing to imbue its power into your combat techniques. This power remains gathered for 2 rounds or until you fall @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}, whichever comes first. You cannot voluntarily release this power except through an action which requires it. While your psi is gathered, the following effects occur.</p><ul><li>The focused power of your mind gives off telltale signs. Your eyes may flare with power, and your form and held objects may vibrate with barely-contained magical might.</li><li>You can use actions that have the Psi Burst trait, after which your Gathered Psi subsides.</li></ul><p>@UUID[Compendium.the-longest-mile.dervish.coWYuzbu9Awoy34r]{Effect: Gather Psi}</p>"
     },
     "source": {
