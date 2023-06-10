@@ -34,13 +34,17 @@ async function handlePack(compendiumName: string) {
   );
 
   try {
-    await packClassicLevel(packDir, inputDir);
+    await packClassicLevel(packDir, inputDir, compendiumName);
   } catch (err) {
     console.error(err);
   }
 }
 
-async function packClassicLevel(packDir: string, inputDir: string) {
+async function packClassicLevel(
+  packDir: string,
+  inputDir: string,
+  compendiumName: string
+) {
   // Load the directory as a ClassicLevel db
   const db = new ClassicLevel(packDir, {
     keyEncoding: "utf8",
@@ -53,8 +57,8 @@ async function packClassicLevel(packDir: string, inputDir: string) {
   for (const file of files) {
     const fileContents = fs.readFileSync(path.join(inputDir, file), "utf-8");
     const value = JSON.parse(fileContents);
-    const key = value._id;
-    delete value._id;
+    if (value === null) continue;
+    const key = calcKey(value);
     seenKeys.add(key);
     batch.put(key, value);
     console.log(
@@ -72,6 +76,18 @@ async function packClassicLevel(packDir: string, inputDir: string) {
   }
   await batch.write();
   await db.close();
+}
+
+function calcKey(json: { type: string; _id: string, parent: any }) {
+  if (json.type == null) {
+    return `!journal!${json._id}`;
+  } else if (json.type.toLowerCase() == "text") {
+    return `!journal.pages!${json.parent}.${json._id}`;
+  } else if (json.type.toLowerCase() == "actor") {
+    return `!actors.items!${json._id}`;
+  } else {
+    return `!items!${json._id}`;
+  }
 }
 
 fs.rmSync("dist", { recursive: true, force: true });

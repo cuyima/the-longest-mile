@@ -24,7 +24,7 @@
     {
       "name": "dervish",
       "label": "Dervish Archetype",
-      "path": "/packs/dervish.db",
+      "path": "/packs/dervish",
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",
@@ -36,7 +36,7 @@
     {
       "name": "deities",
       "label": "Deities",
-      "path": "/packs/deities.db",
+      "path": "/packs/deities",
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",
@@ -48,7 +48,7 @@
     {
       "name": "spells",
       "label": "Spells",
-      "path": "/packs/spells.db",
+      "path": "/packs/spells",
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",
@@ -60,7 +60,7 @@
     {
       "name": "feats",
       "label": "Custom Feats",
-      "path": "/packs/feats.db",
+      "path": "/packs/feats",
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",
@@ -72,7 +72,7 @@
     {
       "name": "journals",
       "label": "Journals",
-      "path": "/packs/journals.db",
+      "path": "/packs/journals",
       "entity": "JournalEntry",
       "type": "JournalEntry",
       "system": "pf2e",
