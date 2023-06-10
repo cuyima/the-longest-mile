@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es2022",
     "module": "esnext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -11,6 +11,12 @@
     "moduleResolution": "node16",
     "baseUrl": ".",
     "rootDir": ".",
-    "outDir": "dist"
+    "outDir": "dist",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/handlebars",
+      "types/types/foundry"
+    ],
+     "useDefineForClassFields": true
   }
 }
