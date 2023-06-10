@@ -1,7 +1,5 @@
 packs/*.db
 decompile/
-input-items/*
-output-items/
 release/
 foundryconfig.json
 packs/*/CURRENT
@@ -9,3 +7,5 @@ packs/*/LOCK
 packs/*/LOG
 packs/*/MANIFEST*
 packs/*/*.log
+package-lock.json
+node_modules/
