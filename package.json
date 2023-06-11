@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "npm run build:packs && vite build",
-    "build:packs": "esno ./build/build.ts"
+    "build:packs": "esno ./build/build.ts",
+    "watch": "npm run build:packs && vite build --watch --mode development"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
