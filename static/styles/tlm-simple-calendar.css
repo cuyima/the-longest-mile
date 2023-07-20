@@ -13,7 +13,7 @@
     overflow: visible;
 }
 
-.simple-calendar-tlm .fsc-pf {
+.simple-calendar-tlm .fsc-wf {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
@@ -279,7 +279,7 @@
     box-shadow: var(--glassy);
 }
 
-.simple-calendar-tlm .fsc-if .fsc-mg {
+.simple-calendar-tlm  .fsc-mg {
     padding: 0 0.5rem 0.5rem;
     overflow: hidden;
     border-bottom: 1px solid var(--tlm-gold);
@@ -291,8 +291,9 @@
     max-height: 12.5rem;
 }
 
-.simple-calendar-tlm .fsc-if .fsc-mg.fsc-c {
+.simple-calendar-tlm .sc-right.fsc-c{
     visibility: hidden;
+    display: none;
 }
 
 .simple-calendar-tlm .fsc-if .fsc-mg .fsc-kg {

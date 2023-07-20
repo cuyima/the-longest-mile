@@ -49,9 +49,10 @@ Hooks.once("simple-calendar-ready", async (app, html, data) => {
 });
 
 Hooks.on("renderApplication", async (app, html, data) => {
+  //currently dead due to sc update, need to change to fsc-og for hook but css is currently shitfucked
   if (
     !game.settings.get(MODULE_NAME, "sc-hack") ||
-    html.eq(0).attr("id") !== "fsc-ng"
+    html.eq(0).attr("id") !== "fsc-og"
   ) {
     return;
   }
