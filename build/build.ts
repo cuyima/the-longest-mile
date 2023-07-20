@@ -34,7 +34,7 @@ async function handlePack(compendiumName: string) {
   );
 
   try {
-    await packClassicLevel(packDir, inputDir, compendiumName);
+    await packClassicLevel(packDir, inputDir);
   } catch (err) {
     console.error(err);
   }
@@ -42,8 +42,7 @@ async function handlePack(compendiumName: string) {
 
 async function packClassicLevel(
   packDir: string,
-  inputDir: string,
-  compendiumName: string
+  inputDir: string
 ) {
   // Load the directory as a ClassicLevel db
   const db = new ClassicLevel(packDir, {
@@ -90,5 +89,6 @@ function calcKey(json: { type: string; _id: string, parent: any }) {
   }
 }
 
+//This dies when foundry is running while compendiums are being built, oh well.
 fs.rmSync("dist", { recursive: true, force: true });
 buildPacks();

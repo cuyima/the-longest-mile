@@ -28,8 +28,9 @@
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
       "ownership": {
-        "PLAYER": "LIMITED",
+        "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
     },
@@ -40,8 +41,9 @@
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
       "ownership": {
-        "PLAYER": "LIMITED",
+        "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
     },
@@ -52,8 +54,9 @@
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
       "ownership": {
-        "PLAYER": "LIMITED",
+        "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
     },
@@ -64,8 +67,9 @@
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
       "ownership": {
-        "PLAYER": "LIMITED",
+        "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
     },
@@ -76,8 +80,9 @@
       "entity": "JournalEntry",
       "type": "JournalEntry",
       "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/orange.webp",
       "ownership": {
-        "PLAYER": "LIMITED",
+        "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
     }
