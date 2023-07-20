@@ -52,7 +52,7 @@ Hooks.on("renderApplication", async (app, html, data) => {
   //currently dead due to sc update, need to change to fsc-og for hook but css is currently shitfucked
   if (
     !game.settings.get(MODULE_NAME, "sc-hack") ||
-    html.eq(0).attr("id") !== "fsc-og"
+    html.eq(0).attr("id") !== "fsc-ng"
   ) {
     return;
   }
