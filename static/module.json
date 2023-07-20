@@ -4,7 +4,7 @@
   "title": "The Longest Mile",
   "description": "Custom content for The Longest Mile campaign.",
   "compatibility": {
-    "verified": "11.301",
+    "verified": "11.305",
     "minimum": "11.301",
     "maximum": "11"
   },
@@ -38,32 +38,6 @@
       "name": "deities",
       "label": "Deities",
       "path": "/packs/deities",
-      "entity": "Item",
-      "type": "Item",
-      "system": "pf2e",
-      "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "spells",
-      "label": "Spells",
-      "path": "/packs/spells",
-      "entity": "Item",
-      "type": "Item",
-      "system": "pf2e",
-      "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "feats",
-      "label": "Custom Feats",
-      "path": "/packs/feats",
       "entity": "Item",
       "type": "Item",
       "system": "pf2e",

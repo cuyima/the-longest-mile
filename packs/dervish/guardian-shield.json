@@ -8,7 +8,7 @@
       "value": "<p>You get the psi cantrip @UUID[Compendium.the-longest-mile.dervish.Item.fpPKRfaKQncXsamA]{Guardian Shield} and one additional Focus Point.</p>"
     },
     "source": {
-      "value": ""
+      "value": "The Longest Mile"
     },
     "rules": [
       {
@@ -48,7 +48,7 @@
     "location": null
   },
   "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "_id": "oqyhoRtfiuW5uJJ5",
   "folder": null,
-  "sort": 0,
-  "_id": "oqyhoRtfiuW5uJJ5"
+  "sort": 0
 }
