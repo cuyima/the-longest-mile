@@ -1,6 +1,6 @@
 import { MODULE_NAME } from "./consts.js";
 
-Hooks.once("init", () => {
+export function registerSettings() {
 	game.settings.register(MODULE_NAME, "sc-hack", {
 		scope: "user",
 		config: true,
@@ -9,4 +9,4 @@ Hooks.once("init", () => {
 		type: Boolean,
 		default: true
 	  });
-});
+}

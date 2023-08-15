@@ -5,10 +5,10 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p><strong>Trigger</strong> Your turn begins.</p><hr /><p><strong>Frequency</strong> once per minute</p><p><strong>Requirements</strong> You're in an encounter and you aren't @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied}.</p><hr /><p>Your mind is trained to slip into a heightened state at a moment's notice. You immediately @UUID[Compendium.the-longest-mile.dervish.YCZg2etveOOeJJJT]{Gather Psi}.</p><p>In addition, your proficiency in occult spell attack rolls and occult spell DCs increases to expert.</p>"
+      "value": "<p><strong>Trigger</strong> Your turn begins.</p><hr /><p><strong>Frequency</strong> once per minute</p><p><strong>Requirements</strong> You're in an encounter and you aren't @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}.</p><hr /><p>Your mind is trained to slip into a heightened state at a moment's notice. You immediately @UUID[Compendium.the-longest-mile.dervish.YCZg2etveOOeJJJT]{Gather Psi}.</p><p>In addition, your proficiency in occult spell attack rolls and occult spell DCs increases to expert.</p>"
     },
     "source": {
-      "value": ""
+      "value": "The Longest Mile"
     },
     "rules": [
       {"key":"ActiveEffectLike",

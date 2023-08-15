@@ -30,7 +30,7 @@
 }
 
 .alignment::before {
-  background: url("/modules/the-longest-mile/images/banner-bg1.webp") no-repeat 100%;
+  background: url("/modules/the-longest-mile/img/banner-bg1.webp") no-repeat 100%;
   content: "";
   height: 46px;
   position: absolute;

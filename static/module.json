@@ -1,0 +1,69 @@
+{
+  "id": "the-longest-mile",
+  "name": "the-longest-mile",
+  "title": "The Longest Mile",
+  "description": "Custom content for The Longest Mile campaign.",
+  "compatibility": {
+    "verified": "11.305",
+    "minimum": "11.301",
+    "maximum": "11"
+  },
+  "authors": [
+    {
+      "name": "Erin & Viv"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "The Longest Mile",
+      "sorting": "a",
+      "packs": ["dervish", "deities", "spells", "feats", "journals"]
+    }
+  ],
+  "packs": [
+    {
+      "name": "dervish",
+      "label": "Dervish Archetype",
+      "path": "/packs/dervish",
+      "entity": "Item",
+      "type": "Item",
+      "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "deities",
+      "label": "Deities",
+      "path": "/packs/deities",
+      "entity": "Item",
+      "type": "Item",
+      "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/blue.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "journals",
+      "label": "Journals",
+      "path": "/packs/journals",
+      "entity": "JournalEntry",
+      "type": "JournalEntry",
+      "system": "pf2e",
+      "banner": "systems/pf2e/assets/compendium-banner/orange.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "esmodules": ["the-longest-mile.mjs"],
+  "url": "https://github.com/cuyima/the-longest-mile",
+  "download": "https://github.com/cuyima/the-longest-mile/releases/download/v_VERSION/module.zip",
+  "manifest": "https://github.com/cuyima/the-longest-mile/releases/latest/download/module.json",
+  "version": "_VERSION"
+}
