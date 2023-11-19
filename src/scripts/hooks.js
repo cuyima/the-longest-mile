@@ -16,7 +16,7 @@ import { registerSettings } from "./settings.js";
 //replace character sheet styling
 Hooks.once("init", async () => {
   registerSettings();
-  injectCSS("character-sheet");
+  injectCSS("tlm-character-sheet");
   console.log(MODULE_NAME + " | Injected character sheets CSS.");
 });
 
