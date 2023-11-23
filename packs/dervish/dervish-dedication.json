@@ -5,7 +5,8 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You channel the inner strength of your mind, unleashing a barrage of psionic energy through the deadly weapons you wield.</p><p>You can cast occult spells using the @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} activity. You're trained in occult spell attack rolls and occult spell DCs. Your key spellcasting ability for dervish archetype spells is Charisma and they are occult dervish spells.</p><p>You gain the psi cantrip @UUID[Compendium.the-longest-mile.dervish.wLkMp60XTDQYqV6p]{Psionic Strike} which you can amplify by spending Focus Points. If you don't have one, you also gain a focus pool of 1 Focus Point, which you can use to amp your psi cantrips. You can Refocus by meditating on your new powers or performing a physical regimen.</p><p>You gain the @UUID[Compendium.pf2e.feats-srd.onde0SxLoxLBTnvm]{Double Slice} fighter feat. This serves as Double Slice for the purpose of meeting prerequisites.</p><p>You gain access to the @UUID[Compendium.the-longest-mile.dervish.YCZg2etveOOeJJJT]{Gather Psi} action that allows you to to use actions with the Psi Burst trait.</p><p><strong>Special</strong> You can't select another dedication feat until you gain two other feats from the @UUID[Compendium.the-longest-mile.journals.Q4XlMqXr82pmrJHI]{Dervish} archetype.</p>"
+      "gm": "",
+      "value": "<p>You channel the inner strength of your mind, unleashing a barrage of psionic energy through the deadly weapons you wield.</p><p>You can cast occult spells using the @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} activity. You're trained in occult spell attack rolls and occult spell DCs. Your key spellcasting ability for dervish archetype spells is Charisma and they are occult dervish spells.</p><p>You gain the psi cantrip @UUID[Compendium.the-longest-mile.dervish.wLkMp60XTDQYqV6p]{Psionic Strike} which you can amplify by spending Focus Points. If you don't have one, you also gain a focus pool of 1 Focus Point, which you can use to amp your psi cantrips. You can Refocus by meditating on your new powers or performing a physical regimen.</p><p>You gain the @UUID[Compendium.pf2e.feats-srd.Item.onde0SxLoxLBTnvm]{Double Slice} fighter feat. This serves as Double Slice for the purpose of meeting prerequisites.</p><p>You gain access to the @UUID[Compendium.the-longest-mile.dervish.YCZg2etveOOeJJJT]{Gather Psi} action that allows you to to use actions with the Psi Burst trait.</p><p><strong>Special</strong> You can't select another dedication feat until you gain two other feats from the @UUID[Compendium.the-longest-mile.journals.Q4XlMqXr82pmrJHI]{Dervish} archetype.</p>"
     },
     "source": {
       "value": "The Longest Mile"
@@ -26,7 +27,7 @@
       {
         "key": "GrantItem",
         "allowDuplicate": false,
-        "uuid": "Compendium.the-longest-mile.dervish.YCZg2etveOOeJJJT"
+        "uuid": "Compendium.the-longest-mile.dervish.Item.YCZg2etveOOeJJJT"
       },
       {
         "key": "ActiveEffectLike",

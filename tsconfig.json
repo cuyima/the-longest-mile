@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "Node16",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Node16",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/handlebars",
+      "types/types/foundry"
+    ],
+     "useDefineForClassFields": true
+  }
+}
