@@ -1,0 +1,63 @@
+{
+  "folder": null,
+  "name": "Effect: Psionic Strike",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra force damage and their strikes gain the occult trait if it didn't have it already.</p>"
+    },
+    "rules": [
+      {
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "traits",
+        "value": "occult",
+        "predicate": [
+          "melee-attack-roll",
+          "weapon-attack-roll"
+        ]
+      },
+      {
+        "value": "ceil(@actor.level/4)+@actor.abilities.cha.mod",
+        "key": "FlatModifier",
+        "selector": "melee-strike-damage",
+        "damageType": "force",
+        "hideIfDisabled": true
+      }
+    ],
+    "slug": "effect-psionic-strike",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "The Longest Mile",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 0,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "systems/pf2e/icons/spells/magic-weapon.webp",
+  "_id": "9HtGwdItIbqTfAbn",
+  "sort": 600000
+}

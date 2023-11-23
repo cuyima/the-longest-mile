@@ -1,19 +1,22 @@
 {
-  "_id": "coWYuzbu9Awoy34r",
   "img": "systems/pf2e/icons/spells/perfected-mind.webp",
   "name": "Effect: Gather Psi",
   "system": {
     "description": {
       "value": "<p>You can use actions that have the Psi Burst trait, after which your Gathered Psi subsides.</p>"
     },
-    "source": {
-      "value": "The Longest Mile"
-    },
     "rules": [],
     "slug": "effect-gather-psi",
     "traits": {
+      "otherTags": [],
       "value": [],
       "rarity": "common"
+    },
+    "publication": {
+      "title": "The Longest Mile",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
     },
     "level": {
       "value": 1
@@ -21,22 +24,24 @@
     "duration": {
       "value": 2,
       "unit": "rounds",
-      "sustained": false,
-      "expiry": "turn-end"
+      "expiry": "turn-end",
+      "sustained": false
     },
     "start": {
       "value": 0,
       "initiative": null
     },
-    "target": null,
     "tokenIcon": {
       "show": true
     },
     "badge": null,
     "context": null,
+    "target": null,
     "unidentified": false
   },
   "type": "effect",
   "effects": [],
-  "sort": 0
+  "_id": "coWYuzbu9Awoy34r",
+  "folder": null,
+  "sort": 1000000
 }

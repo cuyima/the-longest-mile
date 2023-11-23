@@ -4,23 +4,68 @@
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra Force damage equal to to 1 plus your spellcasting ability modifier.</p><hr /><p><strong>Heightened (+1)</strong> Increase the damage by 1.</p>"
-    },
-    "source": {
-      "value": "The Longest Mile"
+      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra force damage equal to to 1 plus your spellcasting ability modifier and their strikes gain the occult trait if they didn't have it already. </p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1.</p>\n<p>@UUID[Compendium.the-longest-mile.dervish.Item.9HtGwdItIbqTfAbn]{Effect: Psionic Strike}</p>"
     },
     "rules": [],
     "slug": "psionic-strike",
     "traits": {
+      "otherTags": [],
       "value": [
         "cantrip",
-        "hb_psi-burst"
+        "focus",
+        "psi-burst"
       ],
-      "rarity": "common"
+      "rarity": "common",
+      "traditions": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
     },
     "level": {
       "value": 1
     },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": null,
+    "time": {
+      "value": "0"
+    },
+    "duration": {
+      "value": "until the end of your turn",
+      "sustained": false
+    },
+    "damage": {
+      "value": {
+        "ZIuYm6J0CjONUeeJ": {
+          "value": "1",
+          "type": {
+            "value": "force",
+            "categories": [],
+            "subtype": ""
+          },
+          "applyMod": true
+        }
+      },
+      "ZIuYm6J0CjONUeeJ": {
+        "category": null
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "counteraction": false,
     "spellType": {
       "value": "utility"
     },
@@ -44,32 +89,6 @@
     "materials": {
       "value": ""
     },
-    "target": {
-      "value": ""
-    },
-    "range": {
-      "value": ""
-    },
-    "area": null,
-    "time": {
-      "value": "0"
-    },
-    "duration": {
-      "value": "until the end of your turn"
-    },
-    "damage": {
-      "value": {
-        "ZIuYm6J0CjONUeeJ": {
-          "value": "1",
-          "type": {
-            "value": "force",
-            "categories": [],
-            "subtype": ""
-          },
-          "applyMod": true
-        }
-      }
-    },
     "save": {
       "value": "",
       "basic": ""
@@ -77,25 +96,12 @@
     "sustained": {
       "value": false
     },
-    "cost": {
-      "value": ""
-    },
-    "location": {
-      "value": null
-    },
     "hasCounteractCheck": {
       "value": false
-    },
-    "heightening": {
-      "type": "interval",
-      "interval": 1,
-      "damage": {
-        "ZIuYm6J0CjONUeeJ": "1"
-      }
     }
   },
   "img": "systems/pf2e/icons/spells/magic-weapon.webp",
   "_id": "wLkMp60XTDQYqV6p",
   "folder": null,
-  "sort": 0
+  "sort": 1500000
 }

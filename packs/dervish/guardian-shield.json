@@ -1,34 +1,28 @@
 {
-  "_id": "oqyhoRtfiuW5uJJ5",
-  "img": "systems/pf2e/icons/features/feats/feats.webp",
   "name": "Guardian Shield",
   "type": "feat",
+  "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>You get the psi cantrip @UUID[Compendium.the-longest-mile.dervish.Item.fpPKRfaKQncXsamA]{Guardian Shield} and one additional Focus Point.</p>"
     },
-    "source": {
-      "value": "The Longest Mile"
-    },
-    "rules": [
-      {
-        "key": "ActiveEffectLike",
-        "mode": "add",
-        "path": "system.resources.focus.max",
-        "value": 1,
-        "priority": 10
-      }
-    ],
+    "rules": [],
     "slug": "guardian-shield",
-    "level": {
-      "value": 6
-    },
     "traits": {
+      "otherTags": [],
       "value": [
         "archetype"
       ],
       "rarity": "common"
+    },
+    "publication": {
+      "title": "The Longest Mile",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
     },
     "category": "class",
     "onlyLevel1": false,
@@ -49,7 +43,7 @@
     "location": null
   },
   "img": "systems/pf2e/icons/features/feats/feats.webp",
-  "_id": "oqyhoRtfiuW5uJJ5",
   "folder": null,
-  "sort": 0
+  "_id": "1X4IN3rFOAseGLwr",
+  "sort": 200000
 }

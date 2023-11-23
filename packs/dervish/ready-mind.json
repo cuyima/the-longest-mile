@@ -1,31 +1,35 @@
 {
-  "_id": "EhoqdkvvTU1lGXKb",
-  "img": "systems/pf2e/icons/features/feats/feats.webp",
   "name": "Ready Mind",
   "type": "feat",
+  "effects": [],
   "system": {
     "description": {
-      "gm": "",
-      "value": "<p><strong>Trigger</strong> Your turn begins.</p><hr /><p><strong>Frequency</strong> once per minute</p><p><strong>Requirements</strong> You're in an encounter and you aren't @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}.</p><hr /><p>Your mind is trained to slip into a heightened state at a moment's notice. You immediately @UUID[Compendium.the-longest-mile.dervish.YCZg2etveOOeJJJT]{Gather Psi}.</p><p>In addition, your proficiency in occult spell attack rolls and occult spell DCs increases to expert.</p>"
-    },
-    "source": {
-      "value": "The Longest Mile"
+      "value": "<p><strong>Trigger</strong> Your turn begins.</p><hr /><p><strong>Frequency</strong> once per minute</p><p><strong>Requirements</strong> You're in an encounter and you aren't @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}.</p><hr /><p>Your mind is trained to slip into a heightened state at a moment's notice. You immediately @UUID[Compendium.the-longest-mile.dervish.Item.YCZg2etveOOeJJJT]{Gather Psi}.</p><p>In addition, your proficiency in occult spell attack rolls and occult spell DCs increases to expert.</p>"
     },
     "rules": [
-      {"key":"ActiveEffectLike",
-      "mode":"upgrade",
-      "path":"system.proficiencies.traditions.occult.rank",
-      "value":2}
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 2
+      }
     ],
     "slug": "ready-mind",
-    "level": {
-      "value": 12
-    },
     "traits": {
+      "otherTags": [],
       "value": [
         "archetype"
       ],
       "rarity": "common"
+    },
+    "publication": {
+      "title": "The Longest Mile",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
     },
     "category": "class",
     "onlyLevel1": false,
@@ -43,9 +47,14 @@
         }
       ]
     },
+    "location": null,
     "frequency": {
       "max": 1,
       "per": "PT1M"
     }
-  }
+  },
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "folder": null,
+  "_id": "RiXzo9TRPFqmg7fR",
+  "sort": 300000
 }
