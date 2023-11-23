@@ -3,17 +3,20 @@
   "name": "Effect: Gather Psi",
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>You can use actions that have the Psi Burst trait, after which your Gathered Psi subsides.</p>"
-    },
-    "source": {
-      "value": "Pathfinder Dark Archive"
     },
     "rules": [],
     "slug": "effect-gather-psi",
     "traits": {
+      "otherTags": [],
       "value": [],
       "rarity": "common"
+    },
+    "publication": {
+      "title": "The Longest Mile",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
     },
     "level": {
       "value": 1
@@ -21,24 +24,25 @@
     "duration": {
       "value": 2,
       "unit": "rounds",
-      "sustained": false,
-      "expiry": "turn-end"
+      "expiry": "turn-end",
+      "sustained": false
     },
     "start": {
       "value": 0,
       "initiative": null
     },
-    "target": null,
     "tokenIcon": {
       "show": true
     },
     "badge": null,
     "context": null,
+    "target": null,
     "unidentified": false
   },
   "type": "effect",
   "effects": [],
   "_id": "coWYuzbu9Awoy34r",
   "folder": null,
-  "sort": 0
+  "sort": 1000000,
+  "_key": "!items!coWYuzbu9Awoy34r"
 }

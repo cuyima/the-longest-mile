@@ -7,27 +7,32 @@
       "gm": "",
       "value": "<p>You gain the psi cantrip @UUID[Compendium.the-longest-mile.dervish.Item.ijnv8dbIc1UrWsXT]{Psionic Movement} and one additional Focus point.</p>"
     },
-    "source": {
-      "value": "The Longest Mile"
-    },
-    "rules": [
-      {
-        "key": "ActiveEffectLike",
-        "mode": "add",
-        "path": "system.resources.focus.max",
-        "value": 1,
-        "priority": 10
-      }
-    ],
+    "rules": [],
     "slug": "psionic-movement",
-    "level": {
-      "value": 4
+    "_migration": {
+      "version": 0.898,
+      "lastMigration": null,
+      "previous": {
+        "schema": null,
+        "foundry": "11.315",
+        "system": "5.9.5"
+      }
     },
     "traits": {
+      "otherTags": [],
       "value": [
         "archetype"
       ],
       "rarity": "common"
+    },
+    "publication": {
+      "title": "The Longest Mile",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
     },
     "category": "class",
     "onlyLevel1": false,
@@ -49,6 +54,22 @@
   },
   "img": "systems/pf2e/icons/features/feats/feats.webp",
   "folder": null,
+  "ownership": {
+    "default": 0,
+    "3dIYMy65gqrwoMlX": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.9.5",
+    "coreVersion": "11.315",
+    "createdTime": 1700762298362,
+    "modifiedTime": 1700762593317,
+    "lastModifiedBy": "3dIYMy65gqrwoMlX"
+  },
+  "_id": "cPJOxvzK9YouUkHh",
   "sort": 0,
-  "_id": "lnTB0Djhk5SffBVb"
+  "_key": "!items!cPJOxvzK9YouUkHh"
 }

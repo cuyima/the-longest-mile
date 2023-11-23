@@ -4,6 +4,10 @@ import {
   TAH,
   DERVISH_CHARGE_ACTIONS,
   DERVISH_CONSUME_ACTIONS,
+  DERVISH_EFFECT,
+  DERVISH_STRIKE_CHARGE,
+  DERVISH_STRIKE_EFFECT,
+  DERVISH_STRIKE_EFFECT_AMP,
 } from "./consts.js";
 import {
   injectCSS,
@@ -79,9 +83,18 @@ Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
   ) return;
 
   let origin = await fromUuid(message?.flags?.pf2e?.origin?.uuid);
-  if (DERVISH_CHARGE_ACTIONS.includes(origin.slug)) {
-    addEffect(message.actor);
-  } else if (DERVISH_CONSUME_ACTIONS.includes(origin.slug)) {
+  
+  if (DERVISH_CONSUME_ACTIONS.includes(origin.slug)) {
     removeEffect(message.actor);
+  }
+
+  console.log(DERVISH_STRIKE_CHARGE == origin.slug)
+
+  if (DERVISH_STRIKE_CHARGE == origin.slug){
+    addEffect(message.actor, DERVISH_STRIKE_EFFECT);
+  }    
+
+  if (DERVISH_STRIKE_CHARGE + '-amped'== origin.slug){
+    addEffect(message.actor, DERVISH_STRIKE_EFFECT_AMP);
   }
 });

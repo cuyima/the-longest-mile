@@ -4,47 +4,30 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p>Your psionic influence telekinetically lifts and transports someone to a new location at your will. Choose a willing creature within 60 feet of you. The target jumps up to 30 feet in any direction. You choose the direction of this jump but it must end on solid ground that you can see.</p><hr /><p><strong>Heightened (5th) </strong>You can either move the target up to 60 feet or target up to five creatures in range.</p>"
-    },
-    "source": {
-      "value": "The Longest Mile"
     },
     "rules": [],
     "slug": "psionic-movement-spell",
     "traits": {
+      "otherTags": [],
       "value": [
         "cantrip",
-        "hb_psi-burst"
+        "focus",
+        "psi-burst"
       ],
-      "rarity": "common"
+      "rarity": "common",
+      "traditions": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
     },
     "level": {
       "value": 1
     },
-    "spellType": {
-      "value": "utility"
-    },
-    "category": {
-      "value": "focus"
-    },
-    "traditions": {
-      "value": [
-        "occult"
-      ]
-    },
-    "school": {
-      "value": "enchantment"
-    },
-    "components": {
-      "focus": false,
-      "material": false,
-      "somatic": false,
-      "verbal": false
-    },
-    "materials": {
-      "value": ""
-    },
+    "requirements": "",
     "target": {
       "value": "1 loose object that is Large or smaller or 1 willing creature"
     },
@@ -56,7 +39,8 @@
       "value": "2"
     },
     "duration": {
-      "value": ""
+      "value": "",
+      "sustained": false
     },
     "damage": {
       "value": {
@@ -69,7 +53,39 @@
           },
           "applyMod": false
         }
+      },
+      "JzQsiZjPFx5Hz9XG": {
+        "formula": "0",
+        "category": null
       }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "counteraction": false,
+    "spellType": {
+      "value": "utility"
+    },
+    "category": {
+      "value": "focus"
+    },
+    "traditions": {
+      "value": [
+        "occult"
+      ]
+    },
+    "components": {
+      "focus": false,
+      "material": false,
+      "somatic": false,
+      "verbal": false
+    },
+    "materials": {
+      "value": ""
     },
     "save": {
       "value": "",
@@ -77,12 +93,6 @@
     },
     "sustained": {
       "value": false
-    },
-    "cost": {
-      "value": ""
-    },
-    "location": {
-      "value": ""
     },
     "hasCounteractCheck": {
       "value": false
@@ -93,5 +103,8 @@
     "overlays": {}
   },
   "img": "systems/pf2e/icons/spells/unfolding-wind-rush.webp",
-  "_id": "ijnv8dbIc1UrWsXT"
+  "_id": "ijnv8dbIc1UrWsXT",
+  "folder": null,
+  "sort": 1200000,
+  "_key": "!items!ijnv8dbIc1UrWsXT"
 }

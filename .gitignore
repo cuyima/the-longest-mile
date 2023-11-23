@@ -10,3 +10,5 @@ packs/*/*.log
 package-lock.json
 node_modules/
 dist/
+input-items/
+output-items/

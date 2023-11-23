@@ -4,47 +4,30 @@
   "effects": [],
   "system": {
     "description": {
-      "gm": "",
       "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 5.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
-    },
-    "source": {
-      "value": "The Longest Mile"
     },
     "rules": [],
     "slug": "guardian-shield-spell",
     "traits": {
+      "otherTags": [],
       "value": [
         "cantrip",
-        "hb_psi-burst"
+        "focus",
+        "psi-burst"
       ],
-      "rarity": "common"
+      "rarity": "common",
+      "traditions": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
     },
     "level": {
       "value": 1
     },
-    "spellType": {
-      "value": "utility"
-    },
-    "category": {
-      "value": "focus"
-    },
-    "traditions": {
-      "value": [
-        "occult"
-      ]
-    },
-    "school": {
-      "value": "abjuration"
-    },
-    "components": {
-      "focus": false,
-      "material": false,
-      "somatic": false,
-      "verbal": false
-    },
-    "materials": {
-      "value": ""
-    },
+    "requirements": "",
     "target": {
       "value": "the creature which triggered the reaction"
     },
@@ -56,10 +39,39 @@
       "value": "reaction"
     },
     "duration": {
-      "value": ""
+      "value": "",
+      "sustained": false
     },
     "damage": {
       "value": {}
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "counteraction": false,
+    "spellType": {
+      "value": "utility"
+    },
+    "category": {
+      "value": "focus"
+    },
+    "traditions": {
+      "value": [
+        "occult"
+      ]
+    },
+    "components": {
+      "focus": false,
+      "material": false,
+      "somatic": false,
+      "verbal": false
+    },
+    "materials": {
+      "value": ""
     },
     "save": {
       "value": "",
@@ -67,12 +79,6 @@
     },
     "sustained": {
       "value": false
-    },
-    "cost": {
-      "value": ""
-    },
-    "location": {
-      "value": ""
     },
     "hasCounteractCheck": {
       "value": false
@@ -88,5 +94,6 @@
   "img": "systems/pf2e/icons/spells/protective-ward.webp",
   "_id": "fpPKRfaKQncXsamA",
   "folder": null,
-  "sort": 0
+  "sort": 1100000,
+  "_key": "!items!fpPKRfaKQncXsamA"
 }

@@ -7,27 +7,32 @@
       "gm": "",
       "value": "<p>You get the psi cantrip @UUID[Compendium.the-longest-mile.dervish.Item.fpPKRfaKQncXsamA]{Guardian Shield} and one additional Focus Point.</p>"
     },
-    "source": {
-      "value": "The Longest Mile"
-    },
-    "rules": [
-      {
-        "key": "ActiveEffectLike",
-        "mode": "add",
-        "path": "system.resources.focus.max",
-        "value": 1,
-        "priority": 10
-      }
-    ],
+    "rules": [],
     "slug": "guardian-shield",
-    "level": {
-      "value": 6
+    "_migration": {
+      "version": 0.898,
+      "lastMigration": null,
+      "previous": {
+        "schema": null,
+        "foundry": "11.315",
+        "system": "5.9.5"
+      }
     },
     "traits": {
+      "otherTags": [],
       "value": [
         "archetype"
       ],
       "rarity": "common"
+    },
+    "publication": {
+      "title": "The Longest Mile",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
     },
     "category": "class",
     "onlyLevel1": false,
@@ -48,7 +53,23 @@
     "location": null
   },
   "img": "systems/pf2e/icons/features/feats/feats.webp",
-  "_id": "oqyhoRtfiuW5uJJ5",
   "folder": null,
-  "sort": 0
+  "ownership": {
+    "default": 0,
+    "3dIYMy65gqrwoMlX": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.9.5",
+    "coreVersion": "11.315",
+    "createdTime": 1700759800899,
+    "modifiedTime": 1700762747148,
+    "lastModifiedBy": "3dIYMy65gqrwoMlX"
+  },
+  "_id": "kdwjNdEcLTGPWO7L",
+  "sort": 0,
+  "_key": "!items!kdwjNdEcLTGPWO7L"
 }

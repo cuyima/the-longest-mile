@@ -61,12 +61,12 @@ function hasPermissions(item) {
   return 3 == item.ownership[game.user.id] || game.user.isGM;
 }
 
-export async function addEffect(actor) {
+export async function addEffect(actor, effect) {
   if (!hasPermissions(actor)) return;
-  let source = await fromUuid(DERVISH_EFFECT);
+  let source = await fromUuid(effect);
   source = source.toObject();
   source.flags = mergeObject(source.flags ?? {}, {
-    core: { sourceId: DERVISH_EFFECT },
+    core: { sourceId: effect },
   });
   await actor.createEmbeddedDocuments("Item", [source]);
 }
