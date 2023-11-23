@@ -48,17 +48,6 @@
       "sustained": false
     },
     "damage": {
-      "value": {
-        "ZIuYm6J0CjONUeeJ": {
-          "value": "1",
-          "type": {
-            "value": "force",
-            "categories": [],
-            "subtype": ""
-          },
-          "applyMod": true
-        }
-      }
     },
     "defense": null,
     "cost": {
