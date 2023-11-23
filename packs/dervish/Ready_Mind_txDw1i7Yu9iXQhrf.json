@@ -1,0 +1,90 @@
+{
+  "name": "Ready Mind",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> Your turn begins.</p><hr /><p><strong>Frequency</strong> once per minute</p><p><strong>Requirements</strong> You're in an encounter and you aren't @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}.</p><hr /><p>Your mind is trained to slip into a heightened state at a moment's notice. You immediately @UUID[Compendium.the-longest-mile.dervish.Item.YCZg2etveOOeJJJT]{Gather Psi}.</p><p>In addition, your proficiency in occult spell attack rolls and occult spell DCs increases to expert.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 2
+      }
+    ],
+    "slug": "ready-mind",
+    "_migration": {
+      "version": 0.898,
+      "lastMigration": null,
+      "previous": {
+        "schema": null,
+        "foundry": "11.315",
+        "system": "5.9.5"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "The Longest Mile",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "bonus",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "free"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dervish Dedication"
+        }
+      ]
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "PT1M"
+    },
+    "selfEffect": {
+      "uuid": "Compendium.the-longest-mile.dervish.Item.coWYuzbu9Awoy34r",
+      "name": "Effect: Gather Psi"
+    }
+  },
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "3dIYMy65gqrwoMlX": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.9.5",
+    "coreVersion": "11.315",
+    "createdTime": 1700762577427,
+    "modifiedTime": 1700762584219,
+    "lastModifiedBy": "3dIYMy65gqrwoMlX"
+  },
+  "_id": "txDw1i7Yu9iXQhrf",
+  "sort": 0,
+  "_key": "!items!txDw1i7Yu9iXQhrf"
+}

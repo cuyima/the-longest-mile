@@ -1,13 +1,13 @@
 {
-  "name": "Psionic Strike",
+  "name": "Psionic Movement",
   "type": "spell",
   "effects": [],
   "system": {
     "description": {
-      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra force damage equal to to 1 plus your spellcasting ability modifier and their strikes gain the occult trait if they didn't have it already. </p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1.</p>\n<p>@UUID[Compendium.the-longest-mile.dervish.Item.9HtGwdItIbqTfAbn]{Effect: Psionic Strike}</p>"
+      "value": "<p>Your psionic influence telekinetically lifts and transports someone to a new location at your will. Choose a willing creature within 60 feet of you. The target jumps up to 30 feet in any direction. You choose the direction of this jump but it must end on solid ground that you can see.</p><hr /><p><strong>Heightened (5th) </strong>You can either move the target up to 60 feet or target up to five creatures in range.</p>"
     },
     "rules": [],
-    "slug": "psionic-strike",
+    "slug": "psionic-movement-spell",
     "traits": {
       "otherTags": [],
       "value": [
@@ -29,32 +29,33 @@
     },
     "requirements": "",
     "target": {
-      "value": ""
+      "value": "1 loose object that is Large or smaller or 1 willing creature"
     },
     "range": {
-      "value": ""
+      "value": "30 feet"
     },
     "area": null,
     "time": {
-      "value": "0"
+      "value": "2"
     },
     "duration": {
-      "value": "until the end of your turn",
+      "value": "",
       "sustained": false
     },
     "damage": {
       "value": {
-        "ZIuYm6J0CjONUeeJ": {
-          "value": "1",
+        "JzQsiZjPFx5Hz9XG": {
+          "value": "",
           "type": {
-            "value": "force",
+            "value": "",
             "categories": [],
             "subtype": ""
           },
-          "applyMod": true
+          "applyMod": false
         }
       },
-      "ZIuYm6J0CjONUeeJ": {
+      "JzQsiZjPFx5Hz9XG": {
+        "formula": "0",
         "category": null
       }
     },
@@ -77,9 +78,6 @@
         "occult"
       ]
     },
-    "school": {
-      "value": "evocation"
-    },
     "components": {
       "focus": false,
       "material": false,
@@ -98,10 +96,15 @@
     },
     "hasCounteractCheck": {
       "value": false
-    }
+    },
+    "ability": {
+      "value": ""
+    },
+    "overlays": {}
   },
-  "img": "systems/pf2e/icons/spells/magic-weapon.webp",
-  "_id": "wLkMp60XTDQYqV6p",
+  "img": "systems/pf2e/icons/spells/unfolding-wind-rush.webp",
+  "_id": "ijnv8dbIc1UrWsXT",
   "folder": null,
-  "sort": 1500000
+  "sort": 1200000,
+  "_key": "!items!ijnv8dbIc1UrWsXT"
 }
