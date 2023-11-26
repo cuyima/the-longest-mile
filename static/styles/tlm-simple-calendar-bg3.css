@@ -1,13 +1,13 @@
 :root {
-    --tlm-weekend: rgb(69 56 48/ 50%);
+    --tlm-weekend: rgb(184 148 126 / 10%);
 }
 
 .simple-calendar-tlm .fsc-v .fsc-w.fsc-aa {
-    background-color: var(--color-border-dark-3) !important;
+    background-color: var(--bg3-border-color) !important;
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w {
-    border: 1px solid var(--color-border-dark-4) !important;
+    border: 1px solid var(--bg3-background-2) !important;
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w.fsc-x {
