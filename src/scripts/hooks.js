@@ -1,17 +1,13 @@
 import {
   MODULE_NAME,
   CHARACTER_SHEET,
-  TAH,
-  DERVISH_CHARGE_ACTIONS,
   DERVISH_CONSUME_ACTIONS,
-  DERVISH_EFFECT,
   DERVISH_STRIKE_CHARGE,
   DERVISH_STRIKE_EFFECT,
   DERVISH_STRIKE_EFFECT_AMP,
 } from "./consts.js";
 import {
   injectCSS,
-  cleanTAHEffects,
   addEffect,
   removeEffect,
 } from "./utils.js";
@@ -35,27 +31,31 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
   );
 });
 
-//update TAH effects
-Hooks.on("render" + TAH, async (app, html) => {
-  cleanTAHEffects(html);
-  console.log(
-    MODULE_NAME + " | Cleaned up effects section of Token Action HUD."
-  );
-});
-
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
   if (game.settings.get(MODULE_NAME, "sc-hack")) {
     injectCSS("tlm-simple-calendar");
 
     const theme = game.settings.get(
       "pf2e-dorako-ui",
-      "theme.application-theme"
+      "theme.window-app-theme"
     );
-    if (theme === "light-theme") {
-      injectCSS("tlm-simple-calendar-light");
-    } else if (theme === "dark-theme") {
-      injectCSS("tlm-simple-calendar-dark");
-    } else if (theme === "no-theme") {
+
+    const color = game.settings.get(
+      "pf2e-dorako-ui",
+      "theme.window-app-color-scheme"
+    );
+
+    if (theme == "crb") {
+      if(color == 'prefer-dark'){
+        injectCSS("tlm-simple-calendar-dark");
+      }else{
+        injectCSS("tlm-simple-calendar-light");
+      }
+    } else if (theme == "foundry2") {
+      injectCSS("tlm-simple-calendar-foundry2");
+    } else if ( theme == "bg3") {
+      injectCSS("tlm-simple-calendar-bg3");
+    } else if (theme == "no-theme") {
       injectCSS("tlm-simple-calendar-def");
     }
 
@@ -80,21 +80,22 @@ Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
   if (
     !message?.flags?.pf2e?.origin?.type == "action" &&
     !message?.flags?.pf2e?.origin?.type == "spell"
-  ) return;
+  )
+    return;
 
   let origin = await fromUuid(message?.flags?.pf2e?.origin?.uuid);
-  
+
   if (DERVISH_CONSUME_ACTIONS.includes(origin.slug)) {
     removeEffect(message.actor);
   }
 
-  console.log(DERVISH_STRIKE_CHARGE == origin.slug)
+  console.log(DERVISH_STRIKE_CHARGE == origin.slug);
 
-  if (DERVISH_STRIKE_CHARGE == origin.slug){
+  if (DERVISH_STRIKE_CHARGE == origin.slug) {
     addEffect(message.actor, DERVISH_STRIKE_EFFECT);
-  }    
+  }
 
-  if (DERVISH_STRIKE_CHARGE + '-amped'== origin.slug){
+  if (DERVISH_STRIKE_CHARGE + "-amped" == origin.slug) {
     addEffect(message.actor, DERVISH_STRIKE_EFFECT_AMP);
   }
 });

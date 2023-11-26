@@ -13,41 +13,6 @@ export const injectCSS = (filename) => {
   head.insertBefore(mainCss, head.lastChild);
 };
 
-export function cleanTAHEffects(html) {
-  html = html.find("[id='tah-category-effects']");
-  const actions = html.find(".tah-actions")[0];
-  let buttonsnew = $();
-
-  //add only unique effects
-  html.find(".tah-action.toggle").each(function (index, element) {
-    let elemvalue = $(element).find(".toggle")[0].value;
-    let selector = "[value=" + elemvalue.replace(/([|])/g, "\\$1") + "]";
-
-    if (buttonsnew.find(selector).length === 0) {
-      buttonsnew = buttonsnew.add(element);
-    }
-  });
-
-  //sort alphabetically
-  buttonsnew.sort(function (a, b) {
-    let nameA = $(a).find(".toggle")[0].value.split("|")[1];
-    let nameB = $(b).find(".toggle")[0].value.split("|")[1];
-    if (nameA < nameB) {
-      return -1;
-    }
-    if (nameA > nameB) {
-      return 1;
-    }
-    return 0;
-  });
-
-  //replace original buttons
-  actions.innerHTML = "";
-  buttonsnew.each(function (index, element) {
-    actions.append(element);
-  });
-}
-
 export function overrideTAHActionsClass(html, id, className) {
   html
     .find(`[id='${id}']`)

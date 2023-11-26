@@ -1,6 +1,5 @@
 :root {
-    --tlm-sheet: url(../../pf2e-dorako-ui/img/background-dark4.webp);
-    --tlm-weekend: rgb(193 191 173 / 30%);
+    --tlm-weekend: var(--secondary);
 }
 
 .simple-calendar-tlm .fsc-wb g,
@@ -19,6 +18,7 @@
 
 .simple-calendar-tlm .sc-right {
     color: var(--color-text-light-heading);
+    background-color: var(--window-app-background);
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w {
@@ -26,15 +26,19 @@
 }
 
 body.game .fsc-h .fsc-r {
-    background-color: var(--text-dark);
+    background-color: var(--input-background-color);
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w.fsc-x {
-    box-shadow: inset 0 0 5px darkseagreen !important;
-    background-color: var(--mats-green-dark) !important;
+    background-color: var(--color-warm-4) !important;
 }
 
 .simple-calendar-tlm .fsc-wb .fsc-_b.fsc-b {
     background-color: var(--glass-bg);
     box-shadow: var(--glassy);
+}
+
+.simple-calendar-tlm .fsc-bf .fsc-fg,
+.simple-calendar-tlm .fsc-hf .fsc-hg  {
+    border-image: linear-gradient(90deg, transparent, var(--color-warm-2) 20%, transparent) 1;
 }
