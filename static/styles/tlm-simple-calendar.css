@@ -8,18 +8,6 @@
     overflow: visible;
 }
 
-.simple-calendar-tlm .fsc-wf {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-}
-
-.simple-calendar-tlm .fsc-qf {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
 .simple-calendar-tlm .fsc-fg {
     flex: 1;
 }
@@ -33,19 +21,9 @@
     padding: 0 0.5rem;
 }
 
-.simple-calendar-tlm .fsc-mf.fsc-c {
-    visibility: hidden;
-}
-
 .simple-calendar-tlm .fsc-if {
     display: flex;
     flex-direction: column;
-}
-
-.fsc-ga.fsc-ha {
-    opacity: 0;
-    height: 0;
-    visibility: hidden;
 }
 
 .simple-calendar-tlm .fsc-pf .fsc-hh {
@@ -54,18 +32,11 @@
 }
 
 .simple-calendar-tlm button.fsc-xb {
-    display: block;
-    position: relative;
-    font-family: var(--font-family) !important;
-    font-size: .875rem !important;
-    border: var(--btn-border);
-    border-image: var(--btn-border-image) !important;
-    background-image: var(--btn-bg-image) !important;
-    padding: 0.15rem 0.48rem;
-    border-radius: 3px;
+    padding: 0.15rem 0.5rem;
     line-height: 1rem;
-    z-index: 1;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .simple-calendar-tlm .fsc-ub.fsc-vb {
@@ -117,11 +88,13 @@
 
 .simple-calendar-tlm .fsc-ub button svg {
     height: 1.125rem;
-    margin-bottom: -0.25rem;
 }
 
 .simple-calendar-tlm button {
     color: var(--button-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .simple-calendar-tlm .fsc-mf.fsc-b {
@@ -154,15 +127,6 @@
 .simple-calendar-tlm .form-fields .fsc-ak span {
     margin-right: 0.35rem;
     white-space: nowrap;
-}
-
-.simple-calendar-tlm .fsc-ig {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    padding: 0.5rem;
-    font-size: .875rem;
 }
 
 .simple-calendar-tlm .fsc-ig input {
@@ -287,13 +251,6 @@
     display: none;
 }
 
-.simple-calendar-tlm .fsc-if .fsc-mg .fsc-kg {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: .75rem;
-}
-
 .simple-calendar-tlm .fsc-if .fsc-mg p {
     font-size: .75rem;
 }
@@ -339,19 +296,12 @@
     top: 0;
     left: 0.4rem;
     height: 1rem;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    z-index: 1;
 }
 
-.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj .fsc-ca {
-    flex: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    position: relative;
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj {
+    position: absolute;
+    top: 0;
+    left: 12rem; 
 }
 
 .simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj .fsc-ca .fsc-va {
@@ -359,58 +309,33 @@
     margin-top: 0.125rem;
 }
 
-.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj {
-    position: absolute;
-    top: 0;
-    right: 1.125rem;
-    height: 1rem;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj .fsc-qj {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: stretch;
-    height: 1rem;
-    margin-right: 0.25rem;
-}
-
-.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj .fsc-qj button {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj .fsc-qj button {
-    border: none;
-    border-radius: 3px;
-    background: none;
-    background-color: unset;
-    box-shadow: none;
-    text-shadow: 0 0 3px black;
-    transition: text-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, backdrop-filter 0.15s ease-in-out, border-radius 0.15s;
-}
-
-.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-tf {
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj .fsc-qj,
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj,
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj .fsc-qj button,
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj .fsc-ca,
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj,
+.simple-calendar-tlm .fsc-wf,
+.simple-calendar-tlm .fsc-qf,
+.simple-calendar-tlm .fsc-ig,
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-tf,
+.simple-calendar-tlm .fsc-qf .fsc-lb {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.25rem;
 }
 
-.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-vb {
-    flex-wrap: nowrap;
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj .fsc-qj button {
+    border: none;
+    background: none;
+    background-color: unset;
+    box-shadow: none;
 }
-
 
 .simple-calendar-tlm.fsc-uf .fsc-pf .fsc-tf .fsc-fj {
     display: flex;
+    align-items: center;
     width: 2rem;
     margin-left: 0.25rem;
 }
@@ -431,15 +356,9 @@
 }
 
 .simple-calendar-tlm .fsc-qf .fsc-lb {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
     padding: 0;
     margin-bottom: 0;
     background-color: unset;
-    color: unset;
 }
 
 .simple-calendar-tlm .fsc-lb .fsc-mb {
@@ -467,10 +386,6 @@
     padding-top: 7px;
 }
 
-.simple-calendar-tlm button:hover {
-    border: 0px !important;
-}
-
 .simple-calendar-tlm .fsc-bf .fsc-fg .fsc-lj {
     display: flex;
     flex-direction: row;
@@ -479,7 +394,8 @@
     font-size: .75rem;
 }
 
-.simple-calendar-tlm .sc-right.fsc-a {
+.simple-calendar-tlm .sc-right.fsc-a,
+.simple-calendar-tlm .fsc-mf.fsc-c {
     display: none !important;
     visibility: hidden !important;
 }
@@ -511,20 +427,25 @@
 .simple-calendar-tlm .fsc-wb g,
 .simple-calendar-tlm .fsc-wb line,
 .simple-calendar-tlm .fsc-wb path,
-.simple-calendar-tlm .fsc-wb circle,
-.simple-calendar-tlm .fsc-lb .fsc-mb {
+.simple-calendar-tlm .fsc-wb circle{
     fill: var(--button-text-color) !important;
     stroke: var(--button-text-color);
 }
 
+.simple-calendar-tlm .fsc-lb .fsc-mb {
+    fill: var(--color-text-dark-primary) !important;
+    stroke: var(--color-text-dark-primary);
+}
+
 .simple-calendar-tlm .fsc-bf .fsc-fg,
 .simple-calendar-tlm .fsc-hf .fsc-hg {
-    border-image: linear-gradient(90deg, transparent, var(--color-warm-2) 20%, transparent) 1;
+    border-image: linear-gradient(90deg, transparent, var(--color-underline-header) 20%, transparent) 1;
 }
 
 .simple-calendar-tlm .fsc-fg .fsc-ga .fsc-ja,
 .simple-calendar-tlm .fsc-wb .fsc-_b.fsc-b,
-.simple-calendar-tlm .fsc-ga .fsc-ja .fsc-la .fsc-na {
+.simple-calendar-tlm .fsc-ga .fsc-ja .fsc-la .fsc-na,
+.simple-calendar-tlm .fsc-ga.sc-right {
     backdrop-filter: blur(4px);
     background: var(--input-background-color) !important;
     border: var(--app-border-style) !important;

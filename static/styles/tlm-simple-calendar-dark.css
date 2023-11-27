@@ -18,3 +18,8 @@
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w.fsc-x {
     background-color: var(--mats-green-dark) !important;
 }
+
+.simple-calendar-tlm .fsc-lb .fsc-mb {
+    fill: var(--text-light) !important;
+    stroke: var(--text-light);
+}

@@ -5,7 +5,7 @@ export function registerSettings() {
     scope: "user",
     config: true,
     name: "Enable Dorako UI Style Calendar",
-    hint: "Enable Simple Calendar styling to mimick Dorako UI (will respect settings from ).",
+    hint: "Enable Simple Calendar styling to mimick Dorako UI (will respect window app theme settings from Dorako UI).",
     type: Boolean,
     default: true,
     requiresReload: true,
