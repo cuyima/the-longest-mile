@@ -303,6 +303,11 @@
     top: 0;
     left: 12rem; 
 }
+.simple-calendar-tlm.fsc-uf .fsc-pf .fsc-pj .fsc-qj .fsc-xb {
+    padding: 0 8px;
+    margin: 0;
+    font-size: 11px;
+}
 
 .simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj .fsc-ca .fsc-va {
     height: 1rem;
