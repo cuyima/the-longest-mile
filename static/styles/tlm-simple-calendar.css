@@ -1,18 +1,18 @@
-.simple-calendar-tlm {
-    height: fit-content !important;
-    width: fit-content !important;
+#fsc-ng.simple-calendar-tlm .window-content {
+    overflow: visible;
 }
 
-.simple-calendar-tlm .window-content{
-    height: fit-content !important;
-    width: fit-content !important;
-    overflow: visible;
+.simple-calendar-tlm.journal-sheet .window-content {
+    /*     overflow-x: visible !important;*/
+    position: unset;
+    overflow-y: hidden !important;
 }
 
 .simple-calendar-tlm .fsc-vf {
     display: flex;
     flex-direction: column;
-    padding: 0 0.5rem;
+    justify-content: space-around;
+    padding: 0.25rem 0.5rem;
 }
 
 .simple-calendar-tlm .fsc-if {
@@ -22,6 +22,7 @@
 
 .simple-calendar-tlm .fsc-pf .fsc-hh {
     margin: 0.5rem;
+    flex: 1;
 }
 
 .simple-calendar-tlm button.fsc-xb {
@@ -30,6 +31,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xb {
+    max-width: 6rem;
 }
 
 .simple-calendar-tlm .fsc-ub.fsc-vb {
@@ -51,6 +57,27 @@
     flex-wrap: nowrap;
 }
 
+.simple-calendar-tlm.journal-sheet .fsc-ug {
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.simple-calendar-tlm.journal-sheet .fsc-vg {
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    user-select: text;
+}
+
+
+.simple-calendar-tlm.journal-sheet .fsc-ug .fsc-ah label {
+    font-size: .725rem;
+    cursor: pointer;
+}
+
 .simple-calendar-tlm .fsc-pf .fsc-qf .fsc-tf {
     margin: 0.25rem 0;
 }
@@ -64,7 +91,6 @@
     top: 1rem;
     height: 75%;
     min-width: 18rem;
-    z-index: -1;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -115,7 +141,7 @@
 .simple-calendar-tlm .fsc-ig,
 .simple-calendar-tlm .fsc-if .fsc-hf:has(em),
 .simple-calendar-tlm .fsc-mf h2,
-.simple-calendar-tlm .fsc-mf>em{
+.simple-calendar-tlm .fsc-mf>em {
     padding: 0.5rem 0.5rem !important;
     margin-bottom: 0;
 }
@@ -197,8 +223,7 @@
 
 .simple-calendar-tlm .fsc-if .fsc-mg p,
 .simple-calendar-tlm .fsc-mg.fsc-b div,
-.simple-calendar-tlm .fsc-hf .fsc-hg .fsc-ck .fsc-dk
- {
+.simple-calendar-tlm .fsc-hf .fsc-hg .fsc-ck .fsc-dk {
     font-size: .75rem;
 }
 
@@ -206,6 +231,20 @@
     width: 0.75rem;
     height: 0.75rem;
     filter: unset;
+}
+
+.simple-calendar-tlm .window-content form input[type=checkbox].fsc-uh {
+    min-width: 2rem;
+    height: 1rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    float: left;
+}
+
+.simple-calendar-tlm.journal-sheet .fsc-ug h1 .fsc-ah input {
+    display: none; 
 }
 
 .simple-calendar-tlm.fsc-uf header>*:not(.close) {
@@ -257,7 +296,6 @@
 .simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj .fsc-ca,
 .simple-calendar-tlm.fsc-uf .fsc-pf .fsc-oj,
 .simple-calendar-tlm .fsc-wf,
-.simple-calendar-tlm .fsc-qf,
 .simple-calendar-tlm .fsc-ig,
 .simple-calendar-tlm.fsc-uf .fsc-pf .fsc-tf,
 .simple-calendar-tlm .fsc-qf .fsc-lb {
@@ -294,7 +332,7 @@
 
 .simple-calendar-tlm .fsc-h {
     margin: 0 !important;
-    padding:0.25rem !important;
+    padding: 0.25rem !important;
 }
 
 .simple-calendar-tlm .fsc-g .fsc-ea {
@@ -320,6 +358,14 @@
     font-size: .6875rem;
 }
 
+.simple-calendar-tlm .fsc-rf,
+.simple-calendar-tlm .fsc-ak {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .simple-calendar-tlm .fsc-oj .fsc-n {
     height: 0.6rem;
     width: 0.6rem;
@@ -342,17 +388,93 @@
 }
 
 .simple-calendar-tlm .fsc-bf .fsc-fg .fsc-lj div:not(:first-child),
-.simple-calendar-tlm .fsc-mf .fsc-ck .fsc-dk div:not(:first-child) {
-    margin-left: 0.5rem;
+.simple-calendar-tlm .fsc-mf .fsc-ck .fsc-dk div:not(:first-child),
+.simple-calendar-tlm .fsc-rf div:not(:first-child) {
+    margin-left: 0.25rem;
+}
+
+.simple-calendar-tlm.journal-sheet .fsc-vg section {
+    overflow-y: auto;
+    word-break: break-word;
+    height: 100%;
 }
 
 .simple-calendar-tlm .fsc-mf .fsc-ck .fsc-dk {
     align-items: center;
 }
 
-.simple-calendar-tlm .fsc-mf .fsc-ck .fsc-bk:last-child {
-    padding: 1px 3px;
+.simple-calendar-tlm .fsc-bk {
+    padding: 1px 2px;
     border-radius: 3px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: .725rem;
+}
+
+.simple-calendar-tlm .fsc-dk .fsc-bk span,
+.simple-calendar-tlm .fsc-rf .fsc-bk span {
+    margin-right: 0.25rem;
+}
+
+.simple-calendar-tlm .fsc-ug .fsc-ah.fsc-bk {
+    font-size: .725rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0;
+    cursor: pointer;
+    min-width: 30px;
+    justify-content: center;
+}
+
+.simple-calendar-tlm  .fsc-pf {
+    display: flex;
+    flex-direction: column;
+}
+
+.simple-calendar-tlm .fsc-qf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}  
+
+.simple-calendar-tlm.journal-sheet form .fsc-wg {
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.simple-calendar-tlm.journal-sheet.journal-sheet form {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.simple-calendar-tlm.journal-sheet {
+    min-height: unset;
+    min-width: unset;
+}
+
+.simple-calendar-tlm.journal-sheet .fsc-ug h1 {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.simple-calendar-tlm.journal-sheet .fsc-ug h1 .fsc-jk {
+    flex: 1;
+    word-break: break-word;
 }
 
 .simple-calendar-tlm ::-webkit-scrollbar-thumb {
@@ -394,6 +516,7 @@
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w .fsc-ba .fsc-ta {
     background-color: color-mix(in srgb, black 10%, var(--accent-color)) !important;
     box-shadow: var(--box-shadow) !important;
+    margin-right: 0 !important;
 }
 
 .simple-calendar-tlm .fsc-h .fsc-r {

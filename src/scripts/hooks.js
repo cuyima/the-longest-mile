@@ -31,17 +31,17 @@ Hooks.once("simple-calendar-ready", async (app, html, data) => {
   const theme = game.settings.get("pf2e-dorako-ui", "theme.window-app-theme");
 
   if (!game.settings.get(MODULE_NAME, "sc-hack") || theme == "no-theme") return;
- 
+
   injectCSS("tlm-simple-calendar");
 
   console.log(MODULE_NAME + " | Injected CSS for Simple Calendar.");
 });
 
 Hooks.on("renderApplication", async (app, html, data) => {
-  //currently dead due to sc update, need to change to fsc-og for hook but css is currently shitfucked
   if (
     !game.settings.get(MODULE_NAME, "sc-hack") ||
-    html.eq(0).attr("id") !== "fsc-ng"
+    html.eq(0).attr("id") !== "fsc-ng" &&
+    !html.eq(0).hasClass("journal-sheet")
   ) {
     return;
   }
