@@ -6,11 +6,7 @@ import {
   DERVISH_STRIKE_EFFECT,
   DERVISH_STRIKE_EFFECT_AMP,
 } from "./consts.js";
-import {
-  injectCSS,
-  addEffect,
-  removeEffect,
-} from "./utils.js";
+import { injectCSS, addEffect, removeEffect } from "./utils.js";
 import { registerSettings } from "./settings.js";
 
 //replace character sheet styling
@@ -23,7 +19,7 @@ Hooks.once("init", async () => {
 //replace character sheet button
 Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
   html
-    .find("div.pc.pc_deity")
+    .find("div.pc.deity")
     .find(".open-compendium")
     .attr("data-compendium", MODULE_NAME + ".deities");
   console.log(
@@ -32,35 +28,13 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
 });
 
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
-  if (game.settings.get(MODULE_NAME, "sc-hack")) {
-    injectCSS("tlm-simple-calendar");
+  const theme = game.settings.get("pf2e-dorako-ui", "theme.window-app-theme");
 
-    const theme = game.settings.get(
-      "pf2e-dorako-ui",
-      "theme.window-app-theme"
-    );
+  if (!game.settings.get(MODULE_NAME, "sc-hack") || theme == "no-theme") return;
+ 
+  injectCSS("tlm-simple-calendar");
 
-    const color = game.settings.get(
-      "pf2e-dorako-ui",
-      "theme.window-app-color-scheme"
-    );
-
-    if (theme == "crb") {
-      if(color == 'prefer-dark'){
-        injectCSS("tlm-simple-calendar-dark");
-      }else{
-        injectCSS("tlm-simple-calendar-light");
-      }
-    } else if (theme == "foundry2") {
-      injectCSS("tlm-simple-calendar-foundry2");
-    } else if ( theme == "bg3") {
-      injectCSS("tlm-simple-calendar-bg3");
-    } else if (theme == "no-theme") {
-      injectCSS("tlm-simple-calendar-def");
-    }
-
-    console.log(MODULE_NAME + " | Injected CSS for Simple Calendar.");
-  }
+  console.log(MODULE_NAME + " | Injected CSS for Simple Calendar.");
 });
 
 Hooks.on("renderApplication", async (app, html, data) => {
