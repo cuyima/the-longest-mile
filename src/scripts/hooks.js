@@ -40,8 +40,8 @@ Hooks.once("simple-calendar-ready", async (app, html, data) => {
 Hooks.on("renderApplication", async (app, html, data) => {
   if (
     !game.settings.get(MODULE_NAME, "sc-hack") ||
-    html.eq(0).attr("id") !== "fsc-ng" &&
-    !html.eq(0).hasClass("journal-sheet")
+    html.eq(0).attr("id") !== "fsc-ng"
+    // && !html.eq(0).hasClass("journal-sheet")
   ) {
     return;
   }

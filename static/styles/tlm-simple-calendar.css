@@ -3,7 +3,6 @@
 }
 
 .simple-calendar-tlm.journal-sheet .window-content {
-    /*     overflow-x: visible !important;*/
     position: unset;
     overflow-y: hidden !important;
 }
@@ -121,6 +120,7 @@
 
 .simple-calendar-tlm .fsc-vf>button.fsc-xb {
     margin: 0 0 0.5rem 0 !important;
+    width: 3rem;
 }
 
 .simple-calendar-tlm .fsc-ub button svg {
@@ -244,7 +244,7 @@
 }
 
 .simple-calendar-tlm.journal-sheet .fsc-ug h1 .fsc-ah input {
-    display: none; 
+    display: none;
 }
 
 .simple-calendar-tlm.fsc-uf header>*:not(.close) {
@@ -430,7 +430,7 @@
     justify-content: center;
 }
 
-.simple-calendar-tlm  .fsc-pf {
+.simple-calendar-tlm .fsc-pf {
     display: flex;
     flex-direction: column;
 }
@@ -440,7 +440,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-}  
+}
 
 .simple-calendar-tlm.journal-sheet form .fsc-wg {
     flex: 0;
@@ -500,7 +500,7 @@
     stroke: var(--color-text-dark-primary);
 }
 
-.simple-calendar-tlm .fsc-fg .fsc-ga .fsc-ja,
+.simple-calendar-tlm .fsc-ga .fsc-ja,
 .simple-calendar-tlm .fsc-wb .fsc-_b.fsc-b,
 .simple-calendar-tlm .fsc-ga .fsc-ja .fsc-la .fsc-na,
 .simple-calendar-tlm .fsc-ga.fsc-mf {
@@ -536,6 +536,60 @@
     background-color: color-mix(in srgb, var(--color-warm-3) 30%, transparent) !important;
 }
 
+
+.simple-calendar-tlm .window-content form .fsc-qi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=text]:focus~label,
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=text]:not(:placeholder-shown)~label,
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=number]:focus~label,
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=number]:not(:placeholder-shown)~label,
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=range]:focus~label,
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=range]:not(:placeholder-shown)~label,
+.simple-calendar-tlm .window-content form .fsc-qi>select:focus~label,
+.simple-calendar-tlm .window-content form .fsc-qi>select:not(:placeholder-shown)~label,
+.simple-calendar-tlm .window-content form .fsc-qi>.fsc-ec:focus~label,
+.simple-calendar-tlm .window-content form .fsc-qi>.fsc-ec:not(:placeholder-shown)~label,
+.simple-calendar-tlm .window-content form .fsc-qi>.fsc-ob:focus~label,
+.simple-calendar-tlm .window-content form .fsc-qi>.fsc-ob:not(:placeholder-shown)~label {
+    transform: scale(0.85) translateY(-0.6rem) translateX(-0.2rem);
+}
+
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=text],
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=number],
+.simple-calendar-tlm .window-content form .fsc-qi>input[type=range],
+.simple-calendar-tlm .window-content form .fsc-qi>select,
+.simple-calendar-tlm .window-content form .fsc-qi>.fsc-ec,
+.simple-calendar-tlm .window-content form .fsc-qi>.fsc-ob {
+    width: 100%;
+    height: calc(2.5rem + 2px);
+    font-size: .875rem;
+}
+
+.simple-calendar-tlm form .fsc-qi label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0;
+    pointer-events: none;
+    border: none;
+    transform-origin: 0 0;
+    font-size: .875rem;
+}
+
+.simple-calendar-tlm .window-content form .fsc-ui {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 1rem 0;
+}
 
 /* theme specific css*/
 [data-dorako-ui-theme=bg3].simple-calendar-tlm {
