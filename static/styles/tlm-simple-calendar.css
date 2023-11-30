@@ -72,7 +72,10 @@
 
 .simple-calendar-tlm.journal-sheet .fsc-vg {
     overflow: hidden;
-    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.simple-calendar-tlm.journal-sheet .fsc-vg section * {
     user-select: text;
 }
 
@@ -83,7 +86,7 @@
 }
 
 .simple-calendar-tlm .fsc-pf .fsc-qf .fsc-tf {
-    margin:  0;
+    margin: 0;
 }
 
 .simple-calendar-tlm .fsc-mf,
@@ -446,7 +449,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 0.5rem;
 }
 
 .simple-calendar-tlm.journal-sheet.journal-sheet form {
@@ -837,6 +839,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .simple-calendar-tlm.journal-sheet .fsc-xg .fsc-jh .fsc-dh {
     margin-right: 0.25rem;
 }
