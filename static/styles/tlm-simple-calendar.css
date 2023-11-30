@@ -540,7 +540,11 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
-    flex: 1;
+    width: 50%;
+}
+
+.simple-calendar-tlm .window-content form h1 .fsc-qi {
+    width: 100% !important;
 }
 
 .simple-calendar-tlm .window-content form .fsc-qi.fsc-ri.fsc-_i {
@@ -733,37 +737,103 @@
     height: 100%;
 }
 
-.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-b {
-    bottom: -2px !important;
+.simple-calendar-tlm.journal-sheet .fsc-xg {
     margin: 0;
     right: 100% !important;
     top: unset !important;
     margin-right: 0.75rem;
     padding: 0.5rem;
+    overflow: hidden;
 }
 
-.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-b ul{
-    list-style: decimal;
+.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-c {
+    visibility: visible !important;
+    display: block !important;
+    min-width: unset;
+    width: 40px;
+    padding-right: 0 !important;
 }
 
-.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-b .fsc-ig {
+.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-c .fsc-jh *:not(:first-child),
+.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-c ul span {
+    display: none !important;
+}
+
+
+.simple-calendar-tlm.journal-sheet .fsc-xg ul {
+    padding: 0;
+    margin: 0.5rem 0;
+    list-style: none;
+    counter-reset: section;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xg li {
+    font-size: .875rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-top: 1px solid var(--color-border-dark);
+    border-bottom: 1px solid var(--color-border-dark-3);
+    position: relative;
+}
+
+
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet ul .fsc-ha {
+    display: none !important;
+}
+
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xg li button {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xg li:last-child {
+    border-bottom: none;
+}
+
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xg li span {
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xg li.fsc-aa {
+    border-top: 1px solid var(--color-border-highlight);
+    border-bottom: 1px solid var(--color-border-highlight);
+}
+
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xg li:before {
+    content: counters(section, ".") ". ";
+    counter-increment: section;
+    margin-right: 0.25rem;
+    pointer-events: none;
+    color: var(--color-text-light-7);
+    text-align: center;
+}
+
+.simple-calendar-tlm.journal-sheet .fsc-xg .fsc-ig {
     position: relative;
     flex: 1;
     padding: 0 !important;
 }
 
-.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-b .fsc-jh {
+.simple-calendar-tlm.journal-sheet .fsc-xg .fsc-jh {
     display: flex;
     align-items: center;
 }
 
-.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-b .fsc-jh *:not(:last-child) {
+.simple-calendar-tlm.journal-sheet .fsc-xg .fsc-jh *:not(:last-child) {
     margin-right: 0.25rem;
 }
 
-.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xg.fsc-b .fsc-xb {
-   width: fit-content;
-   height: 100%;
+.simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-xg .fsc-xb {
+    width: fit-content;
+    height: 100%;
 }
 
 .simple-calendar-tlm.simple-calendar-tlm.journal-sheet .fsc-mf.fsc-xg .fsc-ig button {
