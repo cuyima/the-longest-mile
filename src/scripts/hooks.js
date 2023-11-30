@@ -9,6 +9,9 @@ import {
 import { injectCSS, addEffect, removeEffect } from "./utils.js";
 import { registerSettings } from "./settings.js";
 
+import '../../static/styles/tlm-character-sheet.css';
+import '../../static/styles/tlm-simple-calendar.css';
+
 //replace character sheet styling
 Hooks.once("init", async () => {
   registerSettings();
@@ -41,7 +44,7 @@ Hooks.on("renderApplication", async (app, html, data) => {
   if (
     !game.settings.get(MODULE_NAME, "sc-hack") ||
     html.eq(0).attr("id") !== "fsc-ng"
-    // && !html.eq(0).hasClass("journal-sheet")
+    && !html.eq(0).hasClass("journal-sheet")
   ) {
     return;
   }

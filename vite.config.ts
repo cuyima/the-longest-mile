@@ -5,7 +5,7 @@ import fs from "fs-extra";
 import path from "path"
 
 const config = Vite.defineConfig(({ command, mode }): Vite.UserConfig => {
-    const buildMode = mode === "production" ? "production" : "development";
+    const buildMode = mode == "production" ? "production" : "development";
     const outDir = "dist";
 
     const plugins: any[] = [];
@@ -86,11 +86,7 @@ const config = Vite.defineConfig(({ command, mode }): Vite.UserConfig => {
                         name === "style.css" ? "styles/the-longest-mile.css" : name!,
                     chunkFileNames: "[name].mjs",
                     entryFileNames: "the-longest-mile.mjs",
-                    manualChunks: {
-                        vendor: [],
-                    },
                 },
-                watch: { buildDelay: 100 },
             },
         },
         server: {
