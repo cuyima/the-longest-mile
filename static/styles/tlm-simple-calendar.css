@@ -541,6 +541,7 @@
     flex-wrap: nowrap;
     align-items: stretch;
     width: 50%;
+    position: relative;
 }
 
 .simple-calendar-tlm .window-content form h1 .fsc-qi {
@@ -553,6 +554,7 @@
     align-items: center;
     height: fit-content;
     flex: 1 !important;
+    position: relative;
 }
 
 .simple-calendar-tlm .window-content form .fsc-bb,
@@ -600,7 +602,13 @@
 }
 
 .simple-calendar-tlm form .fsc-si {
-    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 11px;
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
+    opacity: 0.25;
 }
 
 .simple-calendar-tlm form .fsc-ui .fsc-ob button,
@@ -688,6 +696,7 @@
     justify-content: flex-start;
     align-items: stretch;
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 .simple-calendar-tlm .window-content form .fsc-ob button .fsc-qb {
