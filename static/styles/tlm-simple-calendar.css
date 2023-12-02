@@ -4,6 +4,7 @@
 
 #fsc-ng.simple-calendar-tlm {
     height: fit-content !important;
+    width: fit-content !important;
 }
 
 .simple-calendar-tlm.journal-sheet .window-content {

@@ -1,0 +1,74 @@
+[data-dorako-ui-scope=controls]#combat-dock .buttons-container i {
+    border-radius: var(--border-radius);
+    background: var(--button-background-color);
+    border: var(--app-border-style);
+    border-color: var(--button-border-color);
+    color: var(--button-text-color);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--app-text-shadow);
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0;
+    font-size: var(--font-size-10);
+}
+
+[data-dorako-ui-scope=controls]#combat-dock .buttons-container i:hover {
+    background: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+    border: var(--app-border-style);
+    border-color: var(--button-hover-border-color);
+    box-shadow: var(--box-shadow);
+}
+
+
+[data-dorako-ui-scope=controls][data-dorako-ui-theme=crb]#combat-dock {
+    --button-background-color: var(--glass-bg);
+}
+
+#combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-max {
+    height: 80%;
+    overflow: hidden;
+    margin-top: 0.75rem;
+    border-radius: 3px;
+}
+
+#combat-dock .buttons-container {
+    padding-top: 0.25rem;
+}
+
+
+#combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-current {
+    border-top: none;
+}
+
+#combat-dock .separator {
+    border: 1px solid var(--color-border-light-primary);
+  /*   border-image: linear-gradient(transparent, var(--color-border-light-primary) 50%, transparent) 1; */
+}
+
+[data-dorako-ui-scope=controls]#combat-dock .combatant-portrait {
+    border: none;
+    background: none;
+}
+
+#combat-dock .combatant-wrapper {
+    filter: drop-shadow(0px 0px 5px rgb(0 0 0 / 50%));
+}
+
+#tooltip.combat-dock-tooltip {
+    opacity: 1 !important;
+    padding: 0;
+}
+
+#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+    border-radius: var(--border-radius) !important;
+    box-shadow: unset !important;
+}
+
+#tooltip.combat-dock-tooltip:not([data-dorako-ui-theme="bg3"]) .combat-dock-tooltip-wrapper {
+    font-family: var(--font-primary) !important;
+}
+
+[data-dorako-ui-theme="bg3"]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+    font-family: var(--serif) !important;
+}

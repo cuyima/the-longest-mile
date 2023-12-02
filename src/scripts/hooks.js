@@ -6,11 +6,12 @@ import {
   DERVISH_STRIKE_EFFECT,
   DERVISH_STRIKE_EFFECT_AMP,
 } from "./consts.js";
-import { injectCSS, addEffect, removeEffect } from "./utils.js";
+import { injectCSS, addEffect, removeEffect, getUiTheme } from "./utils.js";
 import { registerSettings } from "./settings.js";
 
-import '../../static/styles/tlm-character-sheet.css';
-import '../../static/styles/tlm-simple-calendar.css';
+import "../../static/styles/tlm-character-sheet.css";
+import "../../static/styles/tlm-simple-calendar.css";
+import "../../static/styles/tlm-carousel.css";
 
 //replace character sheet styling
 Hooks.once("init", async () => {
@@ -43,13 +44,29 @@ Hooks.once("simple-calendar-ready", async (app, html, data) => {
 Hooks.on("renderApplication", async (app, html, data) => {
   if (
     !game.settings.get(MODULE_NAME, "sc-hack") ||
-    html.eq(0).attr("id") !== "fsc-ng"
-    && !html.eq(0).hasClass("journal-sheet")
+    (html.eq(0).attr("id") !== "fsc-ng" &&
+      !html.eq(0).hasClass("journal-sheet"))
   ) {
     return;
   }
   html.removeClass("simple-calendar").addClass("simple-calendar-tlm");
   console.log(MODULE_NAME + " | Injected HTML for Simple Calendar.");
+});
+
+Hooks.on("renderCombatDock", async (app, html, data) => {
+  const theme = game.settings.get("pf2e-dorako-ui", "theme.app-theme");
+  if (!theme) return;
+  
+  html.attr("data-dorako-ui-theme", theme);
+  html.attr("data-dorako-ui-scope", "controls");
+
+  console.log(
+    MODULE_NAME + " | Injected Dorako Attributes for Combat Carousel."
+  );
+});
+
+Hooks.once("renderCombatDock", async (app, html, data) => {
+  injectCSS("tlm-carousel");
 });
 
 Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
@@ -61,6 +78,8 @@ Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
     return;
 
   let origin = await fromUuid(message?.flags?.pf2e?.origin?.uuid);
+
+  if (!origin) return;
 
   if (DERVISH_CONSUME_ACTIONS.includes(origin.slug)) {
     removeEffect(message.actor);
