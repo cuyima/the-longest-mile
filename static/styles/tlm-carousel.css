@@ -28,8 +28,17 @@
 #combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-max {
     height: 80%;
     overflow: hidden;
-    margin-top: 0.75rem;
+    margin-top: 10%;
     border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+#combat-dock {
+    margin-top: 0.5rem;
+}
+
+#combat-dock .combatant-wrapper .overlay-ui-container {
+    overflow: visible !important;
 }
 
 #combat-dock .buttons-container {
