@@ -2,10 +2,15 @@
     overflow: visible;
 }
 
+#fsc-ng.simple-calendar-tlm {
+    height: fit-content !important;
+}
+
 .simple-calendar-tlm.journal-sheet .window-content {
     position: unset;
     overflow-y: hidden !important;
     margin: 0;
+    height: fit-content;
 }
 
 .simple-calendar-tlm .fsc-vf {
@@ -445,12 +450,12 @@
     align-items: center;
     justify-content: center;
     height: fit-content;
+    margin-bottom: 1rem;
 }
 
 .simple-calendar-tlm.journal-sheet.journal-sheet form {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     padding: 0.5rem;
 }
 
