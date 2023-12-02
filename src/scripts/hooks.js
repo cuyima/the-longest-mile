@@ -6,7 +6,7 @@ import {
   DERVISH_STRIKE_EFFECT,
   DERVISH_STRIKE_EFFECT_AMP,
 } from "./consts.js";
-import { injectCSS, addEffect, removeEffect, getUiTheme } from "./utils.js";
+import { injectCSS, addEffect, removeEffect } from "./utils.js";
 import { registerSettings } from "./settings.js";
 
 import "../../static/styles/tlm-character-sheet.css";
@@ -56,7 +56,7 @@ Hooks.on("renderApplication", async (app, html, data) => {
 Hooks.on("renderCombatDock", async (app, html, data) => {
   const theme = game.settings.get("pf2e-dorako-ui", "theme.app-theme");
   if (!theme) return;
-  
+
   html.attr("data-dorako-ui-theme", theme);
   html.attr("data-dorako-ui-scope", "controls");
 
