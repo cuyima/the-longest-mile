@@ -1,4 +1,4 @@
-[data-dorako-ui-scope=controls]#combat-dock .buttons-container i {
+[data-dorako-ui-theme]#combat-dock .buttons-container i {
     border-radius: var(--border-radius);
     background: var(--button-background-color);
     border: var(--app-border-style);
@@ -6,13 +6,11 @@
     color: var(--button-text-color);
     box-shadow: var(--box-shadow);
     text-shadow: var(--app-text-shadow);
-    width: 1.25rem;
-    height: 1.25rem;
     padding: 0;
     font-size: var(--font-size-10);
 }
 
-[data-dorako-ui-scope=controls]#combat-dock .buttons-container i:hover {
+[data-dorako-ui-theme]#combat-dock .buttons-container i:hover {
     background: var(--button-hover-background-color);
     color: var(--button-hover-text-color);
     border: var(--app-border-style);
@@ -21,36 +19,11 @@
 }
 
 
-[data-dorako-ui-scope=controls][data-dorako-ui-theme=crb]#combat-dock {
+[data-dorako-ui-theme=crb]#combat-dock {
     --button-background-color: var(--glass-bg);
 }
 
-#combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-max {
-    height: 80%;
-    overflow: hidden;
-    margin-top: 10%;
-    border-radius: 3px;
-    box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
-}
-
-#combat-dock {
-    margin-top: 0.5rem;
-}
-
-#combat-dock .combatant-wrapper .overlay-ui-container {
-    overflow: visible !important;
-}
-
-#combat-dock .buttons-container {
-    padding-top: 0.25rem;
-}
-
-
-#combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-current {
-    border-top: none;
-}
-
-#combat-dock .separator {
+[data-dorako-ui-theme]#combat-dock .separator {
     border-color: var(--button-hover-border-color);
     border-image: radial-gradient(circle at center, var(--button-hover-border-color) 70%, transparent 100%);
     border-image-slice: 1;
@@ -60,29 +33,58 @@
     box-shadow: var(--box-shadow);
 }
 
-[data-dorako-ui-scope=controls]#combat-dock .combatant-portrait {
+/* tooltip stylings */
+
+[data-dorako-ui-theme]#tooltip.combat-dock-tooltip {
+    opacity: 1;
+    padding: 0;
+}
+
+[data-dorako-ui-theme]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+    border-radius: var(--border-radius);
+    box-shadow: unset;
+}
+
+[data-dorako-ui-theme]#tooltip.combat-dock-tooltip:not([data-dorako-ui-theme="bg3"]) .combat-dock-tooltip-wrapper {
+    font-family: var(--font-primary);
+}
+
+[data-dorako-ui-theme="bg3"]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+    font-family: var(--serif);
+}
+
+/* other stylings */
+
+[tlm-combat-dock]#combat-dock {
+    margin-top: 0.5rem;
+}
+
+[tlm-combat-dock]#combat-dock .combatant-wrapper .overlay-ui-container {
+    overflow: visible;
+}
+
+[tlm-combat-dock]#combat-dock .buttons-container {
+    padding-top: 0.25rem;
+}
+
+
+[tlm-combat-dock]#combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-current {
+    border-top: none;
+}
+
+[tlm-combat-dock]#combat-dock .combatant-portrait {
     border: none;
     background: none;
 }
 
-#combat-dock .combatant-wrapper {
+[tlm-combat-dock]#combat-dock .combatant-wrapper {
     filter: drop-shadow(0px 0px 5px rgb(0 0 0 / 50%));
 }
 
-#tooltip.combat-dock-tooltip {
-    opacity: 1 !important;
-    padding: 0;
-}
-
-#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
-    border-radius: var(--border-radius) !important;
-    box-shadow: unset !important;
-}
-
-#tooltip.combat-dock-tooltip:not([data-dorako-ui-theme="bg3"]) .combat-dock-tooltip-wrapper {
-    font-family: var(--font-primary) !important;
-}
-
-[data-dorako-ui-theme="bg3"]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
-    font-family: var(--serif) !important;
+[tlm-combat-dock]#combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-max {
+    height: 80%;
+    overflow: hidden;
+    margin-top: 10%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
 }

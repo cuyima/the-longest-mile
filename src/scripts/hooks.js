@@ -34,7 +34,8 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
   const theme = game.settings.get("pf2e-dorako-ui", "theme.window-app-theme");
 
-  if (!game.settings.get(MODULE_NAME, "sc-hack") || theme == "no-theme") return;
+  if (!game.settings.get(MODULE_NAME, "dorako-sc") || theme == "no-theme")
+    return;
 
   injectCSS("tlm-simple-calendar");
 
@@ -43,30 +44,42 @@ Hooks.once("simple-calendar-ready", async (app, html, data) => {
 
 Hooks.on("renderApplication", async (app, html, data) => {
   if (
-    !game.settings.get(MODULE_NAME, "sc-hack") ||
+    !game.settings.get(MODULE_NAME, "dorako-sc") ||
     (html.eq(0).attr("id") !== "fsc-ng" &&
       !html.eq(0).hasClass("journal-sheet"))
-  ) {
+  )
     return;
-  }
+
   html.removeClass("simple-calendar").addClass("simple-calendar-tlm");
   console.log(MODULE_NAME + " | Injected HTML for Simple Calendar.");
 });
 
 Hooks.on("renderCombatDock", async (app, html, data) => {
-  const theme = game.settings.get("pf2e-dorako-ui", "theme.app-theme");
-  if (!theme) return;
+  if (game.settings.get(MODULE_NAME, "dorako-combat-dock")) {
+    const theme = game.settings.get("pf2e-dorako-ui", "theme.app-theme");
+    if (!theme) return;
 
-  html.attr("data-dorako-ui-theme", theme);
-  html.attr("data-dorako-ui-scope", "controls");
+    html.attr("data-dorako-ui-theme", theme);
+    html.attr("data-dorako-ui-scope", "controls");
 
-  console.log(
-    MODULE_NAME + " | Injected Dorako Attributes for Combat Carousel."
-  );
+    console.log(
+      MODULE_NAME + " | Injected Dorako attributes for Carousel Combat Tracker."
+    );
+  }
+
+  if (game.settings.get(MODULE_NAME, "custom-combat-dock")) {
+
+    html.attr("tlm-combat-dock", "on");
+
+    console.log(
+      MODULE_NAME + " | Injected custom attribute for Carousel Combat Tracker."
+    );
+  }
 });
 
 Hooks.once("renderCombatDock", async (app, html, data) => {
   injectCSS("tlm-carousel");
+  console.log(MODULE_NAME + " | Injected CSS for Carousel Combat Tracker.");
 });
 
 Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
