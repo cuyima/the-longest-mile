@@ -1,6 +1,6 @@
-[data-dorako-ui-theme]#combat-dock .buttons-container i {
+[data-theme]#combat-dock .buttons-container i {
     border-radius: var(--border-radius);
-    background: var(--button-background-color);
+    background: var(--button-background);
     border: var(--app-border-style);
     border-color: var(--button-border-color);
     color: var(--button-text-color);
@@ -10,8 +10,8 @@
     font-size: var(--font-size-10);
 }
 
-[data-dorako-ui-theme]#combat-dock .buttons-container i:hover {
-    background: var(--button-hover-background-color);
+[data-theme]#combat-dock .buttons-container i:hover {
+    background: var(--button-hover-background);
     color: var(--button-hover-text-color);
     border: var(--app-border-style);
     border-color: var(--button-hover-border-color);
@@ -19,11 +19,11 @@
 }
 
 
-[data-dorako-ui-theme=crb]#combat-dock {
+[data-theme=crb]#combat-dock {
     --button-background-color: var(--glass-bg);
 }
 
-[data-dorako-ui-theme]#combat-dock .separator {
+[data-theme]#combat-dock .separator {
     border-color: var(--button-hover-border-color);
     border-image: radial-gradient(circle at center, var(--button-hover-border-color) 70%, transparent 100%);
     border-image-slice: 1;
@@ -35,21 +35,21 @@
 
 /* tooltip stylings */
 
-[data-dorako-ui-theme]#tooltip.combat-dock-tooltip {
+[data-theme]#tooltip.combat-dock-tooltip {
     opacity: 1;
     padding: 0;
 }
 
-[data-dorako-ui-theme]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+[data-theme]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
     border-radius: var(--border-radius);
     box-shadow: unset;
 }
 
-[data-dorako-ui-theme]#tooltip.combat-dock-tooltip:not([data-dorako-ui-theme="bg3"]) .combat-dock-tooltip-wrapper {
+[data-theme]#tooltip.combat-dock-tooltip:not([data-theme="bg3"]) .combat-dock-tooltip-wrapper {
     font-family: var(--font-primary);
 }
 
-[data-dorako-ui-theme="bg3"]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+[data-theme="bg3"]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
     font-family: var(--serif);
 }
 

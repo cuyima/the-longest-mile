@@ -867,33 +867,33 @@
 }
 
 /* theme specific css*/
-[data-dorako-ui-theme=bg3].simple-calendar-tlm {
+[data-theme=bg3].simple-calendar-tlm {
     --tlm-sheet: var(--window-app-background);
 }
 
-[data-dorako-ui-theme=foundry2].simple-calendar-tlm .fsc-lb .fsc-mb {
+[data-theme=foundry2].simple-calendar-tlm .fsc-lb .fsc-mb {
     fill: var(--color-light-3) !important;
     stroke: var(--color-light-3);
 }
 
 
-[data-dorako-ui-theme=crb][data-color-scheme=light].simple-calendar-tlm {
+[data-theme=crb][data-color-scheme=light].simple-calendar-tlm {
     --tlm-sheet: url(../../pf2e-dorako-ui/img/background-light.webp);
 }
 
-[data-dorako-ui-theme=crb][data-color-scheme=light].simple-calendar-tlm .fsc-pf {
+[data-theme=crb][data-color-scheme=light].simple-calendar-tlm .fsc-pf {
     color: var(--text-dark);
 }
 
-[data-dorako-ui-theme=crb][data-color-scheme=dark].simple-calendar-tlm {
+[data-theme=crb][data-color-scheme=dark].simple-calendar-tlm {
     --tlm-sheet: url(../../pf2e-dorako-ui/img/background-dark4.webp);
 }
 
-[data-dorako-ui-theme=crb][data-color-scheme=dark].simple-calendar-tlm .fsc-pf {
+[data-theme=crb][data-color-scheme=dark].simple-calendar-tlm .fsc-pf {
     color: var(--text-light);
 }
 
-[data-dorako-ui-theme=crb][data-color-scheme=dark].simple-calendar-tlm .fsc-lb .fsc-mb {
+[data-theme=crb][data-color-scheme=dark].simple-calendar-tlm .fsc-lb .fsc-mb {
     fill: var(--text-light) !important;
     stroke: var(--text-light);
 }

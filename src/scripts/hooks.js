@@ -57,18 +57,18 @@ Hooks.on("renderApplication", async (app, html, data) => {
 Hooks.on("renderCombatDock", async (app, html, data) => {
   if (game.settings.get(MODULE_NAME, "dorako-combat-dock")) {
     const theme = game.settings.get("pf2e-dorako-ui", "theme.app-theme");
-    if (!theme) return;
+    if (theme) {
+      html.attr("data-theme", theme);
+      html.attr("data-dorako-ui-scope", "controls");
 
-    html.attr("data-dorako-ui-theme", theme);
-    html.attr("data-dorako-ui-scope", "controls");
-
-    console.log(
-      MODULE_NAME + " | Injected Dorako attributes for Carousel Combat Tracker."
-    );
+      console.log(
+        MODULE_NAME +
+          " | Injected Dorako attributes for Carousel Combat Tracker."
+      );
+    }
   }
 
   if (game.settings.get(MODULE_NAME, "custom-combat-dock")) {
-
     html.attr("tlm-combat-dock", "on");
 
     console.log(
