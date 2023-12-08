@@ -1,7 +1,7 @@
 [data-theme]#combat-dock .buttons-container i {
     border-radius: var(--border-radius);
     background: var(--button-background);
-    border: var(--app-border-style);
+    border: var(--app-border-width) solid var(--button-border-color);
     border-color: var(--button-border-color);
     color: var(--button-text-color);
     box-shadow: var(--box-shadow);
@@ -13,7 +13,7 @@
 [data-theme]#combat-dock .buttons-container i:hover {
     background: var(--button-hover-background);
     color: var(--button-hover-text-color);
-    border: var(--app-border-style);
+    border: var(--app-border-width) solid var(--button-hover-border-color);
     border-color: var(--button-hover-border-color);
     box-shadow: var(--box-shadow);
 }

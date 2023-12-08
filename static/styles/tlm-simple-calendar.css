@@ -98,8 +98,7 @@
 .simple-calendar-tlm .fsc-mf,
 .simple-calendar-tlm form .fsc-dc {
     border-radius: var(--border-radius);
-    /*     box-shadow: var(--window-app-box-shadow); */
-    border: var(--window-app-border-style);
+    border: var(--window-app-border-width);
     border-color: var(--window-app-border-color);
     backdrop-filter: blur(4px);
     background-color: var(--window-app-background) !important;
@@ -509,7 +508,7 @@
 .simple-calendar-tlm .fsc-ga.fsc-mf {
     backdrop-filter: blur(4px);
     background: var(--input-background-color) !important;
-    border: var(--app-border-style) !important;
+    border: var(--app-border-width) !important;
     border-color: var(--input-border-color) !important;
     border-radius: var(--border-radius) !important;
     padding: 0.25rem;
@@ -638,7 +637,7 @@
 .simple-calendar-tlm form .fsc-ui .fsc-ob button,
 .simple-calendar-tlm form .fsc-ui .fsc-ec input {
     height: calc(var(--form-field-height) + 1px);
-    border: var(--app-border-style) !important;
+    border: var(--app-border-width) !important;
     border-color: var(--input-border-color) !important;
     box-shadow: var(--box-shadow) !important;
     display: flex;
@@ -688,7 +687,7 @@
 
 .simple-calendar-tlm form .fsc-ui button:hover {
     outline: 1px solid var(--input-focus-outline-color);
-    border: var(--app-border-style) !important;
+    border: var(--app-border-width) !important;
     border-color: var(--input-border-color) !important;
     color: var(--input-focus-text-color) !important;
     box-shadow: var(--box-shadow) !important;
