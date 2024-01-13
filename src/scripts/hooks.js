@@ -1,21 +1,17 @@
 import {
   MODULE_NAME,
   CHARACTER_SHEET,
-  TAH,
-  DERVISH_CHARGE_ACTIONS,
   DERVISH_CONSUME_ACTIONS,
-  DERVISH_EFFECT,
   DERVISH_STRIKE_CHARGE,
   DERVISH_STRIKE_EFFECT,
   DERVISH_STRIKE_EFFECT_AMP,
 } from "./consts.js";
-import {
-  injectCSS,
-  cleanTAHEffects,
-  addEffect,
-  removeEffect,
-} from "./utils.js";
+import { injectCSS, addEffect, removeEffect } from "./utils.js";
 import { registerSettings } from "./settings.js";
+
+import "../../static/styles/tlm-character-sheet.css";
+import "../../static/styles/tlm-simple-calendar.css";
+import "../../static/styles/tlm-carousel.css";
 
 //replace character sheet styling
 Hooks.once("init", async () => {
@@ -27,7 +23,7 @@ Hooks.once("init", async () => {
 //replace character sheet button
 Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
   html
-    .find("div.pc.pc_deity")
+    .find("div.pc.deity")
     .find(".open-compendium")
     .attr("data-compendium", MODULE_NAME + ".deities");
   console.log(
@@ -35,44 +31,55 @@ Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
   );
 });
 
-//update TAH effects
-Hooks.on("render" + TAH, async (app, html) => {
-  cleanTAHEffects(html);
-  console.log(
-    MODULE_NAME + " | Cleaned up effects section of Token Action HUD."
-  );
-});
-
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
-  if (game.settings.get(MODULE_NAME, "sc-hack")) {
-    injectCSS("tlm-simple-calendar");
+  const theme = game.settings.get("pf2e-dorako-ui", "theme.window-app-theme");
 
-    const theme = game.settings.get(
-      "pf2e-dorako-ui",
-      "theme.application-theme"
-    );
-    if (theme === "light-theme") {
-      injectCSS("tlm-simple-calendar-light");
-    } else if (theme === "dark-theme") {
-      injectCSS("tlm-simple-calendar-dark");
-    } else if (theme === "no-theme") {
-      injectCSS("tlm-simple-calendar-def");
-    }
+  if (!game.settings.get(MODULE_NAME, "dorako-sc") || theme == "no-theme")
+    return;
 
-    console.log(MODULE_NAME + " | Injected CSS for Simple Calendar.");
-  }
+  injectCSS("tlm-simple-calendar");
+
+  console.log(MODULE_NAME + " | Injected CSS for Simple Calendar.");
 });
 
 Hooks.on("renderApplication", async (app, html, data) => {
-  //currently dead due to sc update, need to change to fsc-og for hook but css is currently shitfucked
   if (
-    !game.settings.get(MODULE_NAME, "sc-hack") ||
-    html.eq(0).attr("id") !== "fsc-ng"
-  ) {
+    !game.settings.get(MODULE_NAME, "dorako-sc") ||
+    (html.eq(0).attr("id") !== "fsc-ng" &&
+      !html.eq(0).hasClass("journal-sheet"))
+  )
     return;
-  }
+
   html.removeClass("simple-calendar").addClass("simple-calendar-tlm");
   console.log(MODULE_NAME + " | Injected HTML for Simple Calendar.");
+});
+
+Hooks.on("renderCombatDock", async (app, html, data) => {
+  if (game.settings.get(MODULE_NAME, "dorako-combat-dock")) {
+    const theme = game.settings.get("pf2e-dorako-ui", "theme.app-theme");
+    if (theme) {
+      html.attr("data-theme", theme);
+      html.attr("data-dorako-ui-scope", "controls");
+
+      console.log(
+        MODULE_NAME +
+          " | Injected Dorako attributes for Carousel Combat Tracker."
+      );
+    }
+  }
+
+  if (game.settings.get(MODULE_NAME, "custom-combat-dock")) {
+    html.attr("tlm-combat-dock", "on");
+
+    console.log(
+      MODULE_NAME + " | Injected custom attribute for Carousel Combat Tracker."
+    );
+  }
+});
+
+Hooks.once("renderCombatDock", async (app, html, data) => {
+  injectCSS("tlm-carousel");
+  console.log(MODULE_NAME + " | Injected CSS for Carousel Combat Tracker.");
 });
 
 Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
@@ -80,21 +87,24 @@ Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
   if (
     !message?.flags?.pf2e?.origin?.type == "action" &&
     !message?.flags?.pf2e?.origin?.type == "spell"
-  ) return;
+  )
+    return;
 
   let origin = await fromUuid(message?.flags?.pf2e?.origin?.uuid);
-  
+
+  if (!origin) return;
+
   if (DERVISH_CONSUME_ACTIONS.includes(origin.slug)) {
     removeEffect(message.actor);
   }
 
-  console.log(DERVISH_STRIKE_CHARGE == origin.slug)
+  console.log(DERVISH_STRIKE_CHARGE == origin.slug);
 
-  if (DERVISH_STRIKE_CHARGE == origin.slug){
+  if (DERVISH_STRIKE_CHARGE == origin.slug) {
     addEffect(message.actor, DERVISH_STRIKE_EFFECT);
-  }    
+  }
 
-  if (DERVISH_STRIKE_CHARGE + '-amped'== origin.slug){
+  if (DERVISH_STRIKE_CHARGE + "-amped" == origin.slug) {
     addEffect(message.actor, DERVISH_STRIKE_EFFECT_AMP);
   }
 });

@@ -22,3 +22,14 @@
   min-width: 150px;
   max-height: 150px;
 }
+
+.actor.sheet.character .character-details .abcd {
+  grid-template-columns: repeat(2, 12em) !important;
+  padding-left: 0.5rem !important;
+}
+
+.actor.sheet.character .character-details .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
