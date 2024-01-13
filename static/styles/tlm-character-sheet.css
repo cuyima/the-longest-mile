@@ -14,7 +14,7 @@
 }
 
 .character-details {
-  grid: "img details details" auto/140px 140px 1fr !important;
+  grid-template-columns: 170px auto minmax(0, 1fr) !important;
 }
 
 .character-details .frame-container {
