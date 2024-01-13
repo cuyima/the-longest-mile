@@ -1,0 +1,90 @@
+[data-theme]#combat-dock .buttons-container i {
+    border-radius: var(--border-radius);
+    background: var(--button-background);
+    border: var(--app-border-width) solid var(--button-border-color);
+    border-color: var(--button-border-color);
+    color: var(--button-text-color);
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--app-text-shadow);
+    padding: 0;
+    font-size: var(--font-size-10);
+}
+
+[data-theme]#combat-dock .buttons-container i:hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-text-color);
+    border: var(--app-border-width) solid var(--button-hover-border-color);
+    border-color: var(--button-hover-border-color);
+    box-shadow: var(--box-shadow);
+}
+
+
+[data-theme=crb]#combat-dock {
+    --button-background-color: var(--glass-bg);
+}
+
+[data-theme]#combat-dock .separator {
+    border-color: var(--button-hover-border-color);
+    border-image: radial-gradient(circle at center, var(--button-hover-border-color) 70%, transparent 100%);
+    border-image-slice: 1;
+    opacity: 1;
+    border-top: none;
+    border-right: none;
+    box-shadow: var(--box-shadow);
+}
+
+/* tooltip stylings */
+
+[data-theme]#tooltip.combat-dock-tooltip {
+    opacity: 1;
+    padding: 0;
+}
+
+[data-theme]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+    border-radius: var(--border-radius);
+    box-shadow: unset;
+}
+
+[data-theme]#tooltip.combat-dock-tooltip:not([data-theme="bg3"]) .combat-dock-tooltip-wrapper {
+    font-family: var(--font-primary);
+}
+
+[data-theme="bg3"]#tooltip.combat-dock-tooltip .combat-dock-tooltip-wrapper {
+    font-family: var(--serif);
+}
+
+/* other stylings */
+
+[tlm-combat-dock]#combat-dock {
+    margin-top: 0.5rem;
+}
+
+[tlm-combat-dock]#combat-dock .combatant-wrapper .overlay-ui-container {
+    overflow: visible;
+}
+
+[tlm-combat-dock]#combat-dock .buttons-container {
+    padding-top: 0.25rem;
+}
+
+
+[tlm-combat-dock]#combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-current {
+    border-top: none;
+}
+
+[tlm-combat-dock]#combat-dock .combatant-portrait {
+    border: none;
+    background: none;
+}
+
+[tlm-combat-dock]#combat-dock .combatant-wrapper {
+    filter: drop-shadow(0px 0px 5px rgb(0 0 0 / 50%));
+}
+
+[tlm-combat-dock]#combat-dock .combatant-wrapper .overlay-ui-container .tracked-attribute-bar-max {
+    height: 80%;
+    overflow: hidden;
+    margin-top: 10%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+}

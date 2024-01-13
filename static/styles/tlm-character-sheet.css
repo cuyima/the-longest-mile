@@ -14,11 +14,22 @@
 }
 
 .character-details {
-  grid: "img details details" auto/140px 140px 1fr !important;
+  grid-template-columns: 170px auto minmax(0, 1fr) !important;
 }
 
 .character-details .frame-container {
   margin-left: -10px !important;
   min-width: 150px;
   max-height: 150px;
+}
+
+.actor.sheet.character .character-details .abcd {
+  grid-template-columns: repeat(2, 12em) !important;
+  padding-left: 0.5rem !important;
+}
+
+.actor.sheet.character .character-details .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
