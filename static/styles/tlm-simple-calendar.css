@@ -522,7 +522,7 @@
 }
 
 .simple-calendar-tlm .fsc-h .fsc-r {
-    background-color: color-mix(in srgb, var(--color-cool-1) 5%, transparent) !important;
+    background-color: color-mix(in srgb, var(--color-secondary-1) 5%, transparent) !important;
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w {
@@ -531,11 +531,11 @@
 }
 
 .simple-calendar-tlm .fsc-h .fsc-s .fsc-t .fsc-v .fsc-w.fsc-x {
-    background-color: color-mix(in srgb, var(--color-warm-2) 90%, transparent) !important;
+    background-color: color-mix(in srgb, var(--color-primary-1) 90%, transparent) !important;
 }
 
 .simple-calendar-tlm .fsc-v .fsc-w.fsc-aa {
-    background-color: color-mix(in srgb, var(--color-warm-3) 30%, transparent) !important;
+    background-color: color-mix(in srgb, var(--color-primary-2) 30%, transparent) !important;
 }
 
 
