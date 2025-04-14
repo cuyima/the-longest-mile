@@ -20,16 +20,6 @@ Hooks.once("init", async () => {
   console.log(MODULE_NAME + " | Injected character sheets CSS.");
 });
 
-//replace character sheet button
-Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
-  html
-    .find("div.pc.deity")
-    .find(".open-compendium")
-    .attr("data-compendium", MODULE_NAME + ".deities");
-  console.log(
-    MODULE_NAME + " | Overwrote character sheet deities with custom compendium."
-  );
-});
 
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
   const theme = game.settings.get("pf2e-dorako-ui", "theme.window-app-theme");
