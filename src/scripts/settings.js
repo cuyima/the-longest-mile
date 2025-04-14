@@ -30,4 +30,14 @@ export function registerSettings() {
     default: true,
     requiresReload: true,
   });
+
+  game.settings.register(MODULE_NAME, "keeleys-combat-hero-points", {
+    scope: "world",
+    config: true,
+    name: "Keeley's Hero Points (Combat Only)",
+    hint: "Enables Keeley's variant Hero Points for Encounter Mode. This setting will be ignored if Workbench's Hero Point variants are enabled.",
+    type: Boolean,
+    default: true,
+    requiresReload: true,
+  });
 }
