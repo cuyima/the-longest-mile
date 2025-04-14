@@ -1,6 +1,5 @@
 import {
   MODULE_NAME,
-  CHARACTER_SHEET,
   DERVISH_CONSUME_ACTIONS,
   DERVISH_STRIKE_CHARGE,
   DERVISH_STRIKE_EFFECT,
@@ -19,7 +18,6 @@ Hooks.once("init", async () => {
   injectCSS("tlm-character-sheet");
   console.log(MODULE_NAME + " | Injected character sheets CSS.");
 });
-
 
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
   const theme = game.settings.get("pf2e-dorako-ui", "theme.window-app-theme");

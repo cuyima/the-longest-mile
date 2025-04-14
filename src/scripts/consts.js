@@ -1,5 +1,4 @@
 export const MODULE_NAME = "the-longest-mile";
-export const CHARACTER_SHEET = "CharacterSheetPF2e";
 export const TAH = "TokenActionHud";
 
 export const DERVISH_EFFECT = `Compendium.${MODULE_NAME}.dervish.Item.coWYuzbu9Awoy34r`;
