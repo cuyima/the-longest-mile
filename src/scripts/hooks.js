@@ -1,6 +1,5 @@
 import {
   MODULE_NAME,
-  CHARACTER_SHEET,
   DERVISH_CONSUME_ACTIONS,
   DERVISH_STRIKE_CHARGE,
   DERVISH_STRIKE_EFFECT,
@@ -18,17 +17,6 @@ Hooks.once("init", async () => {
   registerSettings();
   injectCSS("tlm-character-sheet");
   console.log(MODULE_NAME + " | Injected character sheets CSS.");
-});
-
-//replace character sheet button
-Hooks.on("render" + CHARACTER_SHEET, (app, html) => {
-  html
-    .find("div.pc.deity")
-    .find(".open-compendium")
-    .attr("data-compendium", MODULE_NAME + ".deities");
-  console.log(
-    MODULE_NAME + " | Overwrote character sheet deities with custom compendium."
-  );
 });
 
 Hooks.once("simple-calendar-ready", async (app, html, data) => {
@@ -98,8 +86,6 @@ Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
     removeEffect(message.actor);
   }
 
-  console.log(DERVISH_STRIKE_CHARGE == origin.slug);
-
   if (DERVISH_STRIKE_CHARGE == origin.slug) {
     addEffect(message.actor, DERVISH_STRIKE_EFFECT);
   }
@@ -108,3 +94,32 @@ Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
     addEffect(message.actor, DERVISH_STRIKE_EFFECT_AMP);
   }
 });
+
+// Borrowed from PF2e Workbench <3
+Hooks.on("pf2e.reroll", (_oldRoll, newRoll, heroPoint, keep) => {
+  if (!heroPoint 
+    || keep !== "new"
+    || !game.settings.get(MODULE_NAME, "keeleys-combat-hero-points") 
+    || !game.combat) {
+    return;
+  }
+
+  if( game.settings.get("xdy-pf2e-workbench", "heroPointRules") !== "no" ) {
+    console.log( MODULE_NAME + " | A Hero Point rule from PF2e Workbench is active, this module's Hero Point rule will not be applied." );
+    return;
+  }
+
+  const die = newRoll.dice.find((d) => d instanceof foundry.dice.terms.Die && d.number === 1 && d.faces === 20);
+  const result = die?.results.find((r) => r.active && r.result <= 10);
+
+  if (die && result) {
+      newRoll.terms.push(
+          foundry.dice.terms.OperatorTerm.fromData({ class: "OperatorTerm", operator: "+", evaluated: true }),
+          foundry.dice.terms.NumericTerm.fromData({ class: "NumericTerm", number: 10, evaluated: true }),
+      );
+      newRoll._total += 10;
+      newRoll.options.keeleyAdd10 = true;
+  }
+    return;
+});
+
