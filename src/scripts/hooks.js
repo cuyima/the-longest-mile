@@ -95,11 +95,13 @@ Hooks.on("preCreateChatMessage", async (message, user, _options, userId) => {
   }
 });
 
-// Borrowed from PF2e Workbench <3
-Hooks.on("pf2e.reroll", (_oldRoll, newRoll, heroPoint, keep) => {
-  if (!heroPoint 
+// Borrowed from PF2e Workbench, but made conditional
+Hooks.on("pf2e.reroll", (_oldRoll, newRoll, resource, keep = "new") => {
+  const heroPoints = typeof resource === "boolean" ? resource : resource.slug === "hero-points";
+  
+  if (!heroPoints
     || keep !== "new"
-    || !game.settings.get(MODULE_NAME, "keeleys-combat-hero-points") 
+    || !game.settings.get(MODULE_NAME, "keeleys-combat-hero-points")
     || !game.combat) {
     return;
   }
