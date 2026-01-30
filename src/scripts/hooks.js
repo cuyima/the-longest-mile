@@ -125,3 +125,41 @@ Hooks.on("pf2e.reroll", (_oldRoll, newRoll, resource, keep = "new") => {
     return;
 });
 
+//Unforunately, Workbench will only modify the roll if its own Hero Point rule is active, so we have to modify the chat message ourselves.
+Hooks.on("renderChatMessage", (message, jq) => {
+    const lastRoll = message.rolls.at(-1);
+    if (!lastRoll) return;
+
+    const element = jq.get(0);
+    if (!element) return;
+
+    if (lastRoll.options.keeleyAdd10) {
+        const tags = element.querySelector(".flavor-text > .tags.modifiers");
+        const formulaElem = element.querySelector(".reroll-discard .dice-formula");
+        const newTotalElem = element.querySelector(".reroll-second .dice-total");
+
+        if (tags && formulaElem && newTotalElem) {
+            // Add a tag to the list of modifiers
+            const newTag = document.createElement("span");
+            newTag.classList.add("tag", "tag_transparent", "keeley-add-10");
+            newTag.innerText = game.i18n.localize(`${MODULENAME}.SETTINGS.heroPointRules.bonusTagKeeleys`);
+            newTag.dataset.slug = "keeley-add-10";
+
+            const querySelector = tags.querySelector(".tag");
+            if (querySelector?.dataset.visibility === "gm") {
+                newTag.dataset.visibility = "gm";
+            }
+
+            tags.append(newTag);
+
+            // Show +10 in the formula
+            const span = document.createElement("span");
+            span.className = "keeley-add-10";
+            span.innerText = " + 10";
+            formulaElem?.append(span);
+
+            // Make the total purple
+            newTotalElem.classList.add("keeley-add-10");
+        }
+    }
+});
