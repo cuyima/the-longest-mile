@@ -13,7 +13,7 @@ function buildPacks() {
   const folders = getFolders("packs/");
   folders.forEach((folder) => {
     console.log(`Building pack: ${folder}`);
-    compilePack(path.join("packs", folder),path.join("dist", folder));
+    compilePack(path.join("packs", folder),path.join("dist", "packs", folder));
   });
 }
 
