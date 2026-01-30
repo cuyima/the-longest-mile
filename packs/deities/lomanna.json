@@ -1,4 +1,5 @@
 {
+  "_id": "mPcUfLKqZ31jv6w5",
   "name": "Lomanna",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,35 @@
     "category": "deity",
     "alignment": {
       "own": "CE",
-      "follower": ["CE", "CN", "NE"]
+      "follower": [
+        "CE",
+        "CN",
+        "NE"
+      ]
     },
     "domains": {
-      "primary": ["family", "might", "darkness", "nightmares"],
-      "alternate": ["destruction"]
+      "primary": [
+        "family",
+        "might",
+        "darkness",
+        "nightmares"
+      ],
+      "alternate": [
+        "destruction"
+      ]
     },
-    "font": ["harm", "heal"],
-    "ability": ["con", "str"],
+    "font": [
+      "harm",
+      "heal"
+    ],
+    "ability": [
+      "con",
+      "str"
+    ],
     "skill": "sur",
-    "weapons": ["whip"],
+    "weapons": [
+      "whip"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.EE7Q5BHIrfWNCPtT",
       "2": "Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp",
@@ -31,5 +51,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "mPcUfLKqZ31jv6w5"
+  "_key": "!items!mPcUfLKqZ31jv6w5"
 }

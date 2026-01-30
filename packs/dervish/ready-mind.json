@@ -1,4 +1,5 @@
 {
+  "_id": "9KMYO84wkbOXs5up",
   "name": "Ready Mind",
   "type": "feat",
   "effects": [],
@@ -16,15 +17,6 @@
       }
     ],
     "slug": "ready-mind",
-    "_migration": {
-      "version": 0.898,
-      "lastMigration": null,
-      "previous": {
-        "schema": null,
-        "foundry": "11.315",
-        "system": "5.9.5"
-      }
-    },
     "traits": {
       "otherTags": [],
       "value": [
@@ -69,22 +61,7 @@
   },
   "img": "systems/pf2e/icons/features/feats/feats.webp",
   "folder": null,
-  "ownership": {
-    "default": 0,
-    "3dIYMy65gqrwoMlX": 3
-  },
-  "flags": {
-    "core": {}
-  },
-  "_stats": {
-    "systemId": "pf2e",
-    "systemVersion": "5.9.5",
-    "coreVersion": "11.315",
-    "createdTime": 1700762577427,
-    "modifiedTime": 1700763576153,
-    "lastModifiedBy": "3dIYMy65gqrwoMlX"
-  },
-  "_id": "9KMYO84wkbOXs5up",
+
   "sort": 0,
   "_key": "!items!9KMYO84wkbOXs5up"
 }

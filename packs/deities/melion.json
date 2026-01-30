@@ -1,4 +1,5 @@
 {
+  "_id": "fxiQJDj7BhuredgY",
   "name": "Melion",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,34 @@
     "category": "deity",
     "alignment": {
       "own": "LG",
-      "follower": ["LG", "LN"]
+      "follower": [
+        "LG",
+        "LN"
+      ]
     },
     "domains": {
-      "primary": ["might", "lightning", "duty", "family"],
-      "alternate": ["confidence", "cities"]
+      "primary": [
+        "might",
+        "lightning",
+        "duty",
+        "family"
+      ],
+      "alternate": [
+        "confidence",
+        "cities"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["str", "cha"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "str",
+      "cha"
+    ],
     "skill": "soc",
-    "weapons": ["warhammer"],
+    "weapons": [
+      "warhammer"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.EUMjrJJwSgsqNidi",
       "4": "Compendium.pf2e.spells-srd.2BV2yYPfVJ5zirZt",
@@ -31,5 +50,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "fxiQJDj7BhuredgY"
+  "_key": "!items!fxiQJDj7BhuredgY"
 }

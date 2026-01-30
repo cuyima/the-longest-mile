@@ -1,4 +1,5 @@
 {
+  "_id": "UXk7ZuR0VWbNpwYn",
   "name": "Iocatha",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,35 @@
     "category": "deity",
     "alignment": {
       "own": "CG",
-      "follower": ["CG", "NG", "CN"]
+      "follower": [
+        "CG",
+        "NG",
+        "CN"
+      ]
     },
     "domains": {
-      "primary": ["change", "freedom", "zeal", "sun"],
-      "alternate": ["destruction", "fire"]
+      "primary": [
+        "change",
+        "freedom",
+        "zeal",
+        "sun"
+      ],
+      "alternate": [
+        "destruction",
+        "fire"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["str", "wis"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "str",
+      "wis"
+    ],
     "skill": "soc",
-    "weapons": ["morningstar"],
+    "weapons": [
+      "morningstar"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.aAbfKn8maGjJjk2W",
       "3": "Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS",
@@ -31,5 +51,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "UXk7ZuR0VWbNpwYn"
+  "_key": "!items!UXk7ZuR0VWbNpwYn"
 }

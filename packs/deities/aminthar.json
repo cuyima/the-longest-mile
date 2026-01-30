@@ -1,4 +1,5 @@
 {
+  "_id": "AW1UBgsoiRlhM7EI",
   "name": "Aminthar",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,34 @@
     "category": "deity",
     "alignment": {
       "own": "LG",
-      "follower": ["LG", "NG", "LN"]
+      "follower": [
+        "LG",
+        "NG",
+        "LN"
+      ]
     },
     "domains": {
-      "primary": ["confidence", "might", "zeal", "fire"],
-      "alternate": ["duty"]
+      "primary": [
+        "confidence",
+        "might",
+        "zeal",
+        "fire"
+      ],
+      "alternate": [
+        "duty"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["str", "cha"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "str",
+      "cha"
+    ],
     "skill": "itm",
-    "weapons": ["longsword"],
+    "weapons": [
+      "longsword"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
       "2": "Compendium.pf2e.spells-srd.wzctak6BxOW8xvFV",
@@ -31,5 +50,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "AW1UBgsoiRlhM7EI"
+  "_key": "!items!AW1UBgsoiRlhM7EI"
 }

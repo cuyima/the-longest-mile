@@ -1,4 +1,5 @@
 {
+  "_id": "dTwtSILvNzs7LEfN",
   "name": "Psychic Lash",
   "type": "feat",
   "effects": [],
@@ -9,15 +10,6 @@
     },
     "rules": [],
     "slug": "psychic-lash",
-    "_migration": {
-      "version": 0.898,
-      "lastMigration": null,
-      "previous": {
-        "schema": null,
-        "foundry": "11.315",
-        "system": "5.9.5"
-      }
-    },
     "traits": {
       "otherTags": [],
       "value": [
@@ -54,22 +46,7 @@
   },
   "img": "systems/pf2e/icons/features/feats/feats.webp",
   "folder": null,
-  "ownership": {
-    "default": 0,
-    "3dIYMy65gqrwoMlX": 3
-  },
-  "flags": {
-    "core": {}
-  },
-  "_stats": {
-    "systemId": "pf2e",
-    "systemVersion": "5.9.5",
-    "coreVersion": "11.315",
-    "createdTime": 1700762575826,
-    "modifiedTime": 1700763381923,
-    "lastModifiedBy": "3dIYMy65gqrwoMlX"
-  },
-  "_id": "dTwtSILvNzs7LEfN",
+
   "sort": 50000,
   "_key": "!items!dTwtSILvNzs7LEfN"
 }

@@ -1,17 +1,18 @@
 {
-  "name": "Guardian Shield",
+  "_id": "vXju4k80sOmvbMez",
+  "name": "Psionic Strike (Amped)",
   "type": "spell",
   "effects": [],
   "system": {
     "description": {
-      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 5.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
+      "gm": "",
+      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra force damage equal to to 1d4 plus your spellcasting ability modifier and their strikes gain the occult trait if they didn't have it already. </p>\n<hr />\n<p><strong>Heightened (+2)</strong> Increase the damage by 1d4.</p>\n<p>@UUID[Compendium.the-longest-mile.dervish.Item.Of8keBzlkQDYZGRC]{Effect: Psionic Strike (Amped)}</p>"
     },
     "rules": [],
-    "slug": "guardian-shield-spell",
+    "slug": "psionic-strike-amped",
     "traits": {
       "otherTags": [],
       "value": [
-        "cantrip",
         "focus",
         "psi-burst"
       ],
@@ -19,7 +20,7 @@
       "traditions": []
     },
     "publication": {
-      "title": "",
+      "title": "The Longest Mile",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -29,22 +30,20 @@
     },
     "requirements": "",
     "target": {
-      "value": "the creature which triggered the reaction"
+      "value": ""
     },
     "range": {
-      "value": "20 feet"
+      "value": ""
     },
     "area": null,
     "time": {
-      "value": "reaction"
+      "value": "0"
     },
     "duration": {
-      "value": "",
+      "value": "until the end of your turn",
       "sustained": false
     },
-    "damage": {
-      "value": {}
-    },
+    "damage": {},
     "defense": null,
     "cost": {
       "value": ""
@@ -63,6 +62,9 @@
       "value": [
         "occult"
       ]
+    },
+    "school": {
+      "value": "evocation"
     },
     "components": {
       "focus": false,
@@ -83,17 +85,12 @@
     "hasCounteractCheck": {
       "value": false
     },
-    "ability": {
-      "value": ""
-    },
-    "overlays": {},
     "heightening": {
       "damage": {}
     }
   },
-  "img": "systems/pf2e/icons/spells/protective-ward.webp",
-  "_id": "fpPKRfaKQncXsamA",
+  "img": "systems/pf2e/icons/spells/magic-weapon.webp",
   "folder": null,
-  "sort": 1100000,
-  "_key": "!items!fpPKRfaKQncXsamA"
+  "sort": 1400000,
+  "_key": "!items!vXju4k80sOmvbMez"
 }

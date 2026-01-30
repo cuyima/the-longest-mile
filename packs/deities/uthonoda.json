@@ -1,4 +1,5 @@
 {
+  "_id": "zdJ1p8xjXSFIyA6m",
   "name": "Uthonoda",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,36 @@
     "category": "deity",
     "alignment": {
       "own": "NE",
-      "follower": ["LE", "NE", "CE"]
+      "follower": [
+        "LE",
+        "NE",
+        "CE"
+      ]
     },
     "domains": {
-      "primary": ["indulgence", "darkness", "undeath", "decay"],
-      "alternate": ["nightmares", "magic", "plague"]
+      "primary": [
+        "indulgence",
+        "darkness",
+        "undeath",
+        "decay"
+      ],
+      "alternate": [
+        "nightmares",
+        "magic",
+        "plague"
+      ]
     },
-    "font": ["harm"],
-    "ability": ["con", "wis"],
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "con",
+      "wis"
+    ],
     "skill": "med",
-    "weapons": ["scythe"],
+    "weapons": [
+      "scythe"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.zJQnkKEKbJqGB3iB",
       "2": "Compendium.pf2e.spells-srd.8ViwItUgwT4lOvvb",
@@ -31,5 +52,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "zdJ1p8xjXSFIyA6m"
+  "_key": "!items!zdJ1p8xjXSFIyA6m"
 }

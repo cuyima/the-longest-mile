@@ -1,4 +1,5 @@
 {
+  "_id": "G367dh2jzoJ9eBKQ",
   "name": "Tivona",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,33 @@
     "category": "deity",
     "alignment": {
       "own": "NG",
-      "follower": ["NG", "LG"]
+      "follower": [
+        "NG",
+        "LG"
+      ]
     },
     "domains": {
-      "primary": ["family", "nature", "earth", "creation"],
-      "alternate": ["cities", "protection"]
+      "primary": [
+        "family",
+        "nature",
+        "earth",
+        "creation"
+      ],
+      "alternate": [
+        "cities",
+        "protection"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["wis"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "wis"
+    ],
     "skill": "nat",
-    "weapons": ["scythe"],
+    "weapons": [
+      "scythe"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.X9dkmh23lFwMjrYd",
       "2": "Compendium.pf2e.spells-srd.CXICME10TkEJxz0P",
@@ -31,5 +49,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "G367dh2jzoJ9eBKQ"
+  "_key": "!items!G367dh2jzoJ9eBKQ"
 }

@@ -1,16 +1,18 @@
 {
-  "name": "Guardian Shield (Amped)",
+  "_id": "fpPKRfaKQncXsamA",
+  "name": "Guardian Shield",
   "type": "spell",
   "effects": [],
   "system": {
     "description": {
-      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 10.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 20.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 30.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 40.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 50.</p>"
+      "value": "<p><strong>Trigger</strong> You or another creature you can see within 20 feet of you would take damage from a spell or a Strike but damage was not rolled yet.</p><hr /><p>You create a momentary shield of telekinetic force around the target that has Hardness 5.</p><hr /><p><strong>Heightened (3rd)</strong> The shield has Hardness 10.</p><p><strong>Heightened (5th)</strong> The shield has Hardness 15.</p><p><strong>Heightened (7th)</strong> The shield has Hardness 20.</p><p><strong>Heightened (9th)</strong> The shield has Hardness 25.</p>"
     },
     "rules": [],
-    "slug": "guardian-shield-spell-amped",
+    "slug": "guardian-shield-spell",
     "traits": {
       "otherTags": [],
       "value": [
+        "cantrip",
         "focus",
         "psi-burst"
       ],
@@ -91,8 +93,7 @@
     }
   },
   "img": "systems/pf2e/icons/spells/protective-ward.webp",
-  "_id": "16AOcHLTEvBLoXU0",
   "folder": null,
-  "sort": 700000,
-  "_key": "!items!16AOcHLTEvBLoXU0"
+  "sort": 1100000,
+  "_key": "!items!fpPKRfaKQncXsamA"
 }

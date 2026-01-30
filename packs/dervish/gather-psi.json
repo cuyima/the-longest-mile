@@ -1,4 +1,5 @@
 {
+  "_id": "YCZg2etveOOeJJJT",
   "name": "Gather Psi",
   "type": "action",
   "effects": [],
@@ -9,10 +10,6 @@
     },
     "rules": [],
     "slug": "gather-psi",
-    "_migration": {
-      "version": null,
-      "lastMigration": null
-    },
     "traits": {
       "otherTags": [],
       "value": [
@@ -45,20 +42,7 @@
     }
   },
   "img": "systems/pf2e/icons/actions/OneAction.webp",
-  "_id": "YCZg2etveOOeJJJT",
   "folder": null,
   "sort": 900000,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "pf2e",
-    "systemVersion": "5.9.5",
-    "coreVersion": "11.315",
-    "createdTime": null,
-    "modifiedTime": 1700763624463,
-    "lastModifiedBy": "3dIYMy65gqrwoMlX"
-  },
   "_key": "!items!YCZg2etveOOeJJJT"
 }

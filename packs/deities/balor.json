@@ -1,4 +1,5 @@
 {
+  "_id": "EkmN1tLhlu8KRW0F",
   "name": "Balor",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,32 @@
     "category": "deity",
     "alignment": {
       "own": "LE",
-      "follower": ["LE", "NE"]
+      "follower": [
+        "LE",
+        "NE"
+      ]
     },
     "domains": {
-      "primary": ["tyranny", "might", "zeal"],
-      "alternate": ["ambition", "confidence"]
+      "primary": [
+        "tyranny",
+        "might",
+        "zeal"
+      ],
+      "alternate": [
+        "ambition",
+        "confidence"
+      ]
     },
-    "font": ["harm"],
-    "ability": ["str"],
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "str"
+    ],
     "skill": "itm",
-    "weapons": ["mace"],
+    "weapons": [
+      "mace"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
       "3": "Compendium.pf2e.spells-srd.DCQHaLrYXMI37dvW",
@@ -31,5 +48,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "EkmN1tLhlu8KRW0F"
+  "_key": "!items!EkmN1tLhlu8KRW0F"
 }

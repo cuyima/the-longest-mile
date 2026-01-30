@@ -1,4 +1,5 @@
 {
+  "_id": "cPJOxvzK9YouUkHh",
   "name": "Psionic Movement",
   "type": "feat",
   "effects": [],
@@ -9,15 +10,6 @@
     },
     "rules": [],
     "slug": "psionic-movement",
-    "_migration": {
-      "version": 0.898,
-      "lastMigration": null,
-      "previous": {
-        "schema": null,
-        "foundry": "11.315",
-        "system": "5.9.5"
-      }
-    },
     "traits": {
       "otherTags": [],
       "value": [
@@ -54,22 +46,6 @@
   },
   "img": "systems/pf2e/icons/features/feats/feats.webp",
   "folder": null,
-  "ownership": {
-    "default": 0,
-    "3dIYMy65gqrwoMlX": 3
-  },
-  "flags": {
-    "core": {}
-  },
-  "_stats": {
-    "systemId": "pf2e",
-    "systemVersion": "5.9.5",
-    "coreVersion": "11.315",
-    "createdTime": 1700762298362,
-    "modifiedTime": 1700762593317,
-    "lastModifiedBy": "3dIYMy65gqrwoMlX"
-  },
-  "_id": "cPJOxvzK9YouUkHh",
   "sort": 0,
   "_key": "!items!cPJOxvzK9YouUkHh"
 }

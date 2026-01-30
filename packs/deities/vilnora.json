@@ -1,4 +1,5 @@
 {
+  "_id": "YC9f0jrnGKF8dhEL",
   "name": "Vilnora",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,34 @@
     "category": "deity",
     "alignment": {
       "own": "NG",
-      "follower": ["CG", "NG"]
+      "follower": [
+        "CG",
+        "NG"
+      ]
     },
     "domains": {
-      "primary": ["healing", "passion", "creation", "dreams"],
-      "alternate": ["soul", "air"]
+      "primary": [
+        "healing",
+        "passion",
+        "creation",
+        "dreams"
+      ],
+      "alternate": [
+        "soul",
+        "air"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["int", "cha"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "int",
+      "cha"
+    ],
     "skill": "cra",
-    "weapons": ["staff"],
+    "weapons": [
+      "staff"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n",
       "3": "Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS",
@@ -31,5 +50,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "YC9f0jrnGKF8dhEL"
+  "_key": "!items!YC9f0jrnGKF8dhEL"
 }
