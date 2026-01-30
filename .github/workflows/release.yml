@@ -39,14 +39,6 @@ jobs:
           # Update download URL in static/module.json
           sed -i 's|"download": "[^"]*"|"download": "https://github.com/${{ github.repository }}/releases/download/v${{ steps.get_version.outputs.version }}/module.zip"|' static/module.json
 
-      - name: Commit version updates
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add package.json static/module.json
-          git commit -m "Update versions to ${{ steps.get_version.outputs.version }}"
-          git push
-
       - name: Build project
         run: npm run build
 
