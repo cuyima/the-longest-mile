@@ -142,7 +142,7 @@ Hooks.on("renderChatMessage", (message, jq) => {
             // Add a tag to the list of modifiers
             const newTag = document.createElement("span");
             newTag.classList.add("tag", "tag_transparent", "keeley-add-10");
-            newTag.innerText = game.i18n.localize(`${MODULENAME}.SETTINGS.heroPointRules.bonusTagKeeleys`);
+            newTag.innerText = game.i18n.localize("xdy-pf2e-workbench.SETTINGS.heroPointRules.bonusTagKeeleys");
             newTag.dataset.slug = "keeley-add-10";
 
             const querySelector = tags.querySelector(".tag");
