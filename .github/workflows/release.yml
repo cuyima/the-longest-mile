@@ -8,6 +8,8 @@ on:
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout code
@@ -39,6 +41,17 @@ jobs:
           # Update download URL in static/module.json
           sed -i 's|"download": "[^"]*"|"download": "https://github.com/${{ github.repository }}/releases/download/v${{ steps.get_version.outputs.version }}/module.zip"|' static/module.json
 
+      - name: Get previous tag
+        id: get_previous_tag
+        run: |
+          # Get the tag before the current one
+          PREVIOUS_TAG=$(git tag --sort=-version:refname | grep -A1 "^v${{ steps.get_version.outputs.version }}$" | tail -n1)
+          if [ -z "$PREVIOUS_TAG" ]; then
+            # If no previous tag found, use the current tag (for first release)
+            PREVIOUS_TAG="v${{ steps.get_version.outputs.version }}"
+          fi
+          echo "previous_tag=$PREVIOUS_TAG" >> $GITHUB_OUTPUT
+
       - name: Build project
         run: npm run build
 
@@ -60,7 +73,7 @@ jobs:
             ## What's Changed
             - Version ${{ steps.get_version.outputs.version }}
             
-            **Full Changelog**: https://github.com/${{ github.repository }}/releases
+            **Full Changelog**: https://github.com/${{ github.repository }}/compare/${{ steps.get_previous_tag.outputs.previous_tag }}...v${{ steps.get_version.outputs.version }}
           draft: false
           prerelease: false
 
