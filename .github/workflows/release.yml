@@ -45,7 +45,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add package.json static/module.json
           git commit -m "Update versions to ${{ steps.get_version.outputs.version }}"
-          git push
+          git push origin HEAD:master
 
       - name: Build project
         run: npm run build
