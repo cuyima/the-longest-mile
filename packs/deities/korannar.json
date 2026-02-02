@@ -1,4 +1,5 @@
 {
+  "_id": "vyltDkeJz2TabrYh",
   "name": "Korannar",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,32 @@
     "category": "deity",
     "alignment": {
       "own": "CN",
-      "follower": ["CG", "CN", "CE"]
+      "follower": [
+        "CG",
+        "CN",
+        "CE"
+      ]
     },
     "domains": {
-      "primary": ["lightning", "air", "freedom", "destruction"],
+      "primary": [
+        "lightning",
+        "air",
+        "freedom",
+        "destruction"
+      ],
       "alternate": []
     },
-    "font": ["harm"],
-    "ability": ["str", "con"],
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "str",
+      "con"
+    ],
     "skill": "ath",
-    "weapons": ["spear"],
+    "weapons": [
+      "spear"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.g8QqHpv2CWDwmIm1",
       "4": "Compendium.pf2e.spells-srd.Y3G6Y6EDgCY0s3fq",
@@ -31,5 +48,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "vyltDkeJz2TabrYh"
+  "_key": "!items!vyltDkeJz2TabrYh"
 }

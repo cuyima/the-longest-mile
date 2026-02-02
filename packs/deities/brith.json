@@ -1,4 +1,5 @@
 {
+  "_id": "XUG0OJEhZdl7iqHP",
   "name": "Brith",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,34 @@
     "category": "deity",
     "alignment": {
       "own": "CN",
-      "follower": ["CN", "CE"]
+      "follower": [
+        "CN",
+        "CE"
+      ]
     },
     "domains": {
-      "primary": ["cold", "decay", "dust", "void"],
-      "alternate": ["darkness", "air"]
+      "primary": [
+        "cold",
+        "decay",
+        "dust",
+        "void"
+      ],
+      "alternate": [
+        "darkness",
+        "air"
+      ]
     },
-    "font": ["harm"],
-    "ability": ["con", "cha"],
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "con",
+      "cha"
+    ],
     "skill": "itm",
-    "weapons": ["war-flail"],
+    "weapons": [
+      "war-flail"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.8TQiFzGf4feoHeH0",
       "5": "Compendium.pf2e.spells-srd.GaRQlC9Yw1BGKHfN",
@@ -31,5 +50,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "XUG0OJEhZdl7iqHP"
+  "_key": "!items!XUG0OJEhZdl7iqHP"
 }

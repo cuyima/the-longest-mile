@@ -1,4 +1,5 @@
 {
+  "_id": "derA31qFKHLxNYUD",
   "name": "Prinnandi",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,33 @@
     "category": "deity",
     "alignment": {
       "own": "N",
-      "follower": ["N", "CN", "CG"]
+      "follower": [
+        "N",
+        "CN",
+        "CG"
+      ]
     },
     "domains": {
-      "primary": ["moon", "trickery", "change", "secrecy"],
+      "primary": [
+        "moon",
+        "trickery",
+        "change",
+        "secrecy"
+      ],
       "alternate": []
     },
-    "font": ["harm", "heal"],
-    "ability": ["dex", "cha"],
+    "font": [
+      "harm",
+      "heal"
+    ],
+    "ability": [
+      "dex",
+      "cha"
+    ],
     "skill": "dec",
-    "weapons": ["sickle"],
+    "weapons": [
+      "sickle"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.zlnXpME1T2uvn8Lr",
       "2": "Compendium.pf2e.spells-srd.j8vIoIEWElvpwkcI",
@@ -31,5 +49,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "derA31qFKHLxNYUD"
+  "_key": "!items!derA31qFKHLxNYUD"
 }

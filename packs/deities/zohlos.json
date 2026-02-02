@@ -1,4 +1,5 @@
 {
+  "_id": "sJ1xa0KFWcrD4V9t",
   "name": "Zohlos",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,35 @@
     "category": "deity",
     "alignment": {
       "own": "NG",
-      "follower": ["LG", "NG", "CG"]
+      "follower": [
+        "LG",
+        "NG",
+        "CG"
+      ]
     },
     "domains": {
-      "primary": ["sun", "repose", "toil", "time"],
-      "alternate": ["fire", "confidence"]
+      "primary": [
+        "sun",
+        "repose",
+        "toil",
+        "time"
+      ],
+      "alternate": [
+        "fire",
+        "confidence"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["wis", "cha"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "wis",
+      "cha"
+    ],
     "skill": "prf",
-    "weapons": ["scimitar"],
+    "weapons": [
+      "scimitar"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n",
       "3": "Compendium.pf2e.spells-srd.AMEu5zzLN7uCX645",
@@ -31,5 +51,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "sJ1xa0KFWcrD4V9t"
+  "_key": "!items!sJ1xa0KFWcrD4V9t"
 }

@@ -1,4 +1,5 @@
 {
+  "_id": "oNImwHAFvaSnug3Z",
   "name": "Calemath",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,31 @@
     "category": "deity",
     "alignment": {
       "own": "N",
-      "follower": ["N", "NG"]
+      "follower": [
+        "N",
+        "NG"
+      ]
     },
     "domains": {
-      "primary": ["creation", "perfection", "knowledge", "passion"],
+      "primary": [
+        "creation",
+        "perfection",
+        "knowledge",
+        "passion"
+      ],
       "alternate": []
     },
-    "font": ["heal"],
-    "ability": ["int", "con"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "int",
+      "con"
+    ],
     "skill": "cra",
-    "weapons": ["light-hammer"],
+    "weapons": [
+      "light-hammer"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.TPI9fRCAYsDqpAe4",
       "4": "Compendium.pf2e.spells-srd.TUj8eugNqAvB1vVR",
@@ -31,5 +47,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "oNImwHAFvaSnug3Z"
+  "_key": "!items!oNImwHAFvaSnug3Z"
 }

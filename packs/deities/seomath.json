@@ -1,4 +1,5 @@
 {
+  "_id": "Zj4uQzJsvamCxAR1",
   "name": "Seomath",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,34 @@
     "category": "deity",
     "alignment": {
       "own": "CG",
-      "follower": ["NG", "CG", "CN"]
+      "follower": [
+        "NG",
+        "CG",
+        "CN"
+      ]
     },
     "domains": {
-      "primary": ["moon", "soul", "darkness", "water"],
-      "alternate": ["repose"]
+      "primary": [
+        "moon",
+        "soul",
+        "darkness",
+        "water"
+      ],
+      "alternate": [
+        "repose"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["dex", "cha"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "dex",
+      "cha"
+    ],
     "skill": "prf",
-    "weapons": ["fauchard"],
+    "weapons": [
+      "fauchard"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n",
       "2": "Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE",
@@ -31,5 +50,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "Zj4uQzJsvamCxAR1"
+  "_key": "!items!Zj4uQzJsvamCxAR1"
 }

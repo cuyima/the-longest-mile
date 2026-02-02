@@ -1,4 +1,5 @@
 {
+  "_id": "ijYuV67bFmX0gMDr",
   "name": "Diomannor",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,30 @@
     "category": "deity",
     "alignment": {
       "own": "LE",
-      "follower": ["LE"]
+      "follower": [
+        "LE"
+      ]
     },
     "domains": {
-      "primary": ["wealth", "ambition", "secrecy"],
-      "alternate": ["toil"]
+      "primary": [
+        "wealth",
+        "ambition",
+        "secrecy"
+      ],
+      "alternate": [
+        "toil"
+      ]
     },
-    "font": ["harm"],
-    "ability": ["int"],
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "int"
+    ],
     "skill": "thi",
-    "weapons": ["spear"],
+    "weapons": [
+      "spear"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.0uRpypf1Hi7ahvTl",
       "4": "Compendium.pf2e.spells-srd.TUj8eugNqAvB1vVR",
@@ -31,5 +46,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "ijYuV67bFmX0gMDr"
+  "_key": "!items!ijYuV67bFmX0gMDr"
 }

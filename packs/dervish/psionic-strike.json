@@ -1,21 +1,19 @@
 {
-  "name": "Psionic Strike (Amped)",
+  "_id": "wLkMp60XTDQYqV6p",
+  "name": "Psionic Strike",
   "type": "spell",
   "effects": [],
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra force damage equal to to 1d4 plus your spellcasting ability modifier and their strikes gain the occult trait if they didn't have it already. </p>\n<hr />\n<p><strong>Heightened (+2)</strong> Increase the damage by 1d4.</p>\n<p>@UUID[Compendium.the-longest-mile.dervish.Item.Of8keBzlkQDYZGRC]{Effect: Psionic Strike (Amped)}</p>"
+      "value": "<p>You imbue psychic energy into any melee weapons you are wielding. Until the end of your turn, these weapons deal extra force damage equal to to 1 plus your spellcasting ability modifier and their strikes gain the occult trait if they didn't have it already. </p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the damage by 1.</p>\n<p>@UUID[Compendium.the-longest-mile.dervish.Item.9HtGwdItIbqTfAbn]{Effect: Psionic Strike}</p>"
     },
     "rules": [],
-    "slug": "psionic-strike-amped",
-    "_migration": {
-      "version": null,
-      "lastMigration": null
-    },
+    "slug": "psionic-strike",
     "traits": {
       "otherTags": [],
       "value": [
+        "cantrip",
         "focus",
         "psi-burst"
       ],
@@ -46,8 +44,7 @@
       "value": "until the end of your turn",
       "sustained": false
     },
-    "damage": {
-    },
+    "damage": {},
     "defense": null,
     "cost": {
       "value": ""
@@ -94,20 +91,8 @@
     }
   },
   "img": "systems/pf2e/icons/spells/magic-weapon.webp",
-  "_id": "vXju4k80sOmvbMez",
   "folder": null,
-  "sort": 1400000,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "pf2e",
-    "systemVersion": "5.9.5",
-    "coreVersion": "11.315",
-    "createdTime": null,
-    "modifiedTime": 1700759944420,
-    "lastModifiedBy": "3dIYMy65gqrwoMlX"
-  },
-  "_key": "!items!vXju4k80sOmvbMez"
+  "sort": 1500000,
+
+  "_key": "!items!wLkMp60XTDQYqV6p"
 }

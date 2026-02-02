@@ -1,4 +1,5 @@
 {
+  "_id": "BrbgJXqxzetuCEZQ",
   "name": "Vorunar",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,32 @@
     "category": "deity",
     "alignment": {
       "own": "LN",
-      "follower": ["LN", "LE", "N"]
+      "follower": [
+        "LN",
+        "LE",
+        "N"
+      ]
     },
     "domains": {
-      "primary": ["nature", "duty", "might"],
-      "alternate": ["toil"]
+      "primary": [
+        "nature",
+        "duty",
+        "might"
+      ],
+      "alternate": [
+        "toil"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["wis"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "wis"
+    ],
     "skill": "sur",
-    "weapons": ["longbow"],
+    "weapons": [
+      "longbow"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
       "2": "Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp",
@@ -31,5 +48,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "BrbgJXqxzetuCEZQ"
+  "_key": "!items!BrbgJXqxzetuCEZQ"
 }

@@ -1,4 +1,5 @@
 {
+  "_id": "s1UhRDHu68YSEjln",
   "name": "Cattoron",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,31 @@
     "category": "deity",
     "alignment": {
       "own": "NG",
-      "follower": ["N", "CG"]
+      "follower": [
+        "N",
+        "CG"
+      ]
     },
     "domains": {
-      "primary": ["nature", "passion", "freedom", "air"],
+      "primary": [
+        "nature",
+        "passion",
+        "freedom",
+        "air"
+      ],
       "alternate": []
     },
-    "font": ["heal"],
-    "ability": ["str", "con"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "str",
+      "con"
+    ],
     "skill": "nat",
-    "weapons": ["longbow"],
+    "weapons": [
+      "longbow"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh",
       "2": "Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp",
@@ -31,5 +47,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "s1UhRDHu68YSEjln"
+  "_key": "!items!s1UhRDHu68YSEjln"
 }

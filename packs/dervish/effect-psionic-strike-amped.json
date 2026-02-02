@@ -1,6 +1,7 @@
 {
+  "_id": "Of8keBzlkQDYZGRC",
   "folder": null,
-  "name": "Effect: Psionic Strike",
+  "name": "Effect: Psionic Strike (Amped)",
   "type": "effect",
   "effects": [],
   "system": {
@@ -19,14 +20,21 @@
         ]
       },
       {
-        "value": "ceil(@actor.level/4)+@actor.abilities.cha.mod",
+        "key": "DamageDice",
+        "selector": "melee-strike-damage",
+        "damageType": "force",
+        "diceNumber": "ceil(@actor.level/4)",
+        "dieSize": "d4"
+      },
+      {
+        "value": "@actor.abilities.cha.mod",
         "key": "FlatModifier",
         "selector": "melee-strike-damage",
         "damageType": "force",
         "hideIfDisabled": true
       }
     ],
-    "slug": "effect-psionic-strike",
+    "slug": "effect-psionic-strike-amped",
     "traits": {
       "otherTags": [],
       "value": []
@@ -58,7 +66,6 @@
     "unidentified": false
   },
   "img": "systems/pf2e/icons/spells/magic-weapon.webp",
-  "_id": "9HtGwdItIbqTfAbn",
-  "sort": 600000,
-  "_key": "!items!9HtGwdItIbqTfAbn"
+  "sort": 100000,
+  "_key": "!items!Of8keBzlkQDYZGRC"
 }

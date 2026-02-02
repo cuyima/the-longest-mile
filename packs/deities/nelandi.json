@@ -1,4 +1,5 @@
 {
+  "_id": "XM84BsdioF1KEk2R",
   "name": "Nelandi",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,34 @@
     "category": "deity",
     "alignment": {
       "own": "LE",
-      "follower": ["LN", "LE", "NE"]
+      "follower": [
+        "LN",
+        "LE",
+        "NE"
+      ]
     },
     "domains": {
-      "primary": ["duty", "pain", "zeal", "lightning"],
-      "alternate": ["tyranny"]
+      "primary": [
+        "duty",
+        "pain",
+        "zeal",
+        "lightning"
+      ],
+      "alternate": [
+        "tyranny"
+      ]
     },
-    "font": ["heal"],
-    "ability": ["wis", "cha"],
+    "font": [
+      "heal"
+    ],
+    "ability": [
+      "wis",
+      "cha"
+    ],
     "skill": "dip",
-    "weapons": ["ranseur"],
+    "weapons": [
+      "ranseur"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.4c1c6eNzU1PFGkAy",
       "3": "Compendium.pf2e.spells-srd.gPvtmKMRpg9I9D7H",
@@ -31,5 +50,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "XM84BsdioF1KEk2R"
+  "_key": "!items!XM84BsdioF1KEk2R"
 }

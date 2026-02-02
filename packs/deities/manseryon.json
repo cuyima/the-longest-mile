@@ -1,4 +1,5 @@
 {
+  "_id": "lCcR7ZE03aGdpDBi",
   "name": "Manseryon",
   "type": "deity",
   "effects": [],
@@ -14,16 +15,33 @@
     "category": "deity",
     "alignment": {
       "own": "NE",
-      "follower": ["LE", "NE"]
+      "follower": [
+        "LE",
+        "NE"
+      ]
     },
     "domains": {
-      "primary": ["duty", "trickery", "ambition"],
-      "alternate": ["zeal", "knowledge"]
+      "primary": [
+        "duty",
+        "trickery",
+        "ambition"
+      ],
+      "alternate": [
+        "zeal",
+        "knowledge"
+      ]
     },
-    "font": ["harm"],
-    "ability": ["cha", "dex"],
+    "font": [
+      "harm"
+    ],
+    "ability": [
+      "cha",
+      "dex"
+    ],
     "skill": "dec",
-    "weapons": ["dagger"],
+    "weapons": [
+      "dagger"
+    ],
     "spells": {
       "1": "Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6",
       "2": "Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp",
@@ -31,5 +49,5 @@
     }
   },
   "img": "systems/pf2e/icons/default-icons/deity.svg",
-  "_id": "lCcR7ZE03aGdpDBi"
+  "_key": "!items!lCcR7ZE03aGdpDBi"
 }
